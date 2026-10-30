@@ -1,0 +1,441 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WindSurf IQ – Stationskarte</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><style>*{box-sizing:border-box}body{margin:0;font:15px system-ui,Arial;background:#0d1520;color:#eaf3ff}header{padding:16px 20px;background:#152337;display:flex;align-items:center;justify-content:space-between;gap:10px}h1{font-size:21px;margin:0}small,.muted{color:#aebdd1}main{display:grid;grid-template-columns:minmax(320px,1fr) 340px;min-height:calc(100vh - 65px)}#map{min-height:540px;background:#20364c}.side{padding:16px;overflow:auto;max-height:calc(100vh - 65px)}input,select,button{font:inherit;border-radius:8px;padding:10px;border:1px solid #47617b}input,select{background:#17283c;color:#fff;min-width:0}button{background:#1b7cd1;color:white;cursor:pointer;border:0}button:disabled{opacity:.45;cursor:default}.row{display:flex;gap:8px;align-items:center;margin:10px 0}.row input{flex:1;width:0}label{display:block;margin-top:13px;color:#c9d9e8;font-size:13px}input[type=range]{width:100%;padding:0}input[type=file]{width:100%;font-size:12px}section{border-bottom:1px solid #30445a;padding-bottom:15px;margin-bottom:15px}h2{font-size:17px;margin:0 0 8px}.station{padding:11px 0;border-bottom:1px solid #293d53;display:flex;justify-content:space-between;gap:8px}.station button{padding:7px 10px;white-space:nowrap}.station strong{display:block}.station small{display:block;margin-top:3px}.pill{background:#243b55;padding:4px 8px;border-radius:30px;font-size:12px}.notice{background:#24354a;border-radius:8px;padding:10px;font-size:13px;line-height:1.5}.leaflet-popup-content{color:#182535}.leaflet-popup-content button{padding:7px}.leaflet-container{font-family:system-ui,Arial}@media(max-width:800px){main{display:flex;flex-direction:column}#map{height:52vh;min-height:360px}.side{max-height:none}} 
+/* WindSurf IQ v6.0: mobile-first shell, existing station logic unchanged */
+:root{color-scheme:dark}button,input,select{touch-action:manipulation}
+#mobileNav{display:none}#mobileNotice{display:none}
+@media(max-width:800px){
+ html,body{height:100%;overflow:hidden}
+ body{display:flex;flex-direction:column;min-height:100dvh}
+ header{flex:0 0 auto;min-height:62px;padding:9px 12px;gap:8px;flex-wrap:wrap}
+ header h1{font-size:17px}header small{font-size:11px}header .pill{font-size:11px;max-width:100%;white-space:normal}
+ main{display:block;position:relative;flex:1;min-height:0;height:auto}
+ #map{position:absolute;inset:0;height:100%;min-height:0;width:100%;z-index:0}
+ .side{display:none;position:absolute;inset:0;z-index:1000;background:#0d1520;overflow-y:auto;max-height:none;padding:14px 14px 100px}
+ body.mobile-panel .side{display:block}
+ body.mobile-panel #map{visibility:hidden}
+ #mobileNav{display:flex;position:relative;z-index:1100;flex:0 0 auto;height:calc(62px + env(safe-area-inset-bottom));padding:5px 8px env(safe-area-inset-bottom);background:#152337;border-top:1px solid #30445a;gap:8px}
+ #mobileNav button{flex:1;border-radius:10px;font-weight:600;font-size:15px;padding:8px}
+ #mobileNav button[aria-pressed=true]{background:#3a9bf0}
+ #mobileNotice{display:block;background:#20344a;padding:7px 12px;font-size:12px}
+ .side input,.side select,.side button{min-height:44px}
+ .row{flex-wrap:wrap}.row input{min-width:140px}
+ .leaflet-popup-content-wrapper{max-width:calc(100vw - 35px)}
+ .leaflet-popup-content{max-height:55dvh;overflow:auto}
+}
+</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#152337"><meta name="apple-mobile-web-app-capable" content="yes"></head><body><header><div><h1>🌬 WindSurf IQ · Stationskarte</h1><small>Nur registrierte Wetterstationen · keine Vorhersagemodelle</small></div><span class="pill" id="count">Lade Daten</span></header><main><div id="map"></div><aside class="side"><section><h2>Hintergrundkarte (MapTiler)</h2><label>MapTiler API-Schlüssel</label><div class="row"><input id="mapkey" type="password" autocomplete="off" placeholder="Schlüssel hier einfügen"><button id="loadmap">Karte laden</button></div><small>Der Schlüssel kann dauerhaft in der lokalen config.js stehen. Bitte keinen Windy-Schlüssel eingeben.</small><div id="mapstatus" class="muted" style="margin-top:8px">Bitte MapTiler-Schlüssel eingeben.</div></section><section><h2>Ort suchen</h2><div class="row"><input id="place" placeholder="z. B. Bostalsee, Hyères, Leucate"><button id="search">Suchen</button></div><small>Alternativ auf die Karte klicken, um den Suchmittelpunkt zu setzen.</small><label>Suchradius: <b id="radlabel">25 km</b></label><input type="range" id="radius" min="1" max="150" value="25"><div class="row"><button id="locate">Mein Standort</button><button id="reset">Alle anzeigen</button></div></section><section><h2>Windy-Stationskatalog aktualisieren</h2><label>Windy Stations API-Schlüssel (einmal eingeben; lokal gespeichert)</label><div class="row"><input id="windykey" type="password" placeholder="Windy-Schlüssel lokal eingeben" autocomplete="off"><button id="refreshWindy">Jetzt laden</button></div><small id="windyStatus">Noch kein automatischer Abruf gestartet.</small><p class="notice">Neu in v4.6: Eine Windy-Station auf der Karte anklicken und im Stationsfenster <b>Aktuelle Messung abrufen</b> wählen. Beim Anklicken einer Windy-Station werden die Messwerte automatisch abgerufen (maximal einmal pro Minute je Station). Kein massenhafter Abruf.</p><p class="notice">Die App lädt die Stationsliste seitenweise direkt von Windy. Zuletzt erfolgreich geladene Daten werden lokal im Browser zwischengespeichert. Für zuverlässige Speicherung den Schlüssel einmal in config.js eintragen. Falls Firefox den Zugriff aus einer lokalen HTML-Datei blockiert, erscheint eine Fehlermeldung.</p></section><section><h2>Weitere Messnetze</h2><div class="notice" style="margin:12px 0"><b>DWD über Bright Sky (v5.4)</b><p>DWD-SYNOP-Stationen im Suchradius automatisch prüfen und aktuelle Windmessungen anzeigen. Kein Schlüssel erforderlich; keine Vorhersage.</p><button id="brightskyload">DWD-Stationen jetzt aktualisieren</button><div id="brightskystatus" class="muted" style="margin-top:8px">Noch keine Messung angefragt.</div></div><p class="notice">v5.4: DWD-SYNOP-Stationen im Suchradius und ihre Messungen werden über Bright Sky geladen. Die alten DWD-/NOAA-Direktabrufe sind wegen CORS nicht automatisch aktiv. AEMET nur mit hinterlegtem Schlüssel. Bei CORS-Sperren ist weiterhin der Dateiimport nötig. Météo-France ist noch nicht direkt angebunden.</p><button id="autoNetworks">DWD über Bright Sky laden</button><p id="autoNetStatus" class="muted">Noch kein Abruf geprüft.</p><p class="notice">AEMET (Spanien) ergänzt die Windy-Stationen. Der AEMET-Schlüssel kann ebenfalls in config.js hinterlegt werden. Andere Anbieter können später über eigene zugelassene Schnittstellen ergänzt werden.</p><label>AEMET OpenData API-Schlüssel</label><div class="row"><input id="aemetkey" type="password" autocomplete="off" placeholder="AEMET-Schlüssel"><button id="aemetload">AEMET laden</button></div><small id="aemetstatus">Noch keine AEMET-Daten geladen.</small><label>AEMET-Beobachtungen als JSON importieren (falls Browserzugriff blockiert)</label><input id="aemetfile" type="file" accept=".json,application/json"><label>Angezeigte Datenquelle</label><select id="providerfilter" style="width:100%"><option value="all">Alle Datenquellen</option><option value="Windy">Windy</option><option value="AEMET">AEMET</option><option value="Météo-France">Météo-France</option><option value="NOAA NDBC">NOAA NDBC</option><option value="DWD">DWD</option><option value="DWD Bright Sky">DWD Bright Sky</option><option value="DWD Bright Sky">DWD Bright Sky</option></select><div class="notice" style="margin-top:12px"><b>NOAA NDBC – kostenlose maritime Messstationen</b><p>Aktuelle echte Windmessungen von Bojen und Küstenstationen. Kein API-Schlüssel erforderlich. Falls Firefox den Direktabruf blockiert, die offizielle TXT-Datei herunterladen und unten importieren.</p><button id="noaaload">NOAA-Stationen laden</button><div id="noaastatus" class="muted" style="margin-top:8px">Noch nicht geladen.</div><label>NOAA latest_obs.txt importieren</label><input type="file" id="noaafile" accept=".txt,text/plain"><small><a href="https://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt" target="_blank" rel="noopener" style="color:#8bd1ff">Offizielle NOAA-Messdatei öffnen</a></small></div><div class="notice" style="margin-top:12px"><b>DWD Deutschland – 10-Minuten-Windmessungen</b><p>Offizielle DWD-Stationen (Metadaten) laden. Anschließend für eine gewählte Station die aktuelle DWD-Winddatei laden. Der direkte Abruf kann bei lokaler HTML-Datei durch CORS blockiert werden; alternativ Dateien importieren.</p><button id="dwdcatalog">DWD-Stationsverzeichnis laden</button><div id="dwdstatus" class="muted" style="margin-top:8px">Noch keine DWD-Stationen geladen.</div><label>DWD-Stationsverzeichnis als TXT importieren</label><input id="dwdcatalogfile" type="file" accept=".txt,text/plain"><label>DWD-Stationsnummer (5 Ziffern)</label><div class="row"><input id="dwdid" placeholder="z. B. 01766" maxlength="5"><button id="dwdload">Windmessung laden</button></div><label>DWD-10-Minuten-Winddatei als ZIP importieren</label><input id="dwdzipfile" type="file" accept=".zip,application/zip"><small><a href="https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/wind/recent/" target="_blank" rel="noopener" style="color:#8bd1ff">Offizielles DWD-Verzeichnis (aktuelle Winddateien)</a></small></div></section><section><h2>Météo-France – JSON-Testimport</h2><p>Messstationen aus einer JSON-Datei laden (noch kein automatischer API-Zugriff).</p><input id="frfile" type="file" accept=".json,application/json"><p id="frstatus">Noch keine französischen Stationen importiert.</p><h2>Stationsdaten</h2><p class="notice">Enthalten sind zunächst <b>100 echte Stationseinträge</b> aus deiner Windy-API-Datei (Seite 0 von 30). Für eine vollständige regionale Suche bitte die gesamte Stationsliste importieren. „Online“ bedeutet nicht automatisch, dass alle Windparameter verfügbar sind.</p><label>Weitere Windy-JSON-Dateien importieren (auch mehrere)</label><input id="file" type="file" accept=".json,application/json" multiple><div class="row"><button id="clear">Auf Beispieldaten zurücksetzen</button></div><small>API-Schlüssel werden hier nicht benötigt oder gespeichert.</small></section><section><h2>Stationen im Umkreis <span id="hits" class="pill">0</span></h2><div id="stations"></div></section><section><h2>Favoriten <span id="favcount" class="pill">0 / 10</span></h2><div id="favorites"></div><div class="row"><button id="export">Favoriten als JSON</button><button id="copy">IDs kopieren</button></div><small>Die Favoriten werden nur in diesem Browser gespeichert. Noch keine Garmin-Synchronisierung.</small></section></aside></main><nav id="mobileNav" aria-label="Navigation"><button id="showMap" type="button" aria-pressed="true">🗺 Karte</button><button id="showPanel" type="button" aria-pressed="false">⚙ Suche & Stationen</button></nav><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script><script src="config.js"></script><script>const initial=[{"id": "05KWFbB", "lon": 6.146058000000039, "lat": 60.367065, "share_option": "public", "station_type": "netatmo", "elev_m": 19, "agl_temp": 0, "agl_wind": 10, "name": "Norheimsund33", "operator_text": "Jeki", "last_observation_time": "2026-10-29T12:56:56.000Z", "is_online": true}, {"id": "0G5BpGbF", "lon": 10.116758000000004, "lat": 48.950108, "share_option": "public", "elev_m": 444, "agl_temp": 2, "agl_wind": 5, "name": "Schrezheim ", "last_observation_time": "2026-10-29T13:05:00.398Z", "is_online": true}, {"id": "0G5yFIbF", "lon": -2.18095500000004, "lat": 57.237187, "share_option": "public", "station_type": "Ecowitt GW3000A", "elev_m": 60, "agl_temp": 1, "agl_wind": 2, "name": "MATHOM452", "last_observation_time": "2026-10-29T13:01:49.954Z", "is_online": true}, {"id": "0Gl1qrbF", "lon": 5.663876999999957, "lat": 50.649474, "share_option": "public", "station_type": "Ecowitt GW1101", "elev_m": 173, "agl_temp": 3, "agl_wind": 3, "name": "Nifiet", "operator_logo": "https://stations.windy.com/media/0Gl1qrbF-1785397768932.png", "operator_text": "Alexander Neuens", "operator_url": "https://meteo-nifiet.infinityfree.me/", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "0Gpj0rbF", "lon": -73.99770000000001, "lat": 40.7611, "share_option": "public", "station_type": "Ambient WS-4000", "elev_m": 100, "agl_temp": 100, "agl_wind": 100, "name": "CatHaus", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "0GpovfbF", "lon": 11.33631200000002, "lat": 46.419565, "share_option": "public", "station_type": "Ecowitt", "elev_m": 253, "agl_temp": 4, "agl_wind": 3, "name": "Dedu weather station", "operator_logo": "https://stations.windy.com/media/0GpovfbF-1793118289095.png", "operator_text": "Dedu’s weather station", "operator_url": "https://dedu251.wixsite.com/dedusweather/blank-2", "last_observation_time": "2026-10-29T13:03:37.445Z", "is_online": true}, {"id": "0GSh7MbF", "lon": 13.975000000000023, "lat": 46.152, "share_option": "public", "station_type": "Froggit WH6000 Pro", "elev_m": 599, "agl_temp": 16, "agl_wind": 16, "name": "Gorje, Cerkno - S50U", "operator_text": "Dan", "operator_url": "https://s50u.s50e.si", "last_observation_time": "2026-10-29T13:06:04.000Z", "is_online": true}, {"id": "0GtL3TbF", "lon": -78.67125699999997, "lat": 35.753504, "share_option": "public", "station_type": "Ecowitt", "elev_m": 99, "agl_temp": 3, "agl_wind": 3, "name": "Balboa Station", "last_observation_time": "2026-10-29T13:04:48.000Z", "is_online": true}, {"id": "0GUw3hbF", "lon": 9.562043000000017, "lat": 45.741964, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": 336, "agl_temp": 2, "agl_wind": 15, "name": "Meteopalazzago.it", "operator_logo": "https://stations.windy.com/media/0GUw3hbF-1777987794517.png", "operator_text": "Davide", "operator_url": "https://meteopalazzago.it", "last_observation_time": "2026-10-29T13:03:54.000Z", "is_online": true}, {"id": "0Gz1Z1bC", "lon": -5.94053, "lat": 53.30915, "share_option": "public", "elev_m": 0, "agl_wind": 3, "name": "North Kish Buoy", "operator_text": "Irish Lights MetOcean (CC-BY 4.0) via DublinBayBuoy.com", "operator_url": "https://dublinbaybuoy.com/", "last_observation_time": "2026-10-29T12:00:00.000Z", "is_online": true}, {"id": "0LiGmbF", "lon": -100.43699600000002, "lat": 25.74473, "share_option": "public", "station_type": "TempestWx", "elev_m": 745, "agl_temp": 5, "agl_wind": 5, "name": "Marsa Weather ", "operator_text": "Marco Saracho ", "operator_url": "https://tempestwx.com/station/143940", "last_observation_time": "2026-10-29T13:05:49.000Z", "is_online": true}, {"id": "0QBPmbj", "lon": 15.838414000000057, "lat": 50.865804, "share_option": "public", "station_type": "EcoWitt", "elev_m": 374, "agl_temp": 4, "agl_wind": 4, "name": "Bobrów RW", "last_observation_time": "2026-10-29T13:06:47.000Z", "is_online": true}, {"id": "0ueD2bF", "lon": -122.21869, "lat": 47.99743, "share_option": "public", "station_type": "Boat (Signal K)", "elev_m": -7, "agl_temp": 9, "agl_wind": 9, "name": "Wanderlost", "operator_text": "Wanderlost", "last_observation_time": "2026-10-29T13:06:15.000Z", "is_online": true}, {"id": "0wVlXb1", "lon": 13.45882000000006, "lat": 45.714761, "share_option": "public", "station_type": "FRIULDEV SRL", "elev_m": -4, "agl_temp": 0, "agl_wind": 0, "name": "Fossalon", "operator_text": "Marco Spagnol", "operator_url": "https://www.friuldev.com", "last_observation_time": "2026-10-29T13:00:00.000Z", "is_online": true}, {"id": "0X5z7b7", "lon": 13.4661, "lat": 50.659302, "share_option": "public", "elev_m": 789, "agl_temp": 6, "agl_wind": 6, "name": "SCHWARTENBERG(DE)", "operator_logo": "https://stations.windy.com/media/0X5z7b7-1791654309040.png", "operator_text": "pgsonda.cz", "operator_url": "https://pgsonda.cz/schwartenberg", "last_observation_time": "2026-10-29T13:04:50.608Z", "is_online": true}, {"id": "0z2DCbk", "lon": -5.816397000000052, "lat": 43.379021, "share_option": "public", "station_type": "netatmo", "elev_m": 187, "agl_temp": 3, "agl_wind": 12, "name": "Netatmo AC", "last_observation_time": "2026-10-29T12:59:01.000Z", "is_online": true}, {"id": "0Zwv4bk", "lon": 34.79534, "lat": 32.16251, "share_option": "public", "station_type": "Boat (Signal K)", "elev_m": 25, "agl_temp": 2, "agl_wind": 10, "name": "Signal K Vessel", "operator_text": "Signal K Vessel", "operator_url": "https://stations.windy.com/stations/0Zwv4bk", "last_observation_time": "2026-10-29T13:05:24.000Z", "is_online": true}, {"id": "0ZyL7bB", "lon": -124.10809599999999, "lat": 41.032249, "share_option": "public", "station_type": "Ecowitt 3000", "elev_m": 90, "agl_temp": 3, "agl_wind": 3, "name": "Moonstone Heights", "operator_text": "Tom Mitchell", "operator_url": "http://www.tom.org", "last_observation_time": "2026-10-29T12:58:42.000Z", "is_online": true}, {"id": "1008f0201162", "lon": 8.054460000000063, "lat": 46.65868, "share_option": "public", "station_type": "Windline Ultrasonic", "elev_m": 2152, "agl_temp": 3, "agl_wind": 3, "name": "First by windline.ch", "last_observation_time": "2026-10-29T13:05:19.000Z", "is_online": true}, {"id": "100df0201162", "lon": 7.776847999999973, "lat": 46.711598, "share_option": "public", "station_type": "Windline Ultrasonic", "elev_m": 1958, "agl_temp": 15, "agl_wind": 15, "name": "Niederhorn by windline.ch", "last_observation_time": "2026-10-29T13:02:54.000Z", "is_online": true}, {"id": "1014f0201162", "lon": 9.820335, "lat": 46.431199, "share_option": "public", "elev_m": 2596, "agl_temp": 2, "agl_wind": 2, "name": "Murtèl by windline.ch", "last_observation_time": "2026-10-29T13:04:32.000Z", "is_online": true}, {"id": "104f0e106da", "lon": 166.579749, "lat": -22.295681, "share_option": "public", "station_type": "Saillogger.com", "elev_m": 1, "agl_temp": 1, "agl_wind": 21, "name": "Sabado", "operator_text": "Sabado", "operator_url": "https://saillogger.com/svsabado", "last_observation_time": "2026-10-29T13:05:43.000Z", "is_online": true}, {"id": "1069f0201162", "lon": 8.295796999999993, "lat": 46.8697, "share_option": "public", "station_type": "Windline Ultrasonic", "elev_m": 1540, "agl_temp": 2, "agl_wind": 2, "name": "Linderen-Alp by windline.ch", "operator_text": "windline.ch", "operator_url": "https://m.windline.ch/meteodata.php?stationID=4201", "last_observation_time": "2026-10-29T13:01:59.000Z", "is_online": true}, {"id": "10f0755fd0", "lon": 15.8049, "lat": 45.9384, "share_option": "public", "station_type": "MMS4 weather station for paragliding TakeOff", "elev_m": 300, "agl_temp": 3, "agl_wind": 3, "name": "Kupljenovo, PG school TakeOff", "operator_logo": "https://stations.windy.com/media/10f0755fd0-1768308714699.jpeg", "operator_text": "MalinaRi", "operator_url": "http://flumen.club/kupljenovo/", "last_observation_time": "2026-10-29T13:06:50.415Z", "is_online": true}, {"id": "114TY8v", "lon": 11.930746999999997, "lat": 44.76968, "share_option": "public", "station_type": "Sainlogic ft300", "elev_m": 3, "agl_temp": 6, "agl_wind": 6, "name": "Fiscaglia", "operator_text": "Fiscagliameteo", "operator_url": "https://fiscagliameteo.djrexishere.it", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "11f0108959", "lon": -66.090972, "lat": 44.48792, "share_option": "public", "station_type": "EOS-1000", "elev_m": 2, "agl_temp": 10, "agl_wind": 10, "name": "Sandy Cove -EOS Weather", "operator_text": "EOS Weather Instruments Ltd", "operator_url": "https://eosweather.com", "last_observation_time": "2026-10-29T13:05:11.799Z", "is_online": true}, {"id": "11f056cc64", "lon": -21.700594000000024, "lat": 63.880737, "share_option": "public", "station_type": "PIXWeather", "elev_m": 80, "agl_temp": 3, "agl_wind": 3, "name": "Herdísarvík", "operator_logo": "https://stations.windy.com/media/11f056cc64-1768308758245.png", "operator_text": "Fisfélag Reykjavíkur", "operator_url": "https://fisflug.is", "last_observation_time": "2026-10-29T12:58:30.000Z", "is_online": true}, {"id": "12f056cc64", "lon": -21.03831200000002, "lat": 63.930037, "share_option": "public", "station_type": "PIXWeather.io", "elev_m": 14, "agl_temp": 3, "agl_wind": 3, "name": "Selfossflugvöllur (BISF)", "operator_logo": "https://stations.windy.com/media/12f056cc64-1774519010905.png", "operator_text": "Flugklúbbur Selfoss", "operator_url": "https://flugklubbur.is/", "last_observation_time": "2026-10-29T12:58:52.000Z", "is_online": true}, {"id": "12f076ba77", "lon": 24.504194855690006, "lat": 43.38605778164343, "share_option": "public", "station_type": "BOTEV Weather Station", "elev_m": 75, "agl_temp": 2, "agl_wind": 4, "name": "Turnene - Meteo.Rocks", "operator_logo": "https://stations.windy.com/media/12f076ba77-1768308634569.png", "operator_text": "Meteo.Rocks", "operator_url": "https://meteo.rocks/station/s-tarnene/46", "last_observation_time": "2026-10-29T13:04:44.000Z", "is_online": true}, {"id": "13f056cc64", "lon": -19.738720000000058, "lat": 65.161765, "share_option": "public", "station_type": "PIXWeather.io", "elev_m": 488, "agl_temp": 3, "agl_wind": 3, "name": "Afangafell", "operator_logo": "https://stations.windy.com/media/13f056cc64-1768308768309.png", "operator_text": "PIXWeather.io", "operator_url": "https://www.pixweather.io", "last_observation_time": "2026-10-29T13:06:12.000Z", "is_online": true}, {"id": "14f0e106da", "lon": -122.7558105, "lat": 48.9923618, "share_option": "public", "station_type": "Saillogger.com", "elev_m": 1, "agl_temp": 1, "agl_wind": 9, "name": "Aruna", "operator_text": "Aruna", "operator_url": "https://saillogger.com/mvaruna", "last_observation_time": "2026-10-29T13:05:11.000Z", "is_online": true}, {"id": "14q5z8k", "lon": -2.855290999999966, "lat": 56.472624, "share_option": "public", "station_type": "Bresser WiFi ClearView 7-in-1", "elev_m": 108, "agl_temp": 8, "agl_wind": 8, "name": "East Ferry", "operator_text": "Graeme Bennett", "last_observation_time": "2026-10-29T13:06:53.239Z", "is_online": true}, {"id": "15bf0e106da", "lon": -122.39065, "lat": 47.62994, "share_option": "public", "station_type": "Saillogger.com", "elev_m": 1, "agl_temp": 1, "agl_wind": 8, "name": "Conundrum", "operator_text": "Conundrum", "operator_url": "https://saillogger.com/mvconundrum", "last_observation_time": "2026-10-29T13:05:41.000Z", "is_online": true}, {"id": "15f056cc64", "lon": -21.25147000000004, "lat": 64.000282, "share_option": "public", "station_type": "PIXWeather.io", "elev_m": 309, "agl_temp": 3, "agl_wind": 3, "name": "Kambar", "operator_logo": "https://stations.windy.com/media/15f056cc64-1768308793370.png", "operator_text": "Fisfélag Reykjavíkur", "operator_url": "https://fisflug.is", "last_observation_time": "2026-10-29T13:03:53.000Z", "is_online": true}, {"id": "16f056cc64", "lon": -21.70381999999995, "lat": 64.11278, "share_option": "public", "station_type": "PIXWeather.io", "elev_m": 138, "agl_temp": 3, "agl_wind": 3, "name": "Heiði (BI43)", "operator_logo": "https://stations.windy.com/media/16f056cc64-1768308793493.png", "operator_text": "Fisfélag Reykjavíkur", "operator_url": "https://fisflug.is", "last_observation_time": "2026-10-29T13:06:07.000Z", "is_online": true}, {"id": "17f01bb50e", "lon": 34.795292, "lat": 32.162537, "share_option": "public", "station_type": "SignalK PostgSail Plugin", "elev_m": 3, "agl_temp": 1, "agl_wind": 10, "name": "Whisper", "operator_text": "Maintained by Whisper via PostgSail", "operator_url": "https://iot.openplotter.cloud/Whisper/monitoring", "last_observation_time": "2026-10-29T13:00:00.000Z", "is_online": true}, {"id": "17f056cc64", "lon": -0.415879, "lat": 42.54836, "share_option": "public", "station_type": "PIXWeather", "elev_m": 835, "agl_temp": 5, "agl_wind": 5, "name": "Pardinilla", "operator_logo": "https://stations.windy.com/media/17f056cc64-1768308799274.png", "operator_text": "PIXWeather.io", "last_observation_time": "2026-10-29T13:06:49.000Z", "is_online": true}, {"id": "185f01bb50e", "lon": -95.040268, "lat": 29.545931, "share_option": "public", "station_type": "SignalK PostgSail Plugin", "elev_m": 1, "agl_temp": 1, "agl_wind": 1, "name": "Flight Risk", "operator_text": "Maintained by Flight Risk via PostgSail", "last_observation_time": "2026-10-29T12:40:00.000Z", "is_online": true}, {"id": "18bf0e106da", "lon": -139.0308916, "lat": -9.806795, "share_option": "public", "station_type": "Saillogger.com", "elev_m": 1, "agl_temp": 1, "agl_wind": 18, "name": "Lodos", "operator_text": "Lodos", "operator_url": "https://saillogger.com/svlodos", "last_observation_time": "2026-10-29T13:04:43.000Z", "is_online": true}, {"id": "1E7fwo8v", "lon": 16.982853999999975, "lat": 48.225723, "share_option": "public", "station_type": "netatmo", "elev_m": 161, "agl_temp": 4, "agl_wind": 0, "name": "Bystrická", "last_observation_time": "2026-10-29T12:52:21.000Z", "is_online": true}, {"id": "1E7wkM8k", "lon": 11.542889999999943, "lat": 44.521048, "share_option": "public", "station_type": "Ecowitt", "elev_m": 22, "agl_temp": 2, "agl_wind": 2, "name": "Villa Eurosia", "operator_text": "Villa Eurosia", "last_observation_time": "2026-10-29T13:03:13.946Z", "is_online": true}, {"id": "1E7YQX8v", "lon": 18.392078999999967, "lat": -33.920763, "share_option": "public", "elev_m": 51, "agl_temp": 5, "agl_wind": 5, "name": "Sea Point, Cape Town", "operator_text": "Richard Greenham", "operator_url": "https://www.wunderground.com/dashboard/pws/ICAPET130", "last_observation_time": "2026-10-29T13:07:24.000Z", "is_online": true}, {"id": "1E9Z78v", "lon": 15.26276699999994, "lat": 50.474373, "share_option": "public", "elev_m": 335, "agl_temp": 2, "agl_wind": 2, "name": "Zámostí Blata ", "operator_text": "Pepa Eder", "last_observation_time": "2026-10-29T13:04:13.000Z", "is_online": true}, {"id": "1eLd38v", "lon": 11.303185999999982, "lat": 43.278424, "share_option": "public", "station_type": "Davis vantage pro2", "elev_m": 250, "agl_temp": 3, "agl_wind": 3, "name": "Stazione Meteo Sant'Andrea a Montecchio", "operator_text": "Daniele Neri", "operator_url": "https://www.associazionemeteosenese.it/santandrea/index.html", "last_observation_time": "2026-10-29T13:05:00.058Z", "is_online": true}, {"id": "1EPENu8k", "lon": 18.489532000000054, "lat": 50.071877, "share_option": "public", "elev_m": 254, "agl_temp": 7, "agl_wind": 7, "name": "Rybnik - Niedobczyce", "operator_logo": "https://stations.windy.com/media/1EPENu8k-1782925191127.png", "operator_text": "E-Meteo.eu", "operator_url": "https://e-meteo.eu/", "last_observation_time": "2026-10-29T13:05:01.000Z", "is_online": true}, {"id": "1EskJl8m", "lon": 14.523061999999982, "lat": 46.053098, "share_option": "public", "station_type": "Senzemo SMC30-OUT", "elev_m": 289, "agl_temp": 3, "agl_wind": 0, "name": "Ljubljana - Šlajmerjev park", "operator_logo": "https://stations.windy.com/media/1EskJl8m-1787772915006.png", "operator_text": "Senzemo", "operator_url": "https://senzemo.com/", "last_observation_time": "2026-10-29T13:00:55.786Z", "is_online": true}, {"id": "1EsQew8v", "lon": -121.69250399999999, "lat": 37.131821, "share_option": "public", "station_type": "WS-2000", "elev_m": 264, "agl_temp": 8, "agl_wind": 8, "name": "Top of Glen Ayre", "last_observation_time": "2026-10-29T13:06:00.693Z", "is_online": true}, {"id": "1EsSTK8v", "lon": 22.036483999999973, "lat": 49.967366, "share_option": "public", "elev_m": 211, "agl_wind": 0, "name": "Tyczyn", "last_observation_time": "2026-10-29T13:03:05.577Z", "is_online": true}, {"id": "1EWRKR8k", "lon": -6.36847, "lat": 52.13938, "share_option": "public", "elev_m": 0, "agl_wind": 3, "name": "Barrels Buoy", "operator_text": "Irish Lights MetOcean (CC-BY 4.0) via DublinBayBuoy.com", "operator_url": "https://dublinbaybuoy.com/", "last_observation_time": "2026-10-29T12:00:00.000Z", "is_online": true}, {"id": "1EY4oT8v", "lon": 12.66594299999997, "lat": 41.82666, "share_option": "public", "station_type": "GW1100A", "elev_m": 169, "agl_temp": 10, "agl_wind": 10, "name": "Marco's Station", "operator_logo": "https://stations.windy.com/media/1EY4oT8v-1788017283539.png", "operator_text": "Marco", "operator_url": "https://app.weathercloud.net/d0283610413#current", "last_observation_time": "2026-10-29T13:05:00.324Z", "is_online": true}, {"id": "1EYMKn8v", "lon": 115.940833, "lat": -31.8665, "share_option": "public", "elev_m": 20, "agl_wind": 3, "name": "VK6HGR", "operator_text": "Gaivn R", "operator_url": "https://rog-tech.net", "last_observation_time": "2026-10-29T13:00:08.000Z", "is_online": true}, {"id": "1f016b066", "lon": 14.021119415792784, "lat": 46.447508858851315, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": 620, "agl_temp": 2, "agl_wind": 8, "name": "Hrušica Kopavnik", "operator_text": "D.R", "operator_url": "https://www.wunderground.com/dashboard/pws/IJESEN16", "last_observation_time": "2026-10-29T13:07:52.000Z", "is_online": true}, {"id": "1f016e009", "lon": 11.2406, "lat": 45.65, "share_option": "public", "station_type": "Barani MeteoWind IoT Pro", "elev_m": 999, "agl_wind": 5, "name": "IT-Rialto-1", "operator_text": "Pretecno", "last_observation_time": "2026-10-29T13:02:44.013Z", "is_online": true}, {"id": "1f0186fb2", "lon": -69.00208801031114, "lat": 48.15043008430386, "share_option": "public", "station_type": "Ecowitt", "elev_m": 301, "agl_temp": 6, "agl_wind": 6, "name": "Parc du Mont St-Mathieu - Sommet de la montagne ", "operator_logo": "https://stations.windy.com/media/1f0186fb2-1768308776376.png", "operator_text": "Simon Levesque", "operator_url": "https://montstmathieu.com/", "last_observation_time": "2026-10-29T13:00:05.448Z", "is_online": true}, {"id": "1f01e1ad3", "lon": -128.14312511076426, "lat": 51.6475179063333, "share_option": "public", "station_type": "Campbell  Scientific CR1000", "elev_m": 63, "agl_temp": 3, "agl_wind": 5, "name": "Hakai - Beach Lookout", "operator_text": "Hakai Institute", "operator_url": "https://hakai.org", "last_observation_time": "2026-10-29T13:00:00.000Z", "is_online": true}, {"id": "1f01e2678", "lon": 0.122534036636353, "lat": 51.80751043634596, "share_option": "public", "station_type": "Ecowitt WS90", "elev_m": 72, "agl_wind": 4, "name": "High Wych Weather 2", "operator_url": "https://www.highwychweather.co.uk/MX/index.htm", "last_observation_time": "2026-10-29T13:05:00.130Z", "is_online": true}, {"id": "1f020d8dd", "lon": 9.274564000000055, "lat": 45.51431, "share_option": "public", "station_type": "netatmo", "elev_m": 128, "agl_temp": 12, "name": "ALPStation", "operator_text": "ALP", "last_observation_time": "2026-10-29T12:57:06.000Z", "is_online": true}, {"id": "1f02fe1f1", "lon": 19.087779521942142, "lat": 48.618547705157376, "share_option": "public", "station_type": "Davis Vantage Vue", "elev_m": 380, "agl_temp": 4, "agl_wind": 4, "name": "Za Trebulou", "last_observation_time": "2026-10-29T13:00:07.000Z", "is_online": true}, {"id": "1f033b4db", "lon": 29.687611457216903, "lat": 59.694138099359236, "share_option": "public", "station_type": "Home Assistant", "elev_m": 4, "agl_temp": 4, "agl_wind": 4, "name": "Baltic Sloboda 2", "last_observation_time": "2026-10-29T12:57:47.096Z", "is_online": true}, {"id": "1f0344e77", "lon": -8.12370300292969, "lat": 37.07045108231679, "share_option": "public", "elev_m": 25, "agl_temp": 5, "agl_wind": 5, "name": "Skipper", "operator_logo": "https://stations.windy.com/media/1f0344e77-1768308782457.jpeg", "operator_text": "Skipper", "operator_url": "https://www.skipper.pt", "last_observation_time": "2026-10-29T13:05:01.940Z", "is_online": true}, {"id": "1f03bd69a", "lon": 106.272965, "lat": 45.758042, "share_option": "public", "station_type": "Wireless Vantage Pro2 Plus with Meteobridge Pro2", "elev_m": 1416, "agl_temp": 2, "agl_wind": 2, "name": "Nutag44 - Food and Agricultur Dep. Mandalgovi", "operator_text": "School of Geography and the Environment", "operator_url": "https://www.geog.ox.ac.uk", "last_observation_time": "2026-10-29T13:03:01.000Z", "is_online": true}, {"id": "1f03e6d6f", "lon": 18.41014623641968, "lat": 45.65916373398598, "share_option": "public", "station_type": "FT0310", "elev_m": 87, "agl_temp": 10, "agl_wind": 10, "name": "1f03e6d6f", "last_observation_time": "2026-10-29T13:04:42.000Z", "is_online": true}, {"id": "1f03e8a2e", "lon": -88.27647500611982, "lat": 30.68458554142805, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": 58, "agl_temp": 4, "agl_wind": 30, "name": "Breckenridge Subdivision", "operator_text": "Ben Tyler", "last_observation_time": "2026-10-29T13:04:58.000Z", "is_online": true}, {"id": "1f0415dd1", "lon": 60.51988400000005, "lat": 56.858862, "share_option": "public", "station_type": "KiteTeam.ru - Кайт Школа, Магазин, Travel", "elev_m": 249, "agl_temp": 253, "agl_wind": 254, "name": "KiteTeam.ru - Кайт Школа, Магазин, Travel", "operator_logo": "https://stations.windy.com/media/1f0415dd1-1768308791224.jpeg", "operator_text": "KiteTeam.ru", "operator_url": "https://kiteteam.ru/", "last_observation_time": "2026-10-29T13:05:02.489Z", "is_online": true}, {"id": "1f046516b", "lon": 145.13090729713443, "lat": -38.07901747087895, "share_option": "public", "station_type": "netatmo", "elev_m": 6, "agl_wind": 2, "name": "Carrum (Netatmo)", "last_observation_time": "2026-10-29T12:53:34.000Z", "is_online": true}, {"id": "1f046faf9", "lon": 32.885827291756875, "lat": 67.9027966939527, "share_option": "public", "station_type": "1chip.ru", "elev_m": 132, "agl_temp": 10, "agl_wind": 12, "name": "Monchegorsk Pyslys - Kitemonch", "last_observation_time": "2026-10-29T13:05:05.451Z", "is_online": true}, {"id": "1f047ca1d", "lon": 5.022575855255128, "lat": 52.815602665471104, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": -4, "agl_temp": 3, "agl_wind": 3, "name": "Vliegveld Middenmeer", "operator_text": "Vliegveld Middenmeer", "operator_url": "https://www.vliegveldmiddenmeer.nl", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "1f04a6496", "lon": 27.415308952331547, "lat": 42.449511744087616, "share_option": "public", "station_type": "Froggit WS", "elev_m": 35, "agl_temp": 20, "agl_wind": 20, "name": "EVG", "operator_logo": "https://stations.windy.com/media/1f04a6496-1768308649151.jpeg", "operator_text": "Evg", "operator_url": "https://burgas.vhelectronics.com", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "1f04ad50f", "lon": -49.67373204191973, "lat": -29.269383606610084, "share_option": "public", "station_type": "WS-2902C", "elev_m": 8, "agl_temp": 2, "agl_wind": 2, "name": "BELLATORRES", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "1f04b66da", "lon": -95.10412600000001, "lat": 43.421504, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": 449, "agl_temp": 4, "agl_wind": 5, "name": "Dickinson County Courthouse", "operator_logo": "https://stations.windy.com/media/1f04b66da-1790946993512.png", "operator_text": "Dickinson County Emergency Management", "operator_url": "https://www.dcem.us", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "1f04caa9f", "lon": -0.244423999999981, "lat": 39.165233, "share_option": "public", "station_type": "Davis Vantage Pro 2 Plus", "elev_m": 8, "agl_temp": 3, "agl_wind": 3, "name": "MeteoCullera - Cullera Sant Antoni", "operator_logo": "https://stations.windy.com/media/1f04caa9f-1774948438868.png", "operator_text": "Cullera Sant Antoni", "operator_url": "https://www.weatherlink.com/embeddablePage/show/648319f5cc46401aa53deb0a11d94f9f/fullscreen", "last_observation_time": "2026-10-29T13:05:01.000Z", "is_online": true}, {"id": "1f04d302f", "lon": 7.423764467239381, "lat": 46.95345174424095, "share_option": "public", "station_type": "Meteobridge / Davis Vantage pro", "elev_m": 560, "agl_temp": 15, "agl_wind": 15, "name": "Meteotest Bern Teststation", "operator_text": "Meteotest", "operator_url": "https://meteotest.ch/wetter/messwerte", "last_observation_time": "2026-10-29T13:05:50.000Z", "is_online": true}, {"id": "1f04dd68f", "lon": -0.938746333122254, "lat": 42.38801540786163, "share_option": "public", "station_type": "netatmo", "elev_m": 760, "agl_temp": 2, "agl_wind": 8, "name": "Biel - Estación Netatmo", "operator_text": "Pablo", "last_observation_time": "2026-10-29T12:54:50.000Z", "is_online": true}, {"id": "1f04f5655", "lon": 152.737512588501, "lat": -27.629943753030087, "share_option": "public", "station_type": "netatmo", "elev_m": 36, "agl_temp": 2, "agl_wind": 1, "name": "One Mile", "last_observation_time": "2026-10-29T12:55:08.000Z", "is_online": true}, {"id": "1f050f965", "lon": -76.40958144008958, "lat": 0.960662286364142, "share_option": "public", "station_type": "GW1100", "elev_m": 274, "agl_temp": 7, "agl_wind": 10, "name": "Puerto Guzman", "operator_logo": "https://stations.windy.com/media/1f050f965-1768308747148.png", "operator_text": "Puerto_Guzman", "operator_url": "https://www.wunderground.com/weather/co/puerto-guzm%C3%A1n/IPUERT76", "last_observation_time": "2026-10-29T13:02:33.000Z", "is_online": true}, {"id": "1f0517ee1", "lon": 9.594571709894808, "lat": 54.86130733844768, "share_option": "public", "station_type": "dnt WiFi-Wetterstation WeatherScreen PRO", "elev_m": 1, "agl_temp": 6, "agl_wind": 6, "name": "Holnis", "operator_logo": "https://stations.windy.com/media/1f0517ee1-1768308643376.png", "operator_text": "Torben - Foerdekiter", "operator_url": "https://foerdekiter.yooco.de/", "last_observation_time": "2026-10-29T13:02:02.984Z", "is_online": true}, {"id": "1f0526307", "lon": -6.947489976882935, "lat": 37.2149974852145, "share_option": "public", "station_type": "Bresser", "elev_m": 10, "agl_temp": 5, "agl_wind": 5, "name": "RCMH Escuela de Vela", "operator_logo": "https://stations.windy.com/media/1f0526307-1768308654844.jpeg", "operator_text": "Catamaranes Huelva", "operator_url": "https://rcmh.es", "last_observation_time": "2026-10-29T13:03:46.516Z", "is_online": true}, {"id": "1f052d3c2", "lon": 23.822264671325687, "lat": 54.82655270062078, "share_option": "public", "station_type": "Nodemcu ESP12", "elev_m": 70, "agl_temp": 6, "agl_wind": 6, "name": "Mastaičiai", "operator_logo": "https://stations.windy.com/media/1f052d3c2-1768308759277.png", "operator_text": "Rimvydas Pocius", "operator_url": "https://www.instructables.com/NodeMCU-Wireless-Weather-Station/", "last_observation_time": "2026-10-29T13:06:58.000Z", "is_online": true}, {"id": "1f05338d8", "lon": 19.80354, "lat": 43.45957, "share_option": "public", "station_type": "Descon Klimerko", "elev_m": 1000, "agl_temp": 15, "agl_wind": 15, "name": "Nova Varos, Zebinovac", "operator_logo": "https://stations.windy.com/media/1f05338d8-1768308817330.jpeg", "operator_text": "Mitar Knezevic", "operator_url": "https://klimerko.org/", "last_observation_time": "2026-10-29T13:00:03.000Z", "is_online": true}, {"id": "1f05341ef", "lon": 146.742703, "lat": -41.084154, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": 14, "agl_temp": 3, "agl_wind": 5, "name": "Greens Beach Weather", "operator_logo": "https://stations.windy.com/media/1f05341ef-1768308640102.jpeg", "operator_text": "Irenabyss", "operator_url": "https://weather.irenabyss.com.au", "last_observation_time": "2026-10-29T13:02:55.000Z", "is_online": true}, {"id": "1f053cc4a", "lon": 148.71173, "lat": -20.26514, "share_option": "public", "station_type": "Boat (Signal K)", "elev_m": 13, "agl_temp": 2, "agl_wind": 6, "name": "Bucket List", "operator_text": "Bucket List", "last_observation_time": "2026-10-29T13:03:41.000Z", "is_online": true}, {"id": "1f05626c7", "lon": 14.522644000000014, "lat": 49.85708, "share_option": "public", "station_type": "Raspberry Pi", "elev_m": 241, "agl_temp": 2, "agl_wind": 2, "name": "Kamenny Ujezdec", "operator_logo": "https://stations.windy.com/media/1f05626c7-1788468132906.png", "operator_text": "Michal Kridlo", "operator_url": "https://weather.kridlo.com", "last_observation_time": "2026-10-29T13:04:42.000Z", "is_online": true}, {"id": "1f0563b88", "lon": -3.868861198425293, "lat": 40.49152796003586, "share_option": "public", "station_type": "Ecowitt HP2564", "elev_m": 737, "agl_temp": 20, "agl_wind": 20, "name": "Las Rozas - Alto Jabonería", "operator_text": "Jorge", "last_observation_time": "2026-10-29T13:03:54.000Z", "is_online": true}, {"id": "1f056cc64", "lon": -20.24674200000004, "lat": 63.930806, "share_option": "public", "station_type": "PIXWeather", "elev_m": 70, "agl_temp": 4, "agl_wind": 4, "name": "Austursel", "operator_logo": "https://stations.windy.com/media/1f056cc64-1768308612051.png", "operator_text": "PIXWeather.io", "operator_url": "https://www.pixweather.io", "last_observation_time": "2026-10-29T12:57:45.000Z", "is_online": true}, {"id": "1f0578c28", "lon": -99.52380537986755, "lat": 17.628286403425832, "share_option": "public", "station_type": "DavisVantage VUE", "elev_m": 1165, "agl_temp": 15, "agl_wind": 15, "name": "Campus Zumpango", "operator_logo": "https://stations.windy.com/media/1f0578c28-1768308789230.jpeg", "operator_text": "Campus Zumpango", "last_observation_time": "2026-10-29T12:59:59.000Z", "is_online": true}, {"id": "1f0581fb5", "lon": 16.8647491331285, "lat": 54.58757610763595, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": 17, "agl_temp": 22, "agl_wind": 25, "name": "Ustka-Nord", "operator_text": "Ustka-Nord", "operator_url": "https:/www.podrycerzem.pl/pogoda", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "1f058a546", "lon": 175.68817, "lat": -37.333414, "share_option": "public", "station_type": "Custom Built", "elev_m": 258, "agl_temp": 3, "agl_wind": 5, "name": "Jake's Hill, Paeroa (WHGPC_WS_01)", "operator_logo": "https://stations.windy.com/media/1f058a546-1768308631116.jpeg", "operator_text": "Waikato Hang Gliding and Paragliding Club", "operator_url": "https://adrenalinealley.co.nz", "last_observation_time": "2026-10-29T13:01:47.809Z", "is_online": true}, {"id": "1f058fec8", "lon": 12.430668, "lat": 46.750379, "share_option": "public", "station_type": "GXAirCom", "elev_m": 1100, "agl_temp": 5, "agl_wind": 5, "name": "Sillian Landeplatz Flugschule Bluesky", "operator_logo": "https://stations.windy.com/media/1f058fec8-1768308621079.jpeg", "operator_text": "Flugschule Bluesky", "operator_url": "https://www.bluesky.at/", "last_observation_time": "2026-10-29T13:07:46.000Z", "is_online": true}, {"id": "1f05928da", "lon": 152.18163529104362, "lat": -32.738371947311876, "share_option": "public", "station_type": "OpenWeather Station", "elev_m": 100, "agl_temp": 2, "agl_wind": 2, "name": "Fingal Spit", "last_observation_time": "2026-10-29T13:00:48.245Z", "is_online": true}, {"id": "1f059370c", "lon": 8.05352568626404, "lat": 52.50768294775215, "share_option": "public", "station_type": "netatmo", "elev_m": 41, "agl_temp": 1, "name": "NachtigallenHaus", "last_observation_time": "2026-10-29T13:00:06.000Z", "is_online": true}, {"id": "1f05970cc", "lon": 17.129648999999972, "lat": 40.976091, "share_option": "public", "station_type": "Ecowitt  GW3000 - WH32 EP in Barani MeteoShield Pro - WH31 EP in Metspec/Campbell RAD14 - WH40H - WS68 - WH57", "elev_m": 182, "agl_temp": 2, "agl_wind": 5, "name": "Conversano - San Vito", "operator_text": "Michele", "operator_url": "https://www.ecowitt.net/home/share?authorize=9BTXBW", "last_observation_time": "2026-10-29T13:06:16.000Z", "is_online": true}, {"id": "1f05b64ff", "lon": 4.971061348915101, "lat": 52.42765592245705, "share_option": "public", "station_type": "Ecowitt", "elev_m": 2, "agl_temp": 2, "agl_wind": 6, "name": "Foodforest Broekermeer", "operator_text": "broekermeer", "operator_url": "https://broekermeer.nl", "last_observation_time": "2026-10-29T13:06:03.000Z", "is_online": true}, {"id": "1f05bf67a", "lon": -119.86725568771364, "lat": 50.88432812721746, "share_option": "public", "station_type": "Acurite", "elev_m": 1315, "agl_temp": 4, "name": "Settler's Crossing, Sun Peaks", "operator_text": "Jay Akerley", "last_observation_time": "2026-10-29T12:58:37.000Z", "is_online": true}, {"id": "1f05c570f", "lon": 27.679839134216312, "lat": 53.999647427542456, "share_option": "public", "station_type": "esp", "elev_m": 2, "agl_temp": 2, "agl_wind": 1, "name": "lesnoy", "last_observation_time": "2026-10-29T13:03:16.663Z", "is_online": true}, {"id": "1f05c6610", "lon": 11.85997599999996, "lat": 43.471591, "share_option": "public", "station_type": "PCE FWS-20", "elev_m": 265, "agl_temp": 10, "agl_wind": 10, "name": "Skytel S.r.l.", "operator_text": "Skytel S.r.l.", "operator_url": "https://meteo.skytel.it", "last_observation_time": "2026-10-29T13:05:00.187Z", "is_online": true}, {"id": "1f05d1917", "lon": 0.0424, "lat": 40.661, "share_option": "public", "station_type": "WH2650", "elev_m": 1135, "agl_temp": 8, "agl_wind": 8, "name": "Meteo Castell de Cabres", "operator_text": "Meteo Castell de Cabres", "operator_url": "https://meteolasenia.myds.me/meteo/meteoweb/", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "1f05d2473", "lon": 21.3246981, "lat": 45.1227023, "share_option": "public", "station_type": "mms", "elev_m": 390, "agl_temp": 10, "agl_wind": 10, "name": "Vrsac  Kula", "operator_text": "VSS", "operator_url": "http://flumen.club/vrsac-kula/", "last_observation_time": "2026-10-29T13:06:49.615Z", "is_online": true}, {"id": "1f05e0c16", "lon": 17.6266622543335, "lat": 40.3868523807442, "share_option": "public", "station_type": "Ecowitt WS3900", "elev_m": 85, "agl_temp": 10, "agl_wind": 10, "name": "Manduria", "operator_logo": "https://stations.windy.com/media/1f05e0c16-1768308772891.png", "operator_url": "https://www.meteomanduria.it", "last_observation_time": "2026-10-29T13:05:00.000Z", "is_online": true}, {"id": "1f05e9400", "lon": -2.786924999999996, "lat": 52.366195, "share_option": "public", "station_type": "Davis Vantage Pro 2", "elev_m": 146, "agl_temp": 1, "agl_wind": 9, "name": "Bromfield", "operator_text": "Freddie", "operator_url": "https://www.hosiene.co.uk/weather/", "last_observation_time": "2026-10-29T13:05:00.163Z", "is_online": true}, {"id": "1f05e99c1", "lon": 15.158954999999992, "lat": 50.717399, "share_option": "public", "station_type": "Ecowitt WH1080", "elev_m": 534, "agl_temp": 10, "agl_wind": 10, "name": "Jablonec nad Nisou Žítkova", "last_observation_time": "2026-10-29T12:36:05.000Z", "is_online": true}];let stations=initial.map(x=>({...x,source:'Windy'})),favorites=[];try{favorites=JSON.parse(localStorage.getItem('windsurfiq-favs')||'[]')}catch(e){};let center=[49.565,7.09],radius=25,showAll=false;const $=id=>document.getElementById(id);const map=L.map('map').setView(center,9);let mapTiles=null;document.getElementById('loadmap').onclick=()=>{const k=document.getElementById('mapkey').value.trim();if(!/^[A-Za-z0-9_-]{10,}$/.test(k)){document.getElementById('mapstatus').textContent='Bitte gültigen MapTiler-Schlüssel eingeben.';return;}if(mapTiles)map.removeLayer(mapTiles);mapTiles=L.tileLayer('https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key='+encodeURIComponent(k),{maxZoom:19,attribution:'© MapTiler © OpenStreetMap contributors'}).addTo(map);mapTiles.on('tileerror',()=>{document.getElementById('mapstatus').textContent='Kartenkacheln konnten nicht geladen werden. Schlüssel und MapTiler-Einstellungen prüfen.'});document.getElementById('mapstatus').textContent='Kartenanfrage gestartet.';document.getElementById('mapkey').value='';};const layer=L.layerGroup().addTo(map);let circle=L.circle(center,{radius:radius*1000,color:'#1589d7',fillOpacity:.08}).addTo(map);let origin=L.circleMarker(center,{radius:6,color:'#fff',fillColor:'#167dd4',fillOpacity:1}).addTo(map);function dist(a,b,c,d){const R=6371,r=x=>x*Math.PI/180,dl=r(c-a),dn=r(d-b),h=Math.sin(dl/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))}function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function setCenter(lat,lon){center=[lat,lon];showAll=false;map.setView(center,Math.max(7,Math.round(12-Math.log2(radius+1))));render();scheduleBrightSky()}function save(){try{localStorage.setItem('windsurfiq-favs',JSON.stringify(favorites))}catch(e){}render()}function add(id){let s=stations.find(x=>x.id===id);if(!s||favorites.some(x=>x.id===id))return;if(favorites.length>=10){alert('Maximal 10 Favoriten.');return}favorites.push({id:s.id,name:s.name||s.id,lat:s.lat,lon:s.lon,source:s.source||'Windy'});save()}window.addStation=add;window.removeStation=id=>{favorites=favorites.filter(x=>x.id!==id);save()};function stationPopup(s){
+ const obs=s.measured||{};
+ const num=x=>x!==null&&x!==undefined&&Number.isFinite(Number(x));
+ const knots=x=>(Number(x)*1.94384449).toFixed(1);
+ let values='<br><b>Messwerte:</b> Noch keine Windmessung geladen';
+ if(num(obs.windMs)||num(obs.gustMs)||num(obs.direction)){
+   values='<br><b>Gemessene Windwerte</b>'+
+     '<br>Wind: '+(num(obs.windMs)?knots(obs.windMs)+' kn':'nicht verfügbar')+
+     '<br>Böen: '+(num(obs.gustMs)?knots(obs.gustMs)+' kn':'nicht verfügbar')+
+     '<br>Richtung: '+(num(obs.direction)?Math.round(Number(obs.direction))+'°':'nicht verfügbar');
+ }
+ let timestamp=s.last_observation_time||obs.observed;
+ let time='unbekannt';
+ if(timestamp){let d=new Date(timestamp);time=Number.isNaN(d.getTime())?esc(timestamp):esc(d.toLocaleString('de-DE',{dateStyle:'short',timeStyle:'short',timeZone:'Europe/Berlin'}))+' (MEZ/MESZ)';}
+ let stale='';if(timestamp){let age=Date.now()-new Date(timestamp).getTime();if(Number.isFinite(age)&&age>60*60*1000)stale='<br><span style="color:#a34b00">Hinweis: Messung älter als 60 Minuten</span>';}
+ return '<b>'+esc(s.name||s.id)+'</b><br>Quelle: '+esc(s.source||'Windy')+'<br>ID: '+esc(s.id)+'<br>'+s.distance.toFixed(1)+' km entfernt<br>Letzte Beobachtung: '+time+values+stale+'<br>'+(s.source==='Windy'?'<button onclick="loadWindyObservation(\''+String(s.id).replace(/'/g,'')+'\')">Aktuelle Messung abrufen</button><br>':s.source==='DWD'?'<button onclick="loadDwdObservation(\''+String(s.providerId).replace(/'/g,'')+'\')">DWD-Messung abrufen</button><br>':'')+'<button onclick="addStation(\''+String(s.id).replace(/'/g,'')+'\')">Als Favorit speichern</button>';
+}
+function render(){layer.clearLayers();circle.setLatLng(center).setRadius(radius*1000);origin.setLatLng(center);$('radlabel').textContent=radius+' km';$('count').textContent=stations.length+' Stationen geladen ('+[...new Set(stations.map(s=>s.source))].map(n=>n+': '+stations.filter(s=>s.source===n).length).join(', ')+')';let found=stations.filter(s=>typeof s.lat==='number'&&typeof s.lon==='number').map(s=>({...s,distance:dist(center[0],center[1],s.lat,s.lon)})).filter(s=>(($('providerfilter')?.value||'all')==='all'||s.source===$('providerfilter').value)&&(showAll||s.distance<=radius)).sort((a,b)=>a.distance-b.distance);$('hits').textContent=found.length;found.slice(0,4000).forEach(s=>{let m=L.circleMarker([s.lat,s.lon],{radius:s.source==='DWD Bright Sky'?7:6,color:s.source==='DWD Bright Sky'?'#f8b84e':'#fff',weight:s.source==='DWD Bright Sky'?2:1,fillColor:s.source==='DWD Bright Sky'?'#e88120':'#1487d6',fillOpacity:.9}).addTo(layer);m.bindPopup(stationPopup(s));if(s.source==='Windy')m.on('click',()=>{setTimeout(()=>autoWindyObservation(s.id),0)})});$('stations').innerHTML=found.length?found.slice(0,60).map(s=>'<div class="station"><div><strong>'+esc(s.name||s.id)+'</strong><small>'+s.distance.toFixed(1)+' km · '+esc(s.source||'Windy')+' · '+esc(s.id)+'</small></div><button onclick="addStation(\''+String(s.id).replace(/'/g,'')+'\')">+ Favorit</button></div>').join(''):'<p class="muted">In den bisher geladenen Daten keine Station im Suchradius. Bitte vollständige Stationsliste importieren.</p>';$('favcount').textContent=favorites.length+' / 10';$('favorites').innerHTML=favorites.length?favorites.map(s=>'<div class="station"><div><strong>'+esc(s.name)+'</strong><small>'+esc(s.id)+'</small></div><button onclick="removeStation(\''+String(s.id).replace(/'/g,'')+'\')">Entfernen</button></div>').join(''):'<p class="muted">Noch keine Station ausgewählt.</p>'}map.on('click',e=>setCenter(e.latlng.lat,e.latlng.lng));$('radius').oninput=e=>{radius=Number(e.target.value);showAll=false;render();scheduleBrightSky()};$('search').onclick=async()=>{let q=$('place').value.trim();if(!q)return;try{let r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+encodeURIComponent(q));if(!r.ok)throw Error('HTTP '+r.status);let j=await r.json();if(!j.length){alert('Ort nicht gefunden.');return}setCenter(+j[0].lat,+j[0].lon)}catch(e){alert('Ortssuche nicht erreichbar. Du kannst den Mittelpunkt auch direkt auf der Karte anklicken.')}};$('place').onkeydown=e=>{if(e.key==='Enter')$('search').click()};$('locate').onclick=()=>{if(!navigator.geolocation){alert('Standortfunktion nicht verfügbar.');return}navigator.geolocation.getCurrentPosition(p=>setCenter(p.coords.latitude,p.coords.longitude),()=>alert('Standort nicht verfügbar. Auf der Karte einen Punkt anklicken.'),{enableHighAccuracy:false})};$('reset').onclick=()=>{showAll=true;map.setView([40,5],2);render()};$('file').onchange=async e=>{let all=[];for(const f of e.target.files){try{let j=JSON.parse(await f.text());let a=Array.isArray(j)?j:Array.isArray(j.data)?j.data:[];all.push(...a.filter(s=>s.id&&typeof s.lat==='number'&&typeof s.lon==='number'))}catch(err){alert('Datei konnte nicht gelesen werden: '+f.name)}}if(all.length){let merged=new Map([...stations,...all.map(s=>({...s,source:s.source||'Windy'}))].map(s=>[s.id,s]));stations=[...merged.values()];render();alert(all.length+' Einträge eingelesen, '+stations.length+' Stationen insgesamt.')}e.target.value=''};$('clear').onclick=()=>{stations=initial.map(x=>({...x,source:'Windy'}));render()};$('export').onclick=()=>{let blob=new Blob([JSON.stringify({app:'WindSurf IQ',stations:favorites},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='WindSurfIQ_Favoriten.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};$('copy').onclick=async()=>{let t=favorites.map(s=>s.name+' | '+s.id).join('\n');try{await navigator.clipboard.writeText(t);alert('Favoriten kopiert.')}catch(e){prompt('IDs zum Kopieren:',t)}};
+// Windy OpenData v2: only load observations for a station selected by the user.
+window.loadWindyObservation=async function(id){
+ const s=stations.find(x=>x.id===id&&x.source==='Windy');
+ if(!s){alert('Windy-Station nicht gefunden.');return;}
+ const key=getWindyKey();
+ if(!key){alert('Bitte zuerst den Windy-API-Schlüssel im Bereich „Windy-Stationskatalog“ eingeben.');return;}
+ const url='https://stations.windy.com/api/v2/opendata/station/'+encodeURIComponent(id)+'/observation';
+ $('windyStatus').textContent='Lade aktuelle Messung für '+(s.name||id)+' …';
+ try{
+  const r=await fetch(url,{headers:{'windy-api-key':key,'Accept':'application/json'},cache:'no-store'});
+  if(!r.ok)throw Error('HTTP '+r.status);
+  const payload=await r.json();
+  // Windy returns parallel arrays in data[0]. Keep all fields at the SAME index.
+  const root=payload?.data??payload;
+  const records=Array.isArray(root)?root:(Array.isArray(root?.observations)?root.observations:(Array.isArray(root?.data)?root.data:[root]));
+  const row=records.find(x=>x&&typeof x==='object'&&Array.isArray(x.ts));
+  if(!row)throw Error('Keine Messreihe mit Zeitstempeln (ts) gefunden.');
+  const valid=v=>v!==null&&v!==undefined&&v!==''&&Number.isFinite(Number(v));
+  const millis=t=>{const n=Number(t);return Number.isFinite(n)?(n<1e11?n*1000:n):NaN};
+  let index=-1, latest=-Infinity;
+  for(let i=0;i<row.ts.length;i++){
+   const t=millis(row.ts[i]);
+   if(Number.isFinite(t)&&t>latest&&(valid(row.wind?.[i])||valid(row.wind_gust?.[i])||valid(row.wind_dir?.[i]))){index=i;latest=t;}
+  }
+  if(index<0)throw Error('Keine gültigen Windmesswerte mit Zeitstempel vorhanden.');
+  const read=k=>valid(row[k]?.[index])?Number(row[k][index]):null;
+  const speed=read('wind'),gust=read('wind_gust'),direction=read('wind_dir');
+  const kn=v=>v===null?'nicht verfügbar':(v*1.94384449).toFixed(1)+' kn';
+  const time=new Date(latest).toLocaleString('de-DE',{dateStyle:'short',timeStyle:'short',timeZone:'Europe/Berlin'});
+  const age=Date.now()-latest;
+  const warning=age>3600000?'<br><span style="color:#a34b00">Hinweis: Messung älter als 60 Minuten</span>':age< -300000?'<br><span style="color:#a34b00">Hinweis: Zeitstempel liegt in der Zukunft</span>':'';
+  s.measured={windMs:speed,gustMs:gust,direction,observed:new Date(latest).toISOString()};
+  s.last_observation_time=new Date(latest).toISOString();
+  $('windyStatus').textContent='Windmessung für '+(s.name||id)+' geladen: '+time+' (MEZ/MESZ).';
+  const popup='<b>'+esc(s.name||id)+'</b><br>Quelle: Windy · ID: '+esc(id)+
+   '<br>Messzeit: '+esc(time)+' (MEZ/MESZ)'+
+   '<br><b>Gemessene Windwerte</b><br>Wind: '+kn(speed)+
+   '<br>Böen: '+kn(gust)+
+   '<br>Richtung: '+(direction===null?'nicht verfügbar':Math.round(direction)+'°')+
+   warning+'<br><small>Wind und Böen: m/s → kn (1 m/s = 1,94384449 kn)</small><br>'+
+   '<button onclick="loadWindyObservation(\''+String(id).replace(/'/g,'')+'\')">Messung aktualisieren</button><br>'+
+   '<button onclick="addStation(\''+String(id).replace(/'/g,'')+'\')">Als Favorit speichern</button>';
+  const active=map._popup;
+  if(active && map.distance(active.getLatLng(),L.latLng(s.lat,s.lon))<15){
+    active.setContent(popup);
+  }
+ }catch(e){$('windyStatus').textContent='Messwertabruf fehlgeschlagen: '+e.message;alert('Windy-Messung: '+e.message)}
+};
+// Persönlicher Windy-Schlüssel: im Browser gespeichert, niemals in die ZIP-Datei eingebettet.
+const WINDY_KEY_STORAGE='windsurfiq-windy-api-key-v1';
+let windySessionKey='';
+try{windySessionKey=localStorage.getItem(WINDY_KEY_STORAGE)||'';}catch(e){}
+const WSI_CONFIG=(window.WSI_CONFIG&&typeof window.WSI_CONFIG==='object')?window.WSI_CONFIG:{};
+if(typeof WSI_CONFIG.windyKey==='string'&&WSI_CONFIG.windyKey.trim())windySessionKey=WSI_CONFIG.windyKey.trim();
+$('windykey').value=windySessionKey;
+function getWindyKey(){return $('windykey').value.trim()||windySessionKey;}
+$('windykey').addEventListener('input',()=>{
+ windySessionKey=$('windykey').value.trim();
+ try{if(windySessionKey)localStorage.setItem(WINDY_KEY_STORAGE,windySessionKey);
+ else localStorage.removeItem(WINDY_KEY_STORAGE);}catch(e){$('windyStatus').textContent='Schlüssel nur für diese Sitzung verfügbar: Browser-Speicherung blockiert.';}
+});
+// Automatisch ausschließlich die angeklickte Windy-Station abfragen.
+const windyAutoLoading=new Set();
+const windyLastAttempt=new Map();
+function autoWindyObservation(id){
+ if(!getWindyKey()||windyAutoLoading.has(id)||Date.now()-(windyLastAttempt.get(id)||0)<60000)return;
+ const s=stations.find(x=>x.id===id&&x.source==='Windy');
+ if(!s)return;
+ // Do not use station metadata last_observation_time to suppress the first fetch.
+ // Only an actual observation fetched by this app can satisfy the freshness check.
+ const last=s.measured?.observed?new Date(s.measured.observed).getTime():0;
+ if(last&&Date.now()-last<60000)return;
+ windyLastAttempt.set(id,Date.now());
+ windyAutoLoading.add(id);
+ const popup=map._popup;
+ if(popup&&popup.getContent()&&String(popup.getContent()).includes('Noch keine Windmessung geladen')){
+   popup.setContent(String(popup.getContent()).replace('Messwerte: Noch keine Windmessung geladen','Messwerte: Werden geladen …'));
+ }
+ Promise.resolve(loadWindyObservation(id)).finally(()=>windyAutoLoading.delete(id));
+}
+const CACHE_KEY='windsurfiq-windy-stations-cache-v1';
+function updateWindyStatus(msg){$('windyStatus').textContent=msg}
+try{const cached=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');if(cached&&Array.isArray(cached.stations)&&cached.stations.length){stations=cached.stations.map(x=>({...x,source:'Windy'}));updateWindyStatus('Zwischenspeicher: '+stations.length+' Stationen, Stand '+new Date(cached.savedAt).toLocaleString('de-DE')+'. Zum Aktualisieren „Jetzt laden“ klicken.')}}catch(e){}
+$('providerfilter').onchange=render;
+$('refreshWindy').onclick=async()=>{
+ const key=getWindyKey();if(!key){alert('Bitte Windy-API-Schlüssel eingeben.');return}
+ const btn=$('refreshWindy');btn.disabled=true;let gathered=[];
+ try{
+  for(let page=0;page<150;page++){
+   updateWindyStatus('Windy abrufen: Seite '+(page+1)+' · '+gathered.length+' Stationen');
+   const url='https://stations.windy.com/api/v2/opendata/station?status=online&page='+page;
+   const response=await fetch(url,{headers:{'windy-api-key':key,'Accept':'application/json'},cache:'no-store'});
+   if(!response.ok)throw new Error('Windy HTTP '+response.status+' (Seite '+page+')');
+   const payload=await response.json();const entries=Array.isArray(payload)?payload:Array.isArray(payload.data)?payload.data:[];
+   gathered.push(...entries.filter(s=>s.id&&typeof s.lat==='number'&&typeof s.lon==='number'));
+   const total=Number(payload.total??payload.total_count??payload.count??NaN);
+   if(entries.length===0 || (Number.isFinite(total)&&gathered.length>=total) || (entries.length<100 && !Number.isFinite(total)))break;
+   if(page===149)throw new Error('Sicherheitsgrenze von 150 Seiten erreicht');
+  }
+  if(!gathered.length)throw new Error('Keine Stationsdaten erhalten');
+  stations=[...stations.filter(s=>s.source!=='Windy'),...new Map(gathered.map(s=>[s.id,{...s,source:'Windy'}])).values()];
+  try{localStorage.setItem(CACHE_KEY,JSON.stringify({savedAt:new Date().toISOString(),stations:gathered}))}catch(e){updateWindyStatus('Geladen, aber lokaler Cache konnte nicht gespeichert werden.')}
+  updateWindyStatus(stations.length+' Stationen erfolgreich aktualisiert: '+new Date().toLocaleString('de-DE'));
+  render();
+ }catch(e){updateWindyStatus('Abruf fehlgeschlagen: '+e.message+'. Bisherige Stationsdaten bleiben erhalten. Wenn die Browser-Sicherheitsrichtlinie (CORS) den Abruf blockiert, ist ein lokaler Helfer oder ein Server nötig.');}
+ finally{btn.disabled=false}
+};
+
+// AEMET observation data are measured readings, not forecasts.
+const AEMET_CACHE='windsurfiq-aemet-observations-v1';
+function aemetCoords(raw){
+  if(typeof raw==='number')return raw;
+  if(typeof raw!=='string')return NaN;
+  const t=raw.trim();
+  if(/^[-+]?\d+(?:[.,]\d+)?$/.test(t))return Number(t.replace(',','.'));
+  const m=t.match(/^(\d{2,3})(\d{2})(\d{2})([NSEW])$/i);
+  if(!m)return NaN;
+  const n=Number(m[1])+Number(m[2])/60+Number(m[3])/3600;
+  return /[SW]/i.test(m[4])?-n:n;
+}
+function aemetNormalize(items){
+  if(!Array.isArray(items))throw Error('AEMET-Datenformat nicht erkannt');
+  return items.map(x=>{
+    const id=String(x.idema||x.indicativo||'').trim();
+    const lat=aemetCoords(x.lat??x.latitud),lon=aemetCoords(x.lon??x.longitud);
+    if(!id||!Number.isFinite(lat)||!Number.isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180)return null;
+    return {id:'aemet:'+id,providerId:id,source:'AEMET',name:x.ubi||x.nombre||id,lat,lon,
+      last_observation_time:x.fint||x.fecha||null,is_online:true,
+      measured:{windMs:x.vv??null,gustMs:x.vmax??null,direction:x.dv??null,observed:x.fint||null}};
+  }).filter(Boolean);
+}
+function mergeAemet(rows){
+  const a=aemetNormalize(rows);
+  if(!a.length)throw Error('Keine Station mit gültigen Koordinaten in den AEMET-Daten');
+  stations=[...stations.filter(s=>s.source!=='AEMET'),...a];
+  try{localStorage.setItem(AEMET_CACHE,JSON.stringify({savedAt:new Date().toISOString(),stations:a}))}catch(e){}
+  render();return a.length;
+}
+try{const cache=JSON.parse(localStorage.getItem(AEMET_CACHE)||'null');if(cache?.stations?.length){stations=[...stations.filter(s=>s.source!=='AEMET'),...cache.stations];$('aemetstatus').textContent='AEMET-Zwischenspeicher: '+cache.stations.length+' Stationen, Stand '+new Date(cache.savedAt).toLocaleString('de-DE')}}catch(e){}
+$('aemetfile').onchange=async e=>{
+  const f=e.target.files[0];if(!f)return;
+  try{const json=JSON.parse(await f.text());const n=mergeAemet(Array.isArray(json)?json:json.data);$('aemetstatus').textContent=n+' AEMET-Stationen aus Datei geladen.'}
+  catch(err){$('aemetstatus').textContent='Import fehlgeschlagen: '+err.message}
+  e.target.value='';
+};
+$('aemetload').onclick=async()=>{
+  const key=$('aemetkey').value.trim();if(!key){alert('Bitte AEMET-API-Schlüssel eingeben.');return}
+  const btn=$('aemetload');btn.disabled=true;$('aemetstatus').textContent='AEMET-Beobachtungen werden geladen ...';
+  try{
+    const endpoint='https://opendata.aemet.es/opendata/api/observacion/convencional/todas/';
+    const r=await fetch(endpoint+'?api_key='+encodeURIComponent(key),{cache:'no-store'});
+    if(!r.ok)throw Error('AEMET HTTP '+r.status);
+    const meta=await r.json();if(!meta.datos)throw Error(meta.descripcion||'Kein Datenlink erhalten');
+    const d=await fetch(meta.datos,{cache:'no-store'});if(!d.ok)throw Error('AEMET-Daten HTTP '+d.status);
+    const n=mergeAemet(await d.json());$('aemetstatus').textContent=n+' AEMET-Stationen mit aktuellen Beobachtungen geladen: '+new Date().toLocaleString('de-DE');
+  }catch(err){$('aemetstatus').textContent='Abruf fehlgeschlagen: '+err.message+'. Eventuell verhindert CORS den direkten Zugriff aus einer lokalen HTML-Datei. JSON-Import ist als Alternative verfügbar.'}
+  finally{btn.disabled=false;$('aemetkey').value=''}
+};
+
+// NOAA NDBC publishes recent observed values, no model/forecast data.
+const NOAA_CACHE='windsurfiq-noaa-ndbc-v1';
+function parseNoaa(txt){
+ const lines=txt.replace(/\r/g,'').split('\n').filter(x=>x.trim());
+ const h=lines.find(x=>/^#STN\s/.test(x));
+ if(!h)throw Error('NOAA-Header #STN fehlt');
+ const cols=h.replace(/^#/,'').trim().split(/\s+/);
+ const get=(row,k)=>row[cols.indexOf(k)];
+ const num=x=>x==null||/^(MM|N\/A|)$/i.test(x)?null:Number(x);
+ let result=[];
+ for(const line of lines){
+  if(line.startsWith('#'))continue;
+  const v=line.trim().split(/\s+/);if(v.length<cols.length)continue;
+  const lat=num(get(v,'LAT')),lon=num(get(v,'LON'));
+  if(lat===null||lon===null||!Number.isFinite(lat)||!Number.isFinite(lon))continue;
+  const station=get(v,'STN');if(!station)continue;
+  const clean=x=>x===null||x>=99?null:x;const speed=clean(num(get(v,'WSPD'))),gust=clean(num(get(v,'GST'))),dir=num(get(v,'WDIR'));
+  if(speed===null&&gust===null&&dir===null)continue;
+  const yr=get(v,'YYYY'),mo=get(v,'MM'),day=get(v,'DD'),hh=get(v,'hh'),mm=get(v,'mm');
+  const date=yr&&mo&&day&&hh&&mm?`${yr}-${mo}-${day}T${hh}:${mm}:00Z`:null;
+  result.push({id:'ndbc:'+station,providerId:station,source:'NOAA NDBC',name:'NOAA '+station,lat,lon,is_online:true,last_observation_time:date,measured:{windMs:speed,gustMs:gust,direction:dir,observed:date}});
+ }
+ if(!result.length)throw Error('Keine NOAA-Stationen mit Windmesswerten gefunden');
+ return result;
+}
+function mergeNoaa(txt){
+ const rows=parseNoaa(txt);stations=[...stations.filter(s=>s.source!=='NOAA NDBC'),...rows];
+ try{localStorage.setItem(NOAA_CACHE,JSON.stringify({savedAt:new Date().toISOString(),stations:rows}))}catch(e){}
+ render();return rows.length;
+}
+try{const c=JSON.parse(localStorage.getItem(NOAA_CACHE)||'null');if(c?.stations?.length){stations=[...stations.filter(s=>s.source!=='NOAA NDBC'),...c.stations];$('noaastatus').textContent=c.stations.length+' NOAA-Stationen aus Zwischenspeicher (Stand '+new Date(c.savedAt).toLocaleString('de-DE')+')'}}catch(e){}
+$('noaaload').onclick=async()=>{const b=$('noaaload');b.disabled=true;$('noaastatus').textContent='NOAA-Messungen werden geladen …';try{const r=await fetch('https://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const n=mergeNoaa(await r.text());$('noaastatus').textContent=n+' NOAA-Stationen mit Windmesswerten geladen: '+new Date().toLocaleString('de-DE')}catch(e){$('noaastatus').textContent='Direktabruf fehlgeschlagen ('+e.message+'). Bitte die NOAA-TXT-Datei über den Link herunterladen und importieren.'}finally{b.disabled=false}};
+$('noaafile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const n=mergeNoaa(await f.text());$('noaastatus').textContent=n+' NOAA-Stationen importiert.'}catch(err){$('noaastatus').textContent='Import fehlgeschlagen: '+err.message}e.target.value=''};
+
+// DWD CDC: measured 10-minute wind observations; never forecast values.
+const DWD_BASE='https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/wind/recent/';
+const DWD_CAT='windsurfiq-dwd-catalog-v1', DWD_OBS='windsurfiq-dwd-observations-v1';
+let dwdMeta=[];
+function dwdStatus(t){$('dwdstatus').textContent=t}
+function dwdCatalogParse(t){
+ const rows=[];
+ for(const line of t.replace(/\r/g,'').split('\n')){
+  // DWD station description: ID, start date, end date, height, latitude, longitude, name, state.
+  const m=line.match(/^\s*(\d{5})\s+\d{8}\s+\d{8}\s+(-?\d+(?:[.,]\d+)?)\s+(-?\d+(?:[.,]\d+)?)\s+(-?\d+(?:[.,]\d+)?)\s+(.+)$/);
+  if(!m)continue;
+  const lat=Number(m[3].replace(',','.')),lon=Number(m[4].replace(',','.'));
+  if(Math.abs(lat)>90||Math.abs(lon)>180)continue;
+  const name=m[5].trim().replace(/\s{2,}.*$/,'').trim();
+  rows.push({id:'dwd:'+m[1],providerId:m[1],source:'DWD',name:'DWD '+name,lat,lon,elev_m:Number(m[2]),last_observation_time:null,is_online:null});
+ }
+ if(!rows.length)throw Error('Keine DWD-Stationszeilen erkannt');
+ return [...new Map(rows.map(r=>[r.id,r])).values()];
+}
+function mergeDwdCatalog(t){
+ dwdMeta=dwdCatalogParse(t);
+ const old=new Map(stations.filter(s=>s.source==='DWD').map(s=>[s.id,s]));
+ stations=[...stations.filter(s=>s.source!=='DWD'),...dwdMeta.map(x=>({...x,...(old.has(x.id)?{measured:old.get(x.id).measured,last_observation_time:old.get(x.id).last_observation_time}: {})}))];
+ try{localStorage.setItem(DWD_CAT,JSON.stringify({savedAt:new Date().toISOString(),rows:dwdMeta}))}catch(e){}
+ render();return dwdMeta.length;
+}
+function parseDwdWind(t,id){
+ const lines=t.replace(/\r/g,'').split('\n').filter(x=>x.includes(';'));
+ if(!lines.length)throw Error('Keine DWD-Messzeilen gefunden');
+ const header=lines[0].split(';').map(x=>x.trim());
+ const idx=k=>header.indexOf(k);
+ if(idx('MESS_DATUM')<0||idx('FF_10')<0)throw Error('Keine 10-Minuten-Winddaten (MESS_DATUM/FF_10)');
+ let latest=null;
+ for(const line of lines.slice(1)){
+  const c=line.split(';').map(x=>x.trim()),stamp=c[idx('MESS_DATUM')];
+  if(!/^\d{12}$/.test(stamp))continue;
+  const value=k=>{let i=idx(k);if(i<0)return null;let v=Number((c[i]||'').replace(',','.'));return Number.isFinite(v)&&v!==-999?v:null};
+  const speed=value('FF_10'),dir=value('DD_10');if(speed===null&&dir===null)continue;
+  if(!latest||stamp>latest.stamp)latest={stamp,speed,dir};
+ }
+ if(!latest)throw Error('Keine gültigen Windmessungen gefunden');
+ const stampText=latest.stamp,observed=`${stampText.slice(0,4)}-${stampText.slice(4,6)}-${stampText.slice(6,8)}T${stampText.slice(8,10)}:${stampText.slice(10,12)}:00Z`;
+ const key='dwd:'+id,old=stations.find(x=>x.id===key)||dwdMeta.find(x=>x.id===key);
+ if(!old)throw Error('Station '+id+' fehlt im DWD-Stationsverzeichnis');
+ const row={...old,last_observation_time:observed,measured:{windMs:latest.speed,gustMs:null,direction:latest.dir,observed}};
+ stations=[...stations.filter(x=>x.id!==key),row];
+ try{const data=JSON.parse(localStorage.getItem(DWD_OBS)||'{}');data[key]=row;localStorage.setItem(DWD_OBS,JSON.stringify(data))}catch(e){}
+ render();return row;
+}
+async function dwdZip(buffer,id){
+ if(typeof JSZip==='undefined')throw Error('ZIP-Bibliothek nicht erreichbar (Internetverbindung prüfen)');
+ const z=await JSZip.loadAsync(buffer);
+ const csv=Object.values(z.files).find(x=>/produkt_zehn_min_ff_.*\.txt$/i.test(x.name));
+ if(!csv)throw Error('DWD-ZIP enthält keine produkt_zehn_min_ff_*.txt');
+ return parseDwdWind(await csv.async('string'),id);
+}
+const dwdRequests=new Map();
+window.loadDwdObservation=async function(id){
+ if(!/^\d{5}$/.test(id))return;
+ if(dwdRequests.has(id))return dwdRequests.get(id);
+ const request=(async()=>{
+  dwdStatus('Aktuelle DWD-Messung '+id+' wird abgerufen …');
+  try{
+   const base='https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/wind/now/';
+   // DWD now is updated hourly; filenames may differ from recent.
+   const listing=await fetch(base,{cache:'no-store'});
+   if(!listing.ok)throw Error('DWD-Verzeichnis HTTP '+listing.status);
+   const text=await listing.text();
+   const matches=[...text.matchAll(/href="([^"]*10minutenwerte_wind_(\d{5})_[^"]*\.zip)"/gi)];
+   const match=matches.find(m=>m[2]===id);
+   if(!match)throw Error('Keine aktuelle ZIP-Datei für Station '+id+' im DWD-now-Verzeichnis');
+   const r=await fetch(new URL(match[1],base).href,{cache:'no-store'});
+   if(!r.ok)throw Error('DWD-ZIP HTTP '+r.status);
+   const row=await dwdZip(await r.arrayBuffer(),id);
+   dwdStatus(row.name+': '+new Date(row.last_observation_time).toLocaleString('de-DE')+' · Windwerte geladen');
+   return row;
+  }catch(e){dwdStatus('Automatischer DWD-Abruf nicht möglich: '+e.message+'. Der manuelle ZIP-Import bleibt verfügbar.');throw e}
+ })().finally(()=>dwdRequests.delete(id));
+ dwdRequests.set(id,request);return request;
+};
+try{const c=JSON.parse(localStorage.getItem(DWD_CAT)||'null');if(c?.rows?.length){dwdMeta=c.rows;stations=[...stations.filter(x=>x.source!=='DWD'),...dwdMeta];dwdStatus(dwdMeta.length+' DWD-Stationen aus lokalem Zwischenspeicher.')}}catch(e){}
+try{const c=JSON.parse(localStorage.getItem(DWD_OBS)||'{}');for(const row of Object.values(c)){const i=stations.findIndex(s=>s.id===row.id);if(i>=0)stations[i]={...stations[i],...row}}}catch(e){}
+$('dwdcatalog').onclick=async()=>{const b=$('dwdcatalog');b.disabled=true;dwdStatus('DWD-Stationsverzeichnis wird geladen …');try{const r=await fetch(DWD_BASE+'zehn_min_ff_Beschreibung_Stationen.txt',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const n=mergeDwdCatalog(await r.text());dwdStatus(n+' DWD-Stationen geladen. Für aktuelle Messwerte eine Stationsnummer eingeben.')}catch(e){dwdStatus('Direktabruf nicht möglich: '+e.message+'. Stationsverzeichnis bitte herunterladen und importieren.')}finally{b.disabled=false}};
+$('dwdcatalogfile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{dwdStatus(mergeDwdCatalog(await f.text())+' DWD-Stationen importiert.')}catch(err){dwdStatus('Import fehlgeschlagen: '+err.message)}e.target.value=''};
+$('dwdload').onclick=async()=>{const id=$('dwdid').value.trim();if(!/^\d{5}$/.test(id)){dwdStatus('Bitte eine fünfstellige DWD-Stationsnummer eingeben.');return}const b=$('dwdload');b.disabled=true;dwdStatus('DWD-Windmessung '+id+' wird geladen …');try{const r=await fetch(DWD_BASE+'10minutenwerte_wind_'+id+'_akt.zip',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const row=await dwdZip(await r.arrayBuffer(),id);dwdStatus(row.name+': '+(row.measured.windMs??'–')+' m/s, '+row.last_observation_time+' (Böen in diesem Datensatz nicht enthalten).')}catch(e){dwdStatus('Direktabruf nicht möglich: '+e.message+'. ZIP-Datei aus dem DWD-Verzeichnis herunterladen und importieren.')}finally{b.disabled=false}};
+$('dwdzipfile').onchange=async e=>{const f=e.target.files[0];if(!f)return;const id=($('dwdid').value.trim()||f.name.match(/wind_(\d{5})_akt/i)?.[1]||'');try{if(!/^\d{5}$/.test(id))throw Error('Stationsnummer fehlt');const row=await dwdZip(await f.arrayBuffer(),id);dwdStatus(row.name+': Messung vom '+row.last_observation_time+' importiert.')}catch(err){dwdStatus('ZIP-Import fehlgeschlagen: '+err.message)}e.target.value=''};
+
+if(typeof WSI_CONFIG.aemetKey==='string'&&WSI_CONFIG.aemetKey.trim())$('aemetkey').value=WSI_CONFIG.aemetKey.trim();
+
+const FR_CACHE='windsurfiq-fr-observations-v1';
+function mergeFrenchJson(payload){
+ const list=Array.isArray(payload)?payload:(payload.stations||payload.data||payload.results);
+ if(!Array.isArray(list))throw Error('JSON benötigt eine Liste oder stations/data/results');
+ const valid=x=>x!==null&&x!==undefined&&x!==''&&Number.isFinite(Number(x));
+ const number=x=>valid(x)?Number(x):null;
+ const result=[];
+ for(const x of list){
+  const lat=number(x.lat??x.latitude),lon=number(x.lon??x.longitude);
+  const id=String(x.id??x.id_station??x.station_id??'');
+  if(lat===null||lon===null||!id)continue;
+  const wind=number(x.windMs??x.wind_ms),gust=number(x.gustMs??x.gust_ms);
+  const direction=number(x.direction??x.wind_dir);
+  const observed=x.observed??x.date??x.timestamp??null;
+  result.push({id:'fr:'+id,providerId:id,source:'Météo-France',name:String(x.name??x.nom??('Météo-France '+id)),
+   lat,lon,last_observation_time:observed,measured:{windMs:wind,gustMs:gust,direction,observed}});
+ }
+ if(!result.length)throw Error('Keine gültigen Stationen (id, lat, lon) gefunden');
+ stations=[...stations.filter(x=>x.source!=='Météo-France'),...result];
+ try{localStorage.setItem(FR_CACHE,JSON.stringify(result))}catch(e){}
+ render();return result.length;
+}
+try{const rows=JSON.parse(localStorage.getItem(FR_CACHE)||'null');if(Array.isArray(rows)&&rows.length){stations=[...stations.filter(x=>x.source!=='Météo-France'),...rows];$('frstatus').textContent=rows.length+' französische Stationen aus Cache.'}}catch(e){}
+$('frfile').onchange=async e=>{
+ const f=e.target.files[0];if(!f)return;
+ try{$('frstatus').textContent=mergeFrenchJson(JSON.parse(await f.text()))+' französische Stationen importiert.'}
+ catch(err){$('frstatus').textContent='Import fehlgeschlagen: '+err.message}
+ e.target.value='';
+};
+
+// v5.4: Alle SYNOP-Stationen prüfen; Abrufe schonend begrenzen und veraltete Suchläufe ignorieren.
+let bsTimer=null,bsSequence=0,bsRunning=false;
+const bsCache=new Map();
+function scheduleBrightSky(){
+ clearTimeout(bsTimer);
+ ++bsSequence; // laufende Suche entwerten
+ bsTimer=setTimeout(()=>loadBrightSky(),1100);
+}
+async function bsGet(url){
+ const res=await fetch(url,{cache:'no-store'});
+ if(!res.ok)throw Error('HTTP '+res.status+' bei '+new URL(url).pathname);
+ return res.json();
+}
+function bsStation(src,w){
+ const id='BS-'+String(src.dwd_station_id||src.id);
+ const kmh=x=>x===null||x===undefined?null:Number(x)/3.6;
+ const measured={windMs:kmh(w.wind_speed_10??w.wind_speed),gustMs:kmh(w.wind_gust_speed_10??w.wind_gust_speed),direction:w.wind_direction_10??w.wind_direction,observed:w.timestamp};
+ if(measured.windMs===null||!Number.isFinite(measured.windMs))return null;
+ return {id,name:src.station_name||'DWD '+id,lat:Number(src.lat),lon:Number(src.lon),source:'DWD Bright Sky',providerId:src.dwd_station_id||'',last_observation_time:w.timestamp,measured};
+}
+async function loadBrightSky(){
+ const seq=++bsSequence;
+ const button=$('brightskyload'),status=$('brightskystatus');
+ const lat=center[0],lon=center[1],r=radius;
+ button.disabled=true;bsRunning=true;
+ status.textContent='DWD-SYNOP-Stationen im '+r+'-km-Radius werden gesucht …';
+ try{
+  const result=await bsGet('https://api.brightsky.dev/sources?lat='+encodeURIComponent(lat)+'&lon='+encodeURIComponent(lon)+'&max_dist='+Math.round(r*1000));
+  if(seq!==bsSequence)return;
+  const candidates=(result.sources||[]).filter(s=>s.observation_type==='synop'&&Number.isFinite(Number(s.lat))&&Number.isFinite(Number(s.lon))&&s.dwd_station_id);
+  const uniq=[...new Map(candidates.map(s=>[s.dwd_station_id,s])).values()].filter(s=>dist(lat,lon,Number(s.lat),Number(s.lon))<=r);
+  if(!uniq.length){stations=stations.filter(s=>s.source!=='DWD Bright Sky');render();status.textContent='Keine DWD-SYNOP-Station im '+r+'-km-Radius gefunden.';return;}
+  let loaded=0,missing=0,errors=0,done=0,index=0;
+  const found=[];
+  status.textContent='DWD: '+uniq.length+' Stationen gefunden, Messwerte werden geprüft …';
+  async function worker(){
+   while(seq===bsSequence&&index<uniq.length){
+    const src=uniq[index++];
+    try{
+     const key=String(src.dwd_station_id),cache=bsCache.get(key);
+     const obs=cache&&Date.now()-cache.time<120000?cache.value:await bsGet('https://api.brightsky.dev/current_weather?dwd_station_id='+encodeURIComponent(key));
+     if(!cache||Date.now()-cache.time>=120000)bsCache.set(key,{time:Date.now(),value:obs});
+     if(seq!==bsSequence)return;
+     const w=obs.weather;
+     if(!w||!w.timestamp){missing++;continue;}
+     const actual=(obs.sources||[]).find(x=>x.id===w.source_id)||src;
+     const station=bsStation(actual,w);
+     if(station&&dist(lat,lon,station.lat,station.lon)<=r){found.push(station);loaded++;}else missing++;
+    }catch(e){if(seq!==bsSequence)return;errors++;console.warn('Bright Sky Station '+src.dwd_station_id+': '+e.message);}
+    finally{if(seq===bsSequence){done++;status.textContent='DWD: '+done+'/'+uniq.length+' geprüft · '+loaded+' mit Wind · '+missing+' ohne Wind · '+errors+' Fehler.';}}
+   }
+  }
+  await Promise.all(Array.from({length:Math.min(3,uniq.length)},()=>worker()));
+  if(seq!==bsSequence)return;
+  stations=[...stations.filter(s=>s.source!=='DWD Bright Sky'),...new Map(found.map(s=>[s.id,s])).values()];
+  render();
+  status.textContent='DWD im '+r+'-km-Radius: '+uniq.length+' Stationen vollständig geprüft, '+loaded+' mit Windmessung, '+missing+' ohne Windwerte, '+errors+' Abruffehler. Orange = DWD, Blau = Windy. Messwerte per Klick.';
+ }catch(e){if(seq===bsSequence)status.textContent='DWD-Suche fehlgeschlagen: '+e.message;}
+ finally{if(seq===bsSequence){bsRunning=false;button.disabled=false;}}
+}
+$('brightskyload').onclick=()=>{clearTimeout(bsTimer);loadBrightSky();};
+$('autoNetworks').onclick=()=>{clearTimeout(bsTimer);loadBrightSky();};
+$('autoNetStatus').textContent='DWD lädt automatisch nach Orts- oder Radiusänderung. NOAA-Direktabruf bleibt wegen CORS deaktiviert.';
+setTimeout(scheduleBrightSky,1500);
+render();
+if(typeof WSI_CONFIG.mapTilerKey==='string'&&WSI_CONFIG.mapTilerKey.trim()){ $('mapkey').value=WSI_CONFIG.mapTilerKey.trim();$('loadmap').click();}
+
+// Mobile navigation only; no changes to Garmin or wind measurement functions.
+(function(){
+ const mapBtn=document.getElementById('showMap'),panelBtn=document.getElementById('showPanel');
+ function switchView(panel){
+  document.body.classList.toggle('mobile-panel',panel);
+  mapBtn.setAttribute('aria-pressed',String(!panel));
+  panelBtn.setAttribute('aria-pressed',String(panel));
+  if(!panel&&typeof map!=='undefined')setTimeout(()=>map.invalidateSize(),60);
+ }
+ mapBtn.addEventListener('click',()=>switchView(false));
+ panelBtn.addEventListener('click',()=>switchView(true));
+ const searchBtn=document.getElementById('search');
+ if(searchBtn)searchBtn.addEventListener('click',()=>{if(window.matchMedia('(max-width:800px)').matches)setTimeout(()=>switchView(false),500)});
+ const locateBtn=document.getElementById('locate');
+ if(locateBtn)locateBtn.addEventListener('click',()=>{if(window.matchMedia('(max-width:800px)').matches)setTimeout(()=>switchView(false),600)});
+ window.addEventListener('resize',()=>{if(typeof map!=='undefined')setTimeout(()=>map.invalidateSize(),100)});
+ if('serviceWorker' in navigator && (location.protocol==='https:' || location.hostname==='localhost')){
+   window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(e=>console.warn('Service Worker:',e.message)));
+ }
+})();
+</script></body></html>
