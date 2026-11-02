@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updated": "2026-11-02",
-  "description": "74 Einträge nach Dublettenprüfung: La Bergerie / Hyères als redundanter Regionsmarker entfernt; La Bergerie als dokumentierter Spot erhalten. Näherungskoordinaten nicht als Einstiegsstellen verwenden. Version 7.3: optionale geprüfte Parkplatzkoordinaten werden über parkingLocation {lat,lon,verified:true} unterstützt. Nicht verifizierte Parkplätze erhalten keinen Navigationsbutton.",
+  "description": "74 Einträge nach Dublettenprüfung: La Bergerie / Hyères als redundanter Regionsmarker entfernt; La Bergerie als dokumentierter Spot erhalten. Näherungskoordinaten nicht als Einstiegsstellen verwenden. Version 7.3: optionale geprüfte Parkplatzkoordinaten werden über parkingLocation {lat,lon,verified:true} unterstützt. Nicht verifizierte Parkplätze erhalten keinen Navigationsbutton. Bostalsee: zwei Startbereiche als launchSites im Regionseintrag dokumentiert; noch keine ungeprüften Markerkoordinaten oder Navigation.",
   "spots": [
     {
       "id": "de-bostalsee-region",
@@ -14,9 +14,47 @@
       "verified": false,
       "kind": "region_anchor",
       "details": {
-        "sources": [],
-        "reviewed": null,
-        "note": "Detailinformationen noch nicht recherchiert."
+        "water": "Binnensee / Stausee",
+        "access": "Mehrere voneinander getrennte Wassersportzugänge: WSCS/LVSS an der Bosener Mühle und Surferbasis Gonnesweiler. Exakte Wassereinstiege noch nicht GPS-verifiziert.",
+        "parking": "P2 Bosener Mühle / Seglerbasis LVSS; P3 Surferbasis / Strandbad Gonnesweiler (amtliches Badegewässerprofil). Parkplatz-Einfahrten, Gespann-Eignung und Zugangsbedingungen noch zu prüfen.",
+        "hazards": "Kitesurfen nicht erlaubt. Windsurf-Grundschein erforderlich. Badezonen sind durch Bojen abgegrenzt.",
+        "standing": "Nicht verlässlich belegt",
+        "sources": [
+          "https://www.windsurfclub-saar.de/surfpool-parken-faqs",
+          "https://www.bostalsee.de/bostalsee/wasser/wassersport",
+          "https://www.saarland.de/SharedDocs/Downloads/DE/msgff/tp_gesundheitpr%C3%A4vention/downloads_badegew%C3%A4sser/badegewaesserprofil_bostalsee.pdf?__blob=publicationFile&v=9",
+          "https://www.lakeride-bostalsee.de/"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Revieranker; nicht als Einstiegskoordinate verwenden. Zwei getrennte Startbereiche erfasst, GPS-Lage und öffentliche Nutzbarkeit noch zu prüfen.",
+        "launchSites": [
+          {
+            "id": "de-bostalsee-wscs-lvss",
+            "name": "Bostalsee – WSCS / LVSS (Bosener Mühle)",
+            "address": "An der Bosener Mühle 2, 66625 Nohfelden",
+            "operator": "Windsurfclub-Saar e.V. / LVSS",
+            "access": "Vereinsbasis; laut WSCS ausschließlich Mitglieder.",
+            "parking": "P2 Bosener Mühle; Befahren der Basis laut WSCS mit LVSS-Parkmarke (50 €/Jahr, Stand 2025).",
+            "launchCoordinatesVerified": false,
+            "parkingCoordinatesVerified": false,
+            "sources": [
+              "https://www.windsurfclub-saar.de/surfpool-parken-faqs"
+            ]
+          },
+          {
+            "id": "de-bostalsee-gonnesweiler-surferbasis",
+            "name": "Bostalsee – Gonnesweiler / Surferbasis",
+            "address": "Lindenallee 1, 66625 Nohfelden-Gonnesweiler",
+            "operator": "LAKERIDE (Anbieter am Strandbad; aktuelle Betreiberzuordnung der separaten Surferbasis nicht abschließend geklärt)",
+            "parking": "P3 Surferbasis / Strandbad Gonnesweiler; Gespann-Eignung ungeprüft.",
+            "launchCoordinatesVerified": false,
+            "parkingCoordinatesVerified": false,
+            "sources": [
+              "https://www.bostalsee.de/bostalsee/wasser/wassersport",
+              "https://www.lakeride-bostalsee.de/"
+            ]
+          }
+        ]
       }
     },
     {
