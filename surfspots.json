@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-02",
+  "description": "Pilotkatalog. Die drei Koordinaten sind grobe regionale Orientierungspunkte, keine geprüften Windsurf-Einstiege.",
+  "spots": [
+    {
+      "id": "de-bostalsee-region",
+      "name": "Bostalsee – Region",
+      "lat": 49.565,
+      "lon": 7.073,
+      "country": "DE",
+      "region": "Saarland",
+      "source": "Redaktioneller Pilot-Eintrag",
+      "verified": false,
+      "kind": "region_anchor"
+    },
+    {
+      "id": "fr-leucate-region",
+      "name": "Leucate – Region",
+      "lat": 42.909,
+      "lon": 3.029,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "Redaktioneller Pilot-Eintrag",
+      "verified": false,
+      "kind": "region_anchor"
+    },
+    {
+      "id": "fr-hyeres-region",
+      "name": "Hyères – Region",
+      "lat": 43.12,
+      "lon": 6.13,
+      "country": "FR",
+      "region": "Provence-Alpes-Côte d’Azur",
+      "source": "Redaktioneller Pilot-Eintrag",
+      "verified": false,
+      "kind": "region_anchor"
+    }
+  ]
+}
