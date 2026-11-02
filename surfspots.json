@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updated": "2026-11-02",
-  "description": "75 Spots; Teilrecherche DE/FR/NL: acht bestehende Einträge mit Quellen und Standortdetails ergänzt, keine unbestätigten neuen GPS-Marker.",
+  "description": "WindSurf IQ Surfspotkatalog; Ausbau Fehmarn mit separat markierten, vorläufigen Einstiegen. Koordinaten nicht zur Navigation freigegeben.",
   "spots": [
     {
       "id": "fr-leucate-region",
@@ -1427,6 +1427,354 @@
         "note": "Eigenständiger Surfspot am gegenüberliegenden Ufer. Marker ist Parkplatz-/Bereichsorientierung, kein geprüfter Wassereinstieg. Parkplatznavigation bis zur Prüfung deaktiviert.",
         "launchCoordinatesVerified": false,
         "parkingCoordinatesVerified": false
+      }
+    },
+    {
+      "id": "de-fehmarn-orth",
+      "name": "Orth / Fehmarn",
+      "lat": 54.445,
+      "lon": 11.048,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Orther Reede; ausgedehnte flache Bereiche, je nach Einstieg.",
+        "access": "Zugang im Hafen-/Uferbereich noch nicht GPS-verifiziert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-lemkenhafen",
+      "name": "Lemkenhafen / Fehmarn",
+      "lat": 54.445,
+      "lon": 11.089,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Stehrevier; windbedingt böig.",
+        "access": "Einstieg und Naturschutzregeln vor Ort prüfen.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-gollendorf",
+      "name": "Gollendorf / Fehmarn",
+      "lat": 54.429,
+      "lon": 11.067,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Flachwasser/Stehbereich laut Revierkarte; lokale Nutzungsregeln prüfen.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-strukkamp",
+      "name": "Strukkamp / Fehmarn",
+      "lat": 54.411,
+      "lon": 11.093,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Revier an der südwestlichen Küste; Bedingungen lokal prüfen.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.spotnetz.de/w/deutschland/schleswig-holstein/fehmarn/"
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-westermarkelsdorf",
+      "name": "Westermarkelsdorf / Fehmarn",
+      "lat": 54.527,
+      "lon": 11.056,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Wellenrevier mit Strömung und Steinen; für Erfahrene.",
+        "access": "Wassereinstieg und Parken noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-bojendorf",
+      "name": "Bojendorf / Fehmarn",
+      "lat": 54.494,
+      "lon": 11.021,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Brandungs-/Wellenrevier; Erfahrung erforderlich.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-puettsee",
+      "name": "Püttsee / Fehmarn",
+      "lat": 54.479,
+      "lon": 11.014,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Brandungsrevier; auf Sperrzonen und Naturschutz achten.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-teichhof",
+      "name": "Teichhof / Fehmarn",
+      "lat": 54.524,
+      "lon": 11.134,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Nordwestliche und östliche Windrichtungen werden in Revierkarte beschrieben.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-presen",
+      "name": "Presen / Fehmarn",
+      "lat": 54.521,
+      "lon": 11.202,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Nordküstenrevier; steinige Einstiege möglich.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.spotnetz.de/w/deutschland/schleswig-holstein/fehmarn/"
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-gruener-brink",
+      "name": "Grüner Brink / Fehmarn",
+      "lat": 54.527,
+      "lon": 11.166,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Nordküstenrevier; Naturschutzbereiche und aktuelle Beschilderung beachten.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.spotnetz.de/w/deutschland/schleswig-holstein/fehmarn/"
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-meeschendorf",
+      "name": "Meeschendorf / Fehmarn",
+      "lat": 54.413,
+      "lon": 11.239,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Ostseeküste; Wind- und Wellenbedingungen vor Ort prüfen.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.spotnetz.de/w/deutschland/schleswig-holstein/fehmarn/"
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-fehmarn-miramar",
+      "name": "Fehmarnsund / Miramar",
+      "lat": 54.4,
+      "lon": 11.111,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Fehmarn Revierübersicht (touristisch); Positionsschätzung nicht verifiziert",
+      "verified": false,
+      "kind": "surfspot",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "water": "Ostsee / Fehmarn",
+        "standing": "Nicht standortspezifisch geprüft",
+        "wind": "Südküstenrevier am Fehmarnsund; Schiffsverkehr beachten.",
+        "access": "Wassereinstieg noch nicht lokalisiert.",
+        "parking": "Parkplatzeinfahrt und Wohnmobil-/Anhänger-Eignung noch nicht geprüft. Keine direkte Navigation.",
+        "hazards": "Aktuelle Bade-, Surf- und Naturschutzregelungen vor Ort beachten.",
+        "infrastructure": "Noch nicht verifiziert",
+        "sources": [
+          {
+            "name": "Revierübersicht Fehmarn",
+            "url": "https://www.spotnetz.de/w/deutschland/schleswig-holstein/fehmarn/"
+          }
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
       }
     }
   ]
