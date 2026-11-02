@@ -18,27 +18,38 @@ for h in s.find_all(['h2','h3']):
  country={'Deutschland':'DE','Niederlande':'NL','Frankreich':'FR'}[m.group(2)]
  a=h.find_parent('a') or parent.find('a',href=True)
  add(name,m.group(1),country,u,','.join(x for x in ['Windsurfen','Kitesurfen','Wingfoilen'] if x in txt),requests.compat.urljoin(u,a['href']) if a and a.has_attr('href') else '')
-# DirectWind: Tabelle kann TH/TD, zusätzliche Spalten oder andere Spaltenreihenfolge haben.
-u='https://directwind.com/spots-windsurf.php'
-r=S.get(u,timeout=60);r.raise_for_status()
-s=bs4.BeautifulSoup(r.text,'html.parser')
-directwind_count=0
-for tr in s.select('tr'):
- cells=tr.find_all(['th','td'],recursive=False)
- if len(cells)<4: continue
- texts=[c.get_text(' ',strip=True) for c in cells]
- # Abteilungsnummer kann in einer eigenen Zelle stehen, nicht zwingend Index 2.
- dept_index=next((i for i,t in enumerate(texts) if re.fullmatch(r'(?:0?[1-9]|[1-8][0-9]|9[0-5]|97[1-6]|2A|2B)',t,re.I)),None)
- if dept_index is None or dept_index<2: continue
- name,place=texts[0],texts[1]
- if not name or name.lower() in ('nom du spot','spot'): continue
- activity=texts[dept_index+1] if len(texts)>dept_index+1 else ''
- a=cells[0].find('a',href=True) or tr.find('a',href=True)
- add(name,place,'FR',u,activity,requests.compat.urljoin(u,a['href']) if a else '')
- directwind_count+=1
-# WICHTIG: Ein grüner GitHub-Workflow darf keinen fehlenden Import verbergen.
-if directwind_count<500:
- raise RuntimeError(f'DirectWind: nur {directwind_count} Einträge gelesen (erwartet ca. 677). HTML-Struktur/Seitenabruf prüfen. Spotara-Einträge: {len(rows)-directwind_count}.')
+
+# DirectWind: Die Spots stehen in Links mit der Klasse "spot-item".
+u = 'https://directwind.com/spots-windsurf.php'
+r = requests.get(u, timeout=60)
+r.raise_for_status()
+s = bs4.BeautifulSoup(r.text, 'html.parser')
+
+directwind_count = 0
+for spot in s.select('a.spot-item'):
+    name_el = spot.select_one('.spot-name')
+    place_el = spot.select_one('.spot-location')
+
+    name = name_el.get_text(' ', strip=True) if name_el else ''
+    place = place_el.get_text(' ', strip=True) if place_el else ''
+    if not name:
+        continue
+
+    activity_el = spot.select_one('.spot-type')
+    activity = activity_el.get_text(' ', strip=True) if activity_el else ''
+    href = spot.get('href', '')
+    detail_url = requests.compat.urljoin(u, href) if href else ''
+
+    add(name, place, 'FR', u, activity, detail_url)
+    directwind_count += 1
+
+# Prüfen, ob DirectWind vollständig eingelesen wurde.
+if directwind_count < 500:
+    raise RuntimeError(
+        f'DirectWind: nur {directwind_count} Einträge gelesen '
+        f'(erwartet ca. 677). Seitenstruktur prüfen.'
+    )
+
 # conservative dedup: identical normalized name and place and country; preserve alternate starts
 
 def norm(v):
