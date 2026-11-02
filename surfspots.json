@@ -125,7 +125,7 @@
           "https://www.tourisme-leucate.com/offres/aire-camping-car-le-goulet-leucate-village-leucate-village-leucate-fr-2945357/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Parkplatzkoordinaten beziehen sich auf den offiziell beschriebenen Wohnmobilstellplatz, NICHT auf den Einstieg. Fahrzeug-/Anhängerzulassung und Platzangebot vor Ort prüfen.",
+        "note": "Offizieller Wohnmobilstellplatz direkt am Revier. Der bestehende Navigationspunkt wird von Google Maps als „La Liguette“ bezeichnet; die konkrete Einfahrt ist noch nicht unabhängig bestätigt. Vor Ort Beschilderung Le Goulet / CD 427 folgen; Gespannzulassung prüfen.",
         "access": "Wesh Center am Lagunenufer; Wohnmobilstellplatz unmittelbar am Revier."
       },
       "parkingLocation": {
@@ -150,8 +150,8 @@
       "details": {
         "water": "Lagune / Étang de Leucate",
         "wind": "Tramontana aus NW häufig stark (Spotnetz nennt 25–35 kn); auch Ost- bis Südostwind nutzbar.",
-        "access": "Naturbelassener Zugang am Lagunenufer; Einstieg teilweise flach.",
-        "parking": "Offizielles Tourismusamt: nur tagsüber für leichte Fahrzeuge und Wohnmobile UNTER 8 m zugänglich; Nachtparken verboten. Zufahrt zum Wasser teilweise schmal. Für große Fahrzeuge/Anhänger Eignung ungeklärt.",
+        "access": "Naturzugang an der Lagune; offizielle Spotkarte für Lage und ausgewiesene Bereiche verwenden.",
+        "parking": "Laut Fremdenverkehrsamt tagsüber für leichte Fahrzeuge und Wohnmobile unter 8 m zugänglich; nachts Parkverbot. Gespann-Eignung nicht bestätigt.",
         "standing": "Laut Spotnetz auf den ersten rund 300 m stehtief; Wasserstand und Untergrund vor Ort prüfen.",
         "sources": [
           "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf",
@@ -159,7 +159,7 @@
           "https://www.spotnetz.de/w/frankreich/okzitanien/etang-de-leucate/etang-de-leucate-la-mine/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Kein verifizierter Parkplatzpunkt. 8-m-Grenze betrifft Fahrzeuglänge, nicht Gespannfreigabe.",
+        "note": "Unter-8-m-Regel ist keine Freigabe für Fahrzeuge mit Anhänger. Kein geprüfter Parkplatz-Navigationspunkt.",
         "hazards": "Seegras, flache Sandbänke und starke Tramontana; Seegrasfinne sinnvoll."
       }
     },
@@ -182,11 +182,12 @@
         "standing": "Nein – Meerspot",
         "sources": [
           "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf",
-          "https://de.tourisme-leucate.com/angebote/aire-camping-car-mouret-leucate-plage-leucate-plage-leucate-de-2945294/"
+          "https://de.tourisme-leucate.com/angebote/aire-camping-car-mouret-leucate-plage-leucate-plage-leucate-de-2945294/",
+          "https://www.tourisme-leucate.com/dormir/aires-de-camping-car/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Für die Aire de Mouret ist noch keine einzeln verifizierte Parkplatzkoordinate hinterlegt.",
-        "parking": "Tourismusamt nennt den Wohnmobilstellplatz Aire de Mouret in der Nähe; kein überprüfter Navigationspunkt.",
+        "note": "Die Lage des Wohnmobilstellplatzes ist offiziell beschrieben, die genaue Einfahrt aber noch nicht unabhängig verifiziert. Daher kein Parkplatz-Navigationsbutton.",
+        "parking": "Offizielle Aire de Mouret für Wohnmobile in der Nähe des Meerspots; laut Fremdenverkehrsamt direkter Zugang zum Strand. Parkgebühren und Gespannzulassung vor Reise prüfen.",
         "facilities": "Strandgastronomie saisonabhängig; Geschäfte und Restaurants in Leucate Plage."
       }
     },
@@ -203,11 +204,12 @@
       "coordinateAccuracy": "approximate; not verified launch point",
       "details": {
         "water": "Lagune / Étang de Leucate",
-        "access": "Von der D627 an der Brücke bei den Austernparks der Beschilderung „Spot de la Corrège“ folgen.",
-        "hazards": "Kitesurfen ist an diesem Spot aus Sicherheitsgründen untersagt.",
+        "access": "Von der D627 nahe der Brücke der Austernzüchter der Beschilderung „Spot de la Corrège“ folgen.",
+        "hazards": "Kitesurfen ist hier laut Fremdenverkehrsamt aus Sicherheitsgründen untersagt; aktuelle lokale Zonierung beachten.",
         "standing": "Nicht belegt",
         "sources": [
-          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+          "https://en.tourisme-leucate.com/discover/riding-in-leucate/leucate-top-spots/"
         ],
         "reviewed": "2026-11-02",
         "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
@@ -251,14 +253,18 @@
       "details": {
         "sources": [
           "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/",
-          "https://www.provencemed.com/de/aktivitaeten/lalmanarre/"
+          "https://www.provencemed.com/de/aktivitaeten/lalmanarre/",
+          "https://www.visitvar.fr/fiche/parking-de-l-almanarre-4720758",
+          "https://hyeres.fr/stationnement-parkings/",
+          "https://www.visitvar.fr/fiche/l-almanarre-5826616"
         ],
         "reviewed": "2026-11-02",
-        "note": "Westseite von Giens, nicht mit ostseitigen Einstiegen zusammenführen.",
+        "note": "Die Parkadresse ist durch offizielle Quellen bestätigt, aber keine präzise Einfahrtskoordinate und keine Zulassung für Camper/Gespanne. Daher bewusst kein Parkplatz-Navigationsbutton.",
         "water": "Mittelmeer / Westseite der Halbinsel Giens.",
         "wind": "Mistral aus West/Nordwest: exponiert, bei stärkerem Wind rauer Seegang. Bei Ostwind vergleichsweise geschützt.",
-        "parking": "Tourismusamt nennt im Sommer einen großen Parkplatz am Kreisverkehr Almanarre und weitere Parkplätze entlang der Route du Sel. Keine überprüften Parkplatzkoordinaten; Höhen-/Längenbeschränkungen unbekannt.",
-        "hazards": "Ausgewiesene Kitebereiche beachten; starke Winde und Seegang möglich."
+        "parking": "Offizieller kostenloser Parkplatz Parking de l’Almanarre am Carrefour de l’Almanarre, 650 Pkw-Stellplätze; laut Tourismusportal täglich 08:00–21:00 Uhr. Zusätzliche saisonale Stellplätze entlang Route du Sel. Wohnmobil-/Gespannzulassung und Einfahrtshöhe nicht bestätigt.",
+        "hazards": "Ausgewiesene Kitebereiche beachten; starke Winde und Seegang möglich.",
+        "access": "Parkplatz Carrefour de l’Almanarre in Strandnähe; der genaue Windsurfeinstieg hängt von den ausgewiesenen Wassersportzonen ab."
       }
     },
     {
@@ -366,9 +372,14 @@
       "kind": "region_anchor",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
-        "reviewed": null,
-        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+        "sources": [
+          "https://www.windsurfing-wulfen.de/kontakt.html"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Adresse der Windsurfstation bestätigt, nicht die genaue Parkplatzeinfahrt. Kein verifizierter Parkplatz-Navigationspunkt.",
+        "access": "Windsurfstation auf dem Campingplatz Wulfener Hals, Wulfener-Hals-Weg 100, 23769 Fehmarn. Laut Betreiber über die A1/Fehmarnsundbrücke, erste Ausfahrt rechts Richtung Avendorf und weiter zum Campingplatz.",
+        "parking": "Zufahrt zur Windsurfstation über den Campingplatz. Tagesgäste-Parkplatz, Gebühren, Camper-/Gespannzulassung und Stellplatzkoordinaten noch nicht bestätigt.",
+        "facilities": "Windsurfstation auf Camping Wulfener Hals; laut Betreiber saisonaler Betrieb April bis Oktober."
       }
     },
     {
