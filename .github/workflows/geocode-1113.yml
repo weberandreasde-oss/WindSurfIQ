@@ -1,0 +1,43 @@
+name: Geocode 1113 Surfspots (Kandidaten)
+on:
+  workflow_dispatch:
+    inputs:
+      max_queries:
+        description: 'Maximal neue Geoapify-Abfragen (0-200)'
+        required: true
+        default: '50'
+permissions:
+  contents: write
+concurrency:
+  group: geocode-1113
+  cancel-in-progress: false
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Geocode candidate locations
+        env:
+          GEOAPIFY_API_KEY: ${{ secrets.GEOAPIFY_API_KEY }}
+          MAX_QUERIES: ${{ inputs.max_queries }}
+        run: python geocode_1113.py
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: geocode-1113-results
+          path: |
+            spots_1113_geocoded_candidates.csv
+            geocode_1113_report.json
+            geocode_1113_cache.json
+      - name: Persist lookup cache for next run
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add geocode_1113_cache.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update 1113 spot geocoding cache'
+            git push
+          fi
