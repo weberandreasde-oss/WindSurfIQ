@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updated": "2026-11-02",
-  "description": "15 Katalogeinträge. Für 7 Leucate-Spots wurden quellengestützte Revierinformationen ergänzt; Koordinaten bleiben vorläufig und sind keine bestätigten Einstiege.",
+  "description": "74 Einträge nach Dublettenprüfung: La Bergerie / Hyères als redundanter Regionsmarker entfernt; La Bergerie als dokumentierter Spot erhalten. Näherungskoordinaten nicht als Einstiegsstellen verwenden. Version 7.3: optionale geprüfte Parkplatzkoordinaten werden über parkingLocation {lat,lon,verified:true} unterstützt. Nicht verifizierte Parkplätze erhalten keinen Navigationsbutton.",
   "spots": [
     {
       "id": "de-bostalsee-region",
@@ -314,6 +314,1009 @@
         ],
         "reviewed": null,
         "note": "Detailinformationen noch nicht recherchiert."
+      }
+    },
+    {
+      "id": "de-fehmarn-gold",
+      "name": "Gold / Fehmarn",
+      "lat": 54.437,
+      "lon": 11.085,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-fehmarn-wulfen",
+      "name": "Wulfen / Fehmarn",
+      "lat": 54.416,
+      "lon": 11.188,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-fehmarn-altenteil",
+      "name": "Altenteil / Fehmarn",
+      "lat": 54.521,
+      "lon": 11.096,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-heiligenhafen",
+      "name": "Heiligenhafen",
+      "lat": 54.373,
+      "lon": 10.981,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-pelzerhaken",
+      "name": "Pelzerhaken",
+      "lat": 54.084,
+      "lon": 10.879,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-sankt-peter-ording",
+      "name": "St. Peter-Ording",
+      "lat": 54.318,
+      "lon": 8.608,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-buesum",
+      "name": "Büsum",
+      "lat": 54.129,
+      "lon": 8.86,
+      "country": "DE",
+      "region": "Schleswig-Holstein",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-dummer",
+      "name": "Dümmer See",
+      "lat": 52.514,
+      "lon": 8.343,
+      "country": "DE",
+      "region": "Niedersachsen",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-bodensee-ueberlingen",
+      "name": "Bodensee – Überlingen",
+      "lat": 47.768,
+      "lon": 9.16,
+      "country": "DE",
+      "region": "Baden-Württemberg",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-walchensee",
+      "name": "Walchensee",
+      "lat": 47.589,
+      "lon": 11.315,
+      "country": "DE",
+      "region": "Bayern",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-ammersee",
+      "name": "Ammersee",
+      "lat": 48.006,
+      "lon": 11.121,
+      "country": "DE",
+      "region": "Bayern",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-chiemsee",
+      "name": "Chiemsee",
+      "lat": 47.867,
+      "lon": 12.454,
+      "country": "DE",
+      "region": "Bayern",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-brombachsee",
+      "name": "Brombachsee",
+      "lat": 49.122,
+      "lon": 10.971,
+      "country": "DE",
+      "region": "Bayern",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-ruegen-wiek",
+      "name": "Wiek / Rügen",
+      "lat": 54.619,
+      "lon": 13.289,
+      "country": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "de-saaler-bodden",
+      "name": "Saaler Bodden",
+      "lat": 54.294,
+      "lon": 12.516,
+      "country": "DE",
+      "region": "Mecklenburg-Vorpommern",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "nl-brouwersdam",
+      "name": "Brouwersdam",
+      "lat": 51.762,
+      "lon": 3.866,
+      "country": "NL",
+      "region": "Zeeland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "nl-oostvoorne",
+      "name": "Oostvoorne",
+      "lat": 51.92,
+      "lon": 4.075,
+      "country": "NL",
+      "region": "Südholland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "nl-harderwijk",
+      "name": "Harderwijk",
+      "lat": 52.347,
+      "lon": 5.622,
+      "country": "NL",
+      "region": "Gelderland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "nl-makkum",
+      "name": "Makkum",
+      "lat": 53.054,
+      "lon": 5.4,
+      "country": "NL",
+      "region": "Friesland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "nl-workum",
+      "name": "Workum",
+      "lat": 52.982,
+      "lon": 5.422,
+      "country": "NL",
+      "region": "Friesland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "nl-hindeloopen",
+      "name": "Hindeloopen",
+      "lat": 52.943,
+      "lon": 5.402,
+      "country": "NL",
+      "region": "Friesland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "nl-renesse",
+      "name": "Renesse",
+      "lat": 51.734,
+      "lon": 3.775,
+      "country": "NL",
+      "region": "Zeeland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "fr-hyeres-la-capte",
+      "name": "La Capte / Hyères",
+      "lat": 43.065,
+      "lon": 6.15,
+      "country": "FR",
+      "region": "Provence-Alpes-Côte d’Azur",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "fr-giens",
+      "name": "Presqu’île de Giens",
+      "lat": 43.037,
+      "lon": 6.131,
+      "country": "FR",
+      "region": "Provence-Alpes-Côte d’Azur",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "fr-beauduc",
+      "name": "Beauduc / Camargue",
+      "lat": 43.411,
+      "lon": 4.585,
+      "country": "FR",
+      "region": "Provence-Alpes-Côte d’Azur",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "fr-la-palma",
+      "name": "La Palme / Étang",
+      "lat": 42.976,
+      "lon": 2.995,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "es-tarifa-valdevaqueros",
+      "name": "Valdevaqueros / Tarifa",
+      "lat": 36.067,
+      "lon": -5.682,
+      "country": "ES",
+      "region": "Andalusien",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "es-tarifa-los-lances",
+      "name": "Los Lances / Tarifa",
+      "lat": 36.05,
+      "lon": -5.627,
+      "country": "ES",
+      "region": "Andalusien",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "es-pozo-izquierdo",
+      "name": "Pozo Izquierdo / Gran Canaria",
+      "lat": 27.815,
+      "lon": -15.425,
+      "country": "ES",
+      "region": "Kanarische Inseln",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "es-sotavento",
+      "name": "Sotavento / Fuerteventura",
+      "lat": 28.136,
+      "lon": -14.239,
+      "country": "ES",
+      "region": "Kanarische Inseln",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "es-el-medano",
+      "name": "El Médano / Teneriffa",
+      "lat": 28.047,
+      "lon": -16.54,
+      "country": "ES",
+      "region": "Kanarische Inseln",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "pt-guincho",
+      "name": "Guincho / Cascais",
+      "lat": 38.729,
+      "lon": -9.472,
+      "country": "PT",
+      "region": "Lissabon",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "pt-viana",
+      "name": "Viana do Castelo",
+      "lat": 41.694,
+      "lon": -8.844,
+      "country": "PT",
+      "region": "Norte",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "it-garda-torbole",
+      "name": "Torbole / Gardasee",
+      "lat": 45.87,
+      "lon": 10.873,
+      "country": "IT",
+      "region": "Trentino",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "it-garda-malcesine",
+      "name": "Malcesine / Gardasee",
+      "lat": 45.764,
+      "lon": 10.812,
+      "country": "IT",
+      "region": "Venetien",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "it-porto-pollo",
+      "name": "Porto Pollo / Sardinien",
+      "lat": 41.195,
+      "lon": 9.327,
+      "country": "IT",
+      "region": "Sardinien",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "it-stintino",
+      "name": "Stintino / Sardinien",
+      "lat": 40.938,
+      "lon": 8.229,
+      "country": "IT",
+      "region": "Sardinien",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "gr-paros-golden-beach",
+      "name": "Golden Beach / Paros",
+      "lat": 37.008,
+      "lon": 25.251,
+      "country": "GR",
+      "region": "Kykladen",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "gr-naxos-mikri-vigla",
+      "name": "Mikri Vigla / Naxos",
+      "lat": 37.027,
+      "lon": 25.37,
+      "country": "GR",
+      "region": "Kykladen",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "gr-rhodos-prasonisi",
+      "name": "Prasonisi / Rhodos",
+      "lat": 35.887,
+      "lon": 27.774,
+      "country": "GR",
+      "region": "Dodekanes",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "gr-kos-psalidi",
+      "name": "Psalidi / Kos",
+      "lat": 36.876,
+      "lon": 27.34,
+      "country": "GR",
+      "region": "Dodekanes",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "hr-bol-zlatni-rat",
+      "name": "Zlatni Rat / Brač",
+      "lat": 43.259,
+      "lon": 16.634,
+      "country": "HR",
+      "region": "Dalmatien",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "hr-viganj",
+      "name": "Viganj / Pelješac",
+      "lat": 42.985,
+      "lon": 17.099,
+      "country": "HR",
+      "region": "Dalmatien",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "dk-hvide-sande",
+      "name": "Hvide Sande",
+      "lat": 56.002,
+      "lon": 8.127,
+      "country": "DK",
+      "region": "Midtjylland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "dk-ringkobing",
+      "name": "Ringkøbing Fjord",
+      "lat": 56.017,
+      "lon": 8.258,
+      "country": "DK",
+      "region": "Midtjylland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "dk-klitmoller",
+      "name": "Klitmøller",
+      "lat": 57.041,
+      "lon": 8.493,
+      "country": "DK",
+      "region": "Nordjylland",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "tr-alacati",
+      "name": "Alaçatı",
+      "lat": 38.258,
+      "lon": 26.386,
+      "country": "TR",
+      "region": "İzmir",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "eg-dahab",
+      "name": "Dahab",
+      "lat": 28.493,
+      "lon": 34.516,
+      "country": "EG",
+      "region": "Sinai",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "eg-soma-bay",
+      "name": "Soma Bay",
+      "lat": 26.847,
+      "lon": 33.993,
+      "country": "EG",
+      "region": "Rotes Meer",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "ma-dakhla",
+      "name": "Dakhla Lagune",
+      "lat": 23.716,
+      "lon": -15.944,
+      "country": "MA",
+      "region": "Dakhla-Oued Ed-Dahab",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "za-langebaan",
+      "name": "Langebaan",
+      "lat": -33.094,
+      "lon": 18.033,
+      "country": "ZA",
+      "region": "Westkap",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "mu-le-morne",
+      "name": "Le Morne",
+      "lat": -20.461,
+      "lon": 57.315,
+      "country": "MU",
+      "region": "Rivière Noire",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "cv-sal",
+      "name": "Santa Maria / Sal",
+      "lat": 16.596,
+      "lon": -22.903,
+      "country": "CV",
+      "region": "Sal",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "us-maui-hookipa",
+      "name": "Ho‘okipa / Maui",
+      "lat": 20.934,
+      "lon": -156.357,
+      "country": "US",
+      "region": "Hawaii",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "us-maui-kanaha",
+      "name": "Kanaha / Maui",
+      "lat": 20.902,
+      "lon": -156.439,
+      "country": "US",
+      "region": "Hawaii",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "br-jericoacoara",
+      "name": "Jericoacoara",
+      "lat": -2.794,
+      "lon": -40.514,
+      "country": "BR",
+      "region": "Ceará",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "br-icaraizinho",
+      "name": "Icaraizinho de Amontada",
+      "lat": -3.024,
+      "lon": -39.646,
+      "country": "BR",
+      "region": "Ceará",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "au-gerroa",
+      "name": "Gerroa",
+      "lat": -34.769,
+      "lon": 150.813,
+      "country": "AU",
+      "region": "New South Wales",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+      }
+    },
+    {
+      "id": "au-safety-bay",
+      "name": "Safety Bay",
+      "lat": -32.302,
+      "lon": 115.712,
+      "country": "AU",
+      "region": "Western Australia",
+      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "verified": false,
+      "kind": "region_anchor",
+      "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
       }
     }
   ]
