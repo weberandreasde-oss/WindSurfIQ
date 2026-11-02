@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updated": "2026-11-02",
-  "description": "WindSurf IQ Surfspotkatalog; Ausbau Fehmarn mit separat markierten, vorläufigen Einstiegen. Koordinaten nicht zur Navigation freigegeben.",
+  "description": "WindSurf IQ Spotkatalog: bestehende 87 Spots plus vorsichtig zusammengeführte OSM-Näherungspositionen. Keine Navigation zu ungeprüften Einstiegen.",
   "spots": [
     {
       "id": "fr-leucate-region",
@@ -80,7 +80,8 @@
         "hazards": "Windsurfzone außerhalb der 300-m-Zone über ausgewiesenen Ausfahrtskorridor; aktuelle Beschilderung beachten.",
         "standing": "Nicht belegt",
         "sources": [
-          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+          "https://directwind.com/spots-windsurf.php"
         ],
         "reviewed": "2026-11-02",
         "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen."
@@ -303,7 +304,8 @@
       "coordinateAccuracy": "approximate; not verified launch point",
       "details": {
         "sources": [
-          "https://www.surf-magazin.de/spots/steinhuder-meer-mardorf-weisse-dune/"
+          "https://www.surf-magazin.de/spots/steinhuder-meer-mardorf-weisse-dune/",
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
         ],
         "reviewed": null,
         "note": "Detailinformationen noch nicht recherchiert."
@@ -414,7 +416,9 @@
       "kind": "region_anchor",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
         "reviewed": null,
         "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
       }
@@ -516,7 +520,9 @@
       "kind": "region_anchor",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
         "reviewed": null,
         "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
       }
@@ -533,7 +539,9 @@
       "kind": "region_anchor",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
         "reviewed": null,
         "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
       }
@@ -550,7 +558,9 @@
       "kind": "region_anchor",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
         "reviewed": null,
         "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
       }
@@ -567,7 +577,9 @@
       "kind": "region_anchor",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
         "reviewed": null,
         "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
       }
@@ -1775,6 +1787,1740 @@
         ],
         "reviewed": "2026-11-02",
         "note": "Geografischer Näherungsmarker, kein geprüfter Wassereinstieg."
+      }
+    },
+    {
+      "id": "de-geo-katharinenhof",
+      "name": "Katharinenhof",
+      "lat": 54.4351864,
+      "lon": 11.2800476,
+      "country": "DE",
+      "region": "Fehmarn",
+      "source": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372=",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Katharinenhof, Fehmarn, Kreis Ostholstein, Schleswig-Holstein, 23769, Deutschland",
+        "osmType": "village",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-staberhuk",
+      "name": "Staberhuk",
+      "lat": 54.4028071,
+      "lon": 11.3111946,
+      "country": "DE",
+      "region": "Fehmarn",
+      "source": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372=",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372="
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Staberhuk, Fehmarn, Kreis Ostholstein, Schleswig-Holstein, 23769, Deutschland",
+        "osmType": "hamlet",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-penthievre-saint-pierre-quiberon",
+      "name": "Penthièvre / Saint-Pierre-Quiberon",
+      "lat": 47.5580337,
+      "lon": -3.1331433,
+      "country": "FR",
+      "region": "Bretagne",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Penthièvre, Avenue du Couédic, Penthièvre, Saint-Pierre-Quiberon, Lorient, Morbihan, Bretagne, France métropolitaine, 56510, France",
+        "osmType": "halt",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-larmor-plage",
+      "name": "Larmor-Plage",
+      "lat": 47.7147553,
+      "lon": -3.376302,
+      "country": "FR",
+      "region": "Bretagne",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Larmor-Plage, Lorient, Morbihan, Bretagne, France métropolitaine, 56260, France",
+        "osmType": "administrative",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-barbatre-plage-de-la-liniere",
+      "name": "Barbâtre – Plage de la Linière",
+      "lat": 46.9447222,
+      "lon": -2.1794444,
+      "country": "FR",
+      "region": "Vendée",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Barbâtre, Les Sables-d'Olonne, Vendée, Pays de la Loire, France métropolitaine, 85630, France",
+        "osmType": "administrative",
+        "searchMethod": "namensbestandteil",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-la-faute-sur-mer",
+      "name": "La Faute-sur-Mer",
+      "lat": 46.332778,
+      "lon": -1.321367,
+      "country": "FR",
+      "region": "Vendée",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "La Faute-sur-Mer, L'Aiguillon-la-Presqu'île, Les Sables-d'Olonne, Vendée, Pays de la Loire, France métropolitaine, 85460, France",
+        "osmType": "administrative",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-la-gueriniere-noirmoutier",
+      "name": "La Guérinière / Noirmoutier",
+      "lat": 46.9680556,
+      "lon": -2.2302778,
+      "country": "FR",
+      "region": "Vendée",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "La Guérinière, Les Sables-d'Olonne, Vendée, Pays de la Loire, France métropolitaine, 85680, France",
+        "osmType": "administrative",
+        "searchMethod": "namensbestandteil",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-lacanau-lac",
+      "name": "Lacanau Lac",
+      "lat": 44.9695375,
+      "lon": -1.1208688,
+      "country": "FR",
+      "region": "Gironde",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Étang de Lacanau, Lacanau, Lesparre-Médoc, Gironde, Nouvelle-Aquitaine, France métropolitaine, 33680, France",
+        "osmType": "lake",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-baie-du-kernic",
+      "name": "Baie du Kernic",
+      "lat": 48.6540401,
+      "lon": -4.2102318,
+      "country": "FR",
+      "region": "Bretagne",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Baie du Kernic, Porsmeur, Plouescat, Morlaix, Finistère, Bretagne, France métropolitaine, 29430, France",
+        "osmType": "bay",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-plage-du-dossen-santec",
+      "name": "Plage du Dossen / Santec",
+      "lat": 48.694725,
+      "lon": -4.0596189,
+      "country": "FR",
+      "region": "Bretagne",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Plage du Dossen, Santec, Morlaix, Finistère, Bretagne, France métropolitaine, 29250, France",
+        "osmType": "beach",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-keremma",
+      "name": "Keremma",
+      "lat": 48.6431368,
+      "lon": -4.2528339,
+      "country": "FR",
+      "region": "Bretagne",
+      "source": "https://kiteculture.fr/spots/discipline/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://kiteculture.fr/spots/discipline/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Keremma, Tréflez, Morlaix, Finistère, Bretagne, France métropolitaine, 29430, France",
+        "osmType": "village",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-quineville",
+      "name": "Quinéville",
+      "lat": 49.5120464,
+      "lon": -1.2975762,
+      "country": "FR",
+      "region": "Normandie",
+      "source": "https://lets-kite.com/fr/spots/pays/france/sport/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://lets-kite.com/fr/spots/pays/france/sport/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Quinéville, Cherbourg, Manche, Normandie, France métropolitaine, 50310, France",
+        "osmType": "administrative",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-frontignan-plage",
+      "name": "Frontignan Plage",
+      "lat": 43.4462651,
+      "lon": 3.799492,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://lets-kite.com/fr/spots/pays/france/sport/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://lets-kite.com/fr/spots/pays/france/sport/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Frontignan Plage, Frontignan, Montpellier, Hérault, Occitanie, France métropolitaine, 34110, France",
+        "osmType": "locality",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-plage-napoleon",
+      "name": "Plage Napoléon",
+      "lat": 43.356414,
+      "lon": 4.8863577,
+      "country": "FR",
+      "region": "Provence",
+      "source": "https://lets-kite.com/fr/spots/pays/france/sport/windsurf",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://lets-kite.com/fr/spots/pays/france/sport/windsurf"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Plage Napoléon, Port-Saint-Louis-du-Rhône, Istres, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13230, France",
+        "osmType": "beach",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-almere-haven",
+      "name": "Almere Haven",
+      "lat": 52.3406187,
+      "lon": 5.2199258,
+      "country": "NL",
+      "region": "IJsselmeer / Markermeer",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Almere Haven, Almere, Flevoland, Nederland, 1354 CN, Nederland",
+        "osmType": "suburb",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-eemhof-zeewolde",
+      "name": "Eemhof / Zeewolde",
+      "lat": 52.2616238,
+      "lon": 5.4021151,
+      "country": "NL",
+      "region": "IJsselmeer / Markermeer",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "De Eemhof, Slingerweg, Zeewolde, Flevoland, Nederland, 3896 LD, Nederland",
+        "osmType": "chalet",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-ijburg-amsterdam",
+      "name": "IJburg / Amsterdam",
+      "lat": 52.3549938,
+      "lon": 4.9971565,
+      "country": "NL",
+      "region": "IJsselmeer / Markermeer",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "IJburg, Oost, Amsterdam, Noord-Holland, Nederland",
+        "osmType": "quarter",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-ketelhaven",
+      "name": "Ketelhaven",
+      "lat": 52.5781494,
+      "lon": 5.7614171,
+      "country": "NL",
+      "region": "IJsselmeer / Markermeer",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Ketelhaven, Dronten, Flevoland, Nederland, 8253 AG, Nederland",
+        "osmType": "hamlet",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-mirnser-klif",
+      "name": "Mirnser Klif",
+      "lat": 52.8519944,
+      "lon": 5.4805608,
+      "country": "NL",
+      "region": "IJsselmeer / Markermeer",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "'t Mirnser Klif, Murnserdyk, Mirns, De Fryske Marren, Fryslân, Nederland, 8573 WP, Nederland",
+        "osmType": "parking",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-trintelhaven",
+      "name": "Trintelhaven",
+      "lat": 52.6361482,
+      "lon": 5.4140468,
+      "country": "NL",
+      "region": "IJsselmeer / Markermeer",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Trintelhaven, Lelystad, Flevoland, Nederland, 8242 PZ, Nederland",
+        "osmType": "unclassified",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-oostmahorn",
+      "name": "Oostmahorn",
+      "lat": 53.3795284,
+      "lon": 6.1603,
+      "country": "NL",
+      "region": "Waddenzee",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "De Skâns-Oostmahorn, Eanjum, Noardeast-Fryslân, Fryslân, Nederland, 9133 DS, Nederland",
+        "osmType": "village",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-lutjesstrand-amstelmeer",
+      "name": "Lutjesstrand / Amstelmeer",
+      "lat": 52.8784272,
+      "lon": 4.8995778,
+      "country": "NL",
+      "region": "Noord-Holland",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Amstelmeer, Slootdorp, Hollands Kroon, Noord-Holland, Nederland",
+        "osmType": "fairway",
+        "searchMethod": "namensbestandteil",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "nl-geo-zandmotor",
+      "name": "Zandmotor",
+      "lat": 52.0534515,
+      "lon": 4.1910056,
+      "country": "NL",
+      "region": "Zuid-Holland",
+      "source": "https://surferswind-production.up.railway.app/spots/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surferswind-production.up.railway.app/spots/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "De Zandmotor, Monster, Westland, Zuid-Holland, Nederland",
+        "osmType": "beach",
+        "searchMethod": "altbestand_ungeprueft",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-juist",
+      "name": "Juist",
+      "lat": 53.6784483,
+      "lon": 6.9956079,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Juist, Landkreis Aurich, Niedersachsen, 26571, Deutschland",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-norderney",
+      "name": "Norderney",
+      "lat": 53.7123857,
+      "lon": 7.2340205,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Norderney, Landkreis Aurich, Niedersachsen, 26548, Deutschland",
+        "osmType": "island",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-wangerooge",
+      "name": "Wangerooge",
+      "lat": 53.7834392,
+      "lon": 7.9342106,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Wangerooge, Wangerland, Landkreis Friesland, Niedersachsen, 26486, Deutschland",
+        "osmType": "island",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-sylt",
+      "name": "Sylt",
+      "lat": 54.9026616,
+      "lon": 8.3311491,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Sylt, Kreis Nordfriesland, Schleswig-Holstein, Deutschland",
+        "osmType": "island",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-amrum",
+      "name": "Amrum",
+      "lat": 54.6602197,
+      "lon": 8.3287701,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Amrum, Nebel, Föhr-Amrum, Kreis Nordfriesland, Schleswig-Holstein, 25946, Deutschland",
+        "osmType": "island",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-meldorf",
+      "name": "Meldorf",
+      "lat": 54.08988,
+      "lon": 9.070633,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Meldorf, Mitteldithmarschen, Kreis Dithmarschen, Schleswig-Holstein, 25704, Deutschland",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-heidkate",
+      "name": "Heidkate",
+      "lat": 54.4324052,
+      "lon": 10.3339066,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Heidkate, Wisch, Probstei, Kreis Plön, Schleswig-Holstein, 24217, Deutschland",
+        "osmType": "hamlet",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-damp",
+      "name": "Damp",
+      "lat": 54.583368,
+      "lon": 10.0227108,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Damp, Schlei-Ostsee, Kreis Rendsburg-Eckernförde, Schleswig-Holstein, Deutschland",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-altmuhlsee",
+      "name": "Altmühlsee",
+      "lat": 49.134675,
+      "lon": 10.721572,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Altmühlsee, Streudorf, Gunzenhausen, Landkreis Weißenburg-Gunzenhausen, Bayern, Deutschland",
+        "osmType": "reservoir",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-muritz",
+      "name": "Müritz",
+      "lat": 53.4188545,
+      "lon": 12.7020046,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Müritz, Mecklenburgische Seenplatte, Mecklenburg-Vorpommern, Deutschland",
+        "osmType": "lake",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-tegeler-see",
+      "name": "Tegeler See",
+      "lat": 52.574558,
+      "lon": 13.2550024,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Tegeler See, Reinickendorf, Berlin, Deutschland",
+        "osmType": "lake",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-wannsee",
+      "name": "Wannsee",
+      "lat": 52.4211482,
+      "lon": 13.1589374,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Wannsee, Steglitz-Zehlendorf, Berlin, 14109, Deutschland",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "de-geo-bodensee-radolfzell",
+      "name": "Bodensee – Radolfzell",
+      "lat": 47.7372802,
+      "lon": 8.9702755,
+      "country": "DE",
+      "region": "Deutschland / Nord- und Ostsee / Binnenland",
+      "source": "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://surf-forum.com/lexicon/entry/48-liste-der-surfreviere/"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Radolfzell am Bodensee, Landkreis Konstanz, Baden-Württemberg, 78315, Deutschland",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-lac-de-divonne",
+      "name": "Lac de Divonne",
+      "lat": 46.353921,
+      "lon": 6.151271,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Lac de Divonne, Plan, Vésenex, Divonne-les-Bains, Gex, Ain, Auvergne-Rhône-Alpes, France métropolitaine, 01220, France",
+        "osmType": "lake",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-lac-de-nantua",
+      "name": "Lac de Nantua",
+      "lat": 46.1618531,
+      "lon": 5.5875398,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Lac de Nantua, Nantua, Ain, Auvergne-Rhône-Alpes, France métropolitaine, France",
+        "osmType": "lake",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-lac-de-la-foret-d-orient",
+      "name": "Lac de la Forêt d’Orient",
+      "lat": 48.2618021,
+      "lon": 4.3053221,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Lac de la Forêt d'Orient, Lusigny-sur-Barse, Troyes, Aube, Grand Est, France métropolitaine, 10270, France",
+        "osmType": "hamlet",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-gruissan",
+      "name": "Gruissan",
+      "lat": 43.107039,
+      "lon": 3.0864971,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Gruissan, Narbonne, Aude, Occitanie, France métropolitaine, 11430, France",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-la-ganguise",
+      "name": "La Ganguise",
+      "lat": 43.3066894,
+      "lon": 1.8268083,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "La Ganguise, Cumiès, Carcassonne, Aude, Occitanie, France métropolitaine, 11410, France",
+        "osmType": "river",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-narbonne-la-nautique",
+      "name": "Narbonne – La Nautique",
+      "lat": 43.1420458,
+      "lon": 3.0092656,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Société Nautique de Narbonne - Ecole Française de Voile, Rue des Nautiquards, Port la Nautique, Narbonne, Aude, Occitanie, France métropolitaine, 11100, France",
+        "osmType": "sailing_school",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-fos-sur-mer",
+      "name": "Fos-sur-Mer",
+      "lat": 43.4380714,
+      "lon": 4.945595,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Fos-sur-Mer, Istres, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13270, France",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-lac-de-sainte-croix",
+      "name": "Lac de Sainte-Croix",
+      "lat": 43.7673241,
+      "lon": 6.183931,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Lac de Sainte-Croix, Sainte-Croix-du-Verdon, Digne-les-Bains, Alpes-de-Haute-Provence, Provence-Alpes-Côte d'Azur, France métropolitaine, 04500, France",
+        "osmType": "reservoir",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-ouistreham-colleville",
+      "name": "Ouistreham – Colleville",
+      "lat": 49.2623648,
+      "lon": -0.3153392,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Ouistreham, Colleville-Montgomery, Caen, Calvados, Normandie, France métropolitaine, 14880, France",
+        "osmType": "political",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-langrune-sur-mer",
+      "name": "Langrune-sur-Mer",
+      "lat": 49.320622,
+      "lon": -0.3727503,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Langrune-sur-Mer, Caen, Calvados, Normandie, France métropolitaine, 14830, France",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-trouville-sur-mer",
+      "name": "Trouville-sur-Mer",
+      "lat": 49.3679823,
+      "lon": 0.0809113,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Trouville-sur-Mer, Lisieux, Calvados, Normandie, France métropolitaine, 14360, France",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-saint-georges-de-didonne",
+      "name": "Saint-Georges-de-Didonne",
+      "lat": 45.6024886,
+      "lon": -0.997949,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Saint-Georges-de-Didonne, Rochefort, Charente-Maritime, Nouvelle-Aquitaine, France métropolitaine, 17110, France",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-bonifacio-piantarella",
+      "name": "Bonifacio – Piantarella",
+      "lat": 41.3773933,
+      "lon": 9.178429,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Les Bouches de Bonifacio, D 260, Falatte, Piantarella, Bonifacio / Bunifaziu, Sartène, Corse-du-Sud, Corse, France métropolitaine, 20169, France",
+        "osmType": "fast_food",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-plage-de-wissant",
+      "name": "Plage de Wissant",
+      "lat": 50.9029951,
+      "lon": 1.6818383,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Chemin de la Plage, Strouanne, Wissant, Boulogne-sur-Mer, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62179, France",
+        "osmType": "residential",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
+      }
+    },
+    {
+      "id": "fr-geo-hendaye",
+      "name": "Hendaye",
+      "lat": 43.3641518,
+      "lon": -1.7616499,
+      "country": "FR",
+      "region": "Frankreich / mehrere Regionen",
+      "source": "https://directwind.com/spots-windsurf.php",
+      "verified": false,
+      "kind": "geocoded_candidate_approximate_location",
+      "coordinateAccuracy": "OSM Orts-/Regionsnäherung; Wassereinstieg NICHT verifiziert",
+      "sportTypes": {
+        "windsurf": "ungeprueft",
+        "kite": "ungeprueft",
+        "wingfoil": "ungeprueft"
+      },
+      "details": {
+        "sources": [
+          "https://directwind.com/spots-windsurf.php"
+        ],
+        "reviewed": null,
+        "note": "Automatische OSM-Ortszuordnung; Lage und tatsächlicher Surf-/Kiteeinstieg nicht verifiziert. Nicht für Parkplatznavigation verwenden.",
+        "access": "Nicht geprüft",
+        "parking": "Nicht geprüft",
+        "standing": "Nicht geprüft",
+        "wind": "Nicht geprüft"
+      },
+      "geocoding": {
+        "osmName": "Hendaye, Bayonne, Pyrénées-Atlantiques, Nouvelle-Aquitaine, France métropolitaine, 64700, France",
+        "osmType": "administrative",
+        "searchMethod": "spotname",
+        "quality": "unverified_approximation"
       }
     }
   ]
