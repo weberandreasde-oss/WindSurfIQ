@@ -116,14 +116,24 @@
       "details": {
         "water": "Lagune / Étang de Leucate",
         "wind": "NW (Tramontana): gut exponiert, Freeride/Slalom",
-        "parking": "Wohnmobilstellplatz Aire du Goulet am Spot; Konditionen vor Ort prüfen.",
-        "facilities": "Wesh Center Crew: Verleih, Kurse, Gastronomie.",
+        "parking": "Offizieller Wohnmobilstellplatz Aire du Goulet direkt am Windsurfspot, 120 Plätze, ganzjährig, Wasser und Entsorgung, kein Strom. Laut Tourismusamt 24 h: saisonabhängig 12,22–15,22 € (Preise vor Reise prüfen).",
+        "facilities": "Wesh Center: Windsurfkurse, Verleih und Gastronomie saisonal (April–Oktober).",
         "standing": "Nicht verlässlich belegt",
         "sources": [
-          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+          "https://www.audetourisme.com/en/fiche/leucate/aire-de-services-pour-camping-cars-du-goulet_TFOACCAMLAR0110002G/",
+          "https://www.tourisme-leucate.com/offres/aire-camping-car-le-goulet-leucate-village-leucate-village-leucate-fr-2945357/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+        "note": "Parkplatzkoordinaten beziehen sich auf den offiziell beschriebenen Wohnmobilstellplatz, NICHT auf den Einstieg. Fahrzeug-/Anhängerzulassung und Platzangebot vor Ort prüfen.",
+        "access": "Wesh Center am Lagunenufer; Wohnmobilstellplatz unmittelbar am Revier."
+      },
+      "parkingLocation": {
+        "lat": 42.91072222222222,
+        "lon": 3.019222222222222,
+        "verified": true,
+        "name": "Aire de camping-car du Goulet",
+        "source": "https://www.audetourisme.com/en/fiche/leucate/aire-de-services-pour-camping-cars-du-goulet_TFOACCAMLAR0110002G/"
       }
     },
     {
@@ -139,15 +149,18 @@
       "coordinateAccuracy": "approximate; not verified launch point",
       "details": {
         "water": "Lagune / Étang de Leucate",
-        "wind": "NW (Tramontana): seitlicher Wind, Slalom/Freeride",
+        "wind": "Tramontana aus NW häufig stark (Spotnetz nennt 25–35 kn); auch Ost- bis Südostwind nutzbar.",
         "access": "Naturbelassener Zugang am Lagunenufer; Einstieg teilweise flach.",
-        "parking": "Parkregeln und Wohnmobilbeschränkungen vor Anreise anhand aktueller Beschilderung prüfen.",
-        "standing": "Teilweise flach; zusammenhängendes Stehrevier nicht bestätigt",
+        "parking": "Offizielles Tourismusamt: nur tagsüber für leichte Fahrzeuge und Wohnmobile UNTER 8 m zugänglich; Nachtparken verboten. Zufahrt zum Wasser teilweise schmal. Für große Fahrzeuge/Anhänger Eignung ungeklärt.",
+        "standing": "Laut Spotnetz auf den ersten rund 300 m stehtief; Wasserstand und Untergrund vor Ort prüfen.",
         "sources": [
-          "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf"
+          "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf",
+          "https://de.tourisme-leucate.com/entdecken-sie/rutschen/top-spots-in-leucate/",
+          "https://www.spotnetz.de/w/frankreich/okzitanien/etang-de-leucate/etang-de-leucate-la-mine/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+        "note": "Kein verifizierter Parkplatzpunkt. 8-m-Grenze betrifft Fahrzeuglänge, nicht Gespannfreigabe.",
+        "hazards": "Seegras, flache Sandbänke und starke Tramontana; Seegrasfinne sinnvoll."
       }
     },
     {
@@ -168,10 +181,13 @@
         "hazards": "Badezonen und saisonale Einschränkungen beachten.",
         "standing": "Nein – Meerspot",
         "sources": [
-          "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf"
+          "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf",
+          "https://de.tourisme-leucate.com/angebote/aire-camping-car-mouret-leucate-plage-leucate-plage-leucate-de-2945294/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+        "note": "Für die Aire de Mouret ist noch keine einzeln verifizierte Parkplatzkoordinate hinterlegt.",
+        "parking": "Tourismusamt nennt den Wohnmobilstellplatz Aire de Mouret in der Nähe; kein überprüfter Navigationspunkt.",
+        "facilities": "Strandgastronomie saisonabhängig; Geschäfte und Restaurants in Leucate Plage."
       }
     },
     {
@@ -234,10 +250,15 @@
       "coordinateAccuracy": "approximate; not verified launch point",
       "details": {
         "sources": [
-          "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/"
+          "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/",
+          "https://www.provencemed.com/de/aktivitaeten/lalmanarre/"
         ],
-        "reviewed": null,
-        "note": "Detailinformationen noch nicht recherchiert."
+        "reviewed": "2026-11-02",
+        "note": "Westseite von Giens, nicht mit ostseitigen Einstiegen zusammenführen.",
+        "water": "Mittelmeer / Westseite der Halbinsel Giens.",
+        "wind": "Mistral aus West/Nordwest: exponiert, bei stärkerem Wind rauer Seegang. Bei Ostwind vergleichsweise geschützt.",
+        "parking": "Tourismusamt nennt im Sommer einen großen Parkplatz am Kreisverkehr Almanarre und weitere Parkplätze entlang der Route du Sel. Keine überprüften Parkplatzkoordinaten; Höhen-/Längenbeschränkungen unbekannt.",
+        "hazards": "Ausgewiesene Kitebereiche beachten; starke Winde und Seegang möglich."
       }
     },
     {
