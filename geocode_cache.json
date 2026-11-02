@@ -1,475 +1,728 @@
 {
-  "de|fehmarn|hunengrab": null,
-  "de|fehmarn|katharinenhof": {
-    "place_id": 149682734,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "node",
-    "osm_id": 282655085,
-    "lat": "54.4351864",
-    "lon": "11.2800476",
-    "category": "place",
-    "type": "village",
-    "place_rank": 19,
-    "importance": 0.23822746059912708,
-    "addresstype": "village",
-    "name": "Katharinenhof",
-    "display_name": "Katharinenhof, Fehmarn, Kreis Ostholstein, Schleswig-Holstein, 23769, Deutschland",
-    "address": {
-      "village": "Katharinenhof",
-      "city": "Fehmarn",
-      "county": "Kreis Ostholstein",
-      "state": "Schleswig-Holstein",
-      "ISO3166-2-lvl4": "DE-SH",
-      "postcode": "23769",
-      "country": "Deutschland",
-      "country_code": "de"
+  "de|fehmarn|hunengrab": {
+    "hit": {
+      "lat": "52.6541632",
+      "lon": "11.0024938",
+      "display_name": "Großsteingrab Tangeln 5, Neumühle, Tangeln, Beetzendorf, Beetzendorf-Diesdorf, Altmarkkreis Salzwedel, Sachsen-Anhalt, 38489, Deutschland",
+      "osm_type": "archaeological_site",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "54.4151864",
-      "54.4551864",
-      "11.2600476",
-      "11.3000476"
-    ]
+    "method": "spotname",
+    "attempts": [
+      "Hünengrab, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|fehmarn|katharinenhof": {
+    "hit": {
+      "lat": "54.4351864",
+      "lon": "11.2800476",
+      "display_name": "Katharinenhof, Fehmarn, Kreis Ostholstein, Schleswig-Holstein, 23769, Deutschland",
+      "osm_type": "village",
+      "osm_class": ""
+    },
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "de|fehmarn|staberhuk": {
-    "place_id": 149717366,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "node",
-    "osm_id": 658700349,
-    "lat": "54.4028071",
-    "lon": "11.3111946",
-    "category": "place",
-    "type": "hamlet",
-    "place_rank": 20,
-    "importance": 0.13336833524071104,
-    "addresstype": "hamlet",
-    "name": "Staberhuk",
-    "display_name": "Staberhuk, Fehmarn, Kreis Ostholstein, Schleswig-Holstein, 23769, Deutschland",
-    "address": {
-      "hamlet": "Staberhuk",
-      "city": "Fehmarn",
-      "county": "Kreis Ostholstein",
-      "state": "Schleswig-Holstein",
-      "ISO3166-2-lvl4": "DE-SH",
-      "postcode": "23769",
-      "country": "Deutschland",
-      "country_code": "de"
+    "hit": {
+      "lat": "54.4028071",
+      "lon": "11.3111946",
+      "display_name": "Staberhuk, Fehmarn, Kreis Ostholstein, Schleswig-Holstein, 23769, Deutschland",
+      "osm_type": "hamlet",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "54.3828071",
-      "54.4228071",
-      "11.2911946",
-      "11.3311946"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
-  "fr|bretagne|la pointe de la torche": null,
+  "fr|bretagne|la pointe de la torche": {
+    "hit": null,
+    "method": "",
+    "attempts": [
+      "La Pointe de la Torche, France",
+      "La Pointe de la Torche, Bretagne, France"
+    ],
+    "complete": true
+  },
   "fr|bretagne|penthievre / saint-pierre-quiberon": {
-    "place_id": 286453568,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "node",
-    "osm_id": 662900488,
-    "lat": "47.5580337",
-    "lon": "-3.1331433",
-    "category": "railway",
-    "type": "halt",
-    "place_rank": 30,
-    "importance": 0.22898814784265079,
-    "addresstype": "railway",
-    "name": "Penthièvre",
-    "display_name": "Penthièvre, Avenue du Couédic, Penthièvre, Saint-Pierre-Quiberon, Lorient, Morbihan, Bretagne, France métropolitaine, 56510, France",
-    "address": {
-      "railway": "Penthièvre",
-      "road": "Avenue du Couédic",
-      "hamlet": "Penthièvre",
-      "village": "Saint-Pierre-Quiberon",
-      "municipality": "Lorient",
-      "county": "Morbihan",
-      "ISO3166-2-lvl6": "FR-56",
-      "state": "Bretagne",
-      "ISO3166-2-lvl4": "FR-BRE",
-      "region": "France métropolitaine",
-      "postcode": "56510",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "47.5580337",
+      "lon": "-3.1331433",
+      "display_name": "Penthièvre, Avenue du Couédic, Penthièvre, Saint-Pierre-Quiberon, Lorient, Morbihan, Bretagne, France métropolitaine, 56510, France",
+      "osm_type": "halt",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "47.5579837",
-      "47.5580837",
-      "-3.1331933",
-      "-3.1330933"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "fr|bretagne|larmor-plage": {
-    "place_id": 288087275,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "relation",
-    "osm_id": 30404,
-    "lat": "47.7147553",
-    "lon": "-3.3763020",
-    "category": "boundary",
-    "type": "administrative",
-    "place_rank": 16,
-    "importance": 0.531665715965706,
-    "addresstype": "village",
-    "name": "Larmor-Plage",
-    "display_name": "Larmor-Plage, Lorient, Morbihan, Bretagne, France métropolitaine, 56260, France",
-    "address": {
-      "village": "Larmor-Plage",
-      "municipality": "Lorient",
-      "county": "Morbihan",
-      "ISO3166-2-lvl6": "FR-56",
-      "state": "Bretagne",
-      "ISO3166-2-lvl4": "FR-BRE",
-      "region": "France métropolitaine",
-      "postcode": "56260",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "47.7147553",
+      "lon": "-3.3763020",
+      "display_name": "Larmor-Plage, Lorient, Morbihan, Bretagne, France métropolitaine, 56260, France",
+      "osm_type": "administrative",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "47.7009440",
-      "47.7312974",
-      "-3.4157432",
-      "-3.3667396"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
-  "fr|vendee|barbatre – plage de la liniere": null,
+  "fr|vendee|barbatre – plage de la liniere": {
+    "hit": {
+      "lat": "46.9447222",
+      "lon": "-2.1794444",
+      "display_name": "Barbâtre, Les Sables-d'Olonne, Vendée, Pays de la Loire, France métropolitaine, 85630, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Barbâtre – Plage de la Linière, France",
+      "Barbâtre – Plage de la Linière, Vendée, France",
+      "Barbâtre, France"
+    ],
+    "complete": true
+  },
   "fr|vendee|la faute-sur-mer": {
-    "place_id": 289317300,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "relation",
-    "osm_id": 164239,
-    "lat": "46.3327780",
-    "lon": "-1.3213670",
-    "category": "boundary",
-    "type": "administrative",
-    "place_rank": 18,
-    "importance": 0.5093992241589906,
-    "addresstype": "village",
-    "name": "La Faute-sur-Mer",
-    "display_name": "La Faute-sur-Mer, L'Aiguillon-la-Presqu'île, Les Sables-d'Olonne, Vendée, Pays de la Loire, France métropolitaine, 85460, France",
-    "address": {
-      "village": "La Faute-sur-Mer",
-      "city": "L'Aiguillon-la-Presqu'île",
-      "municipality": "Les Sables-d'Olonne",
-      "county": "Vendée",
-      "ISO3166-2-lvl6": "FR-85",
-      "state": "Pays de la Loire",
-      "ISO3166-2-lvl4": "FR-PDL",
-      "region": "France métropolitaine",
-      "postcode": "85460",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "46.3327780",
+      "lon": "-1.3213670",
+      "display_name": "La Faute-sur-Mer, L'Aiguillon-la-Presqu'île, Les Sables-d'Olonne, Vendée, Pays de la Loire, France métropolitaine, 85460, France",
+      "osm_type": "administrative",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "46.2791800",
-      "46.3532415",
-      "-1.3562010",
-      "-1.2602894"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
-  "fr|vendee|la gueriniere / noirmoutier": null,
-  "fr|var|saint-tropez – les salins": null,
-  "fr|var|sainte-maxime – la nartelle": null,
-  "fr|gironde|lacanau lac": {
-    "place_id": 291213794,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "relation",
-    "osm_id": 4848920,
-    "lat": "44.9695375",
-    "lon": "-1.1208688",
-    "category": "water",
-    "type": "lake",
-    "place_rank": 20,
-    "importance": 0.35699141996923245,
-    "addresstype": "lake",
-    "name": "Étang de Lacanau",
-    "display_name": "Étang de Lacanau, Lacanau, Lesparre-Médoc, Gironde, Nouvelle-Aquitaine, France métropolitaine, 33680, France",
-    "address": {
-      "lake": "Étang de Lacanau",
-      "village": "Lacanau",
-      "municipality": "Lesparre-Médoc",
-      "county": "Gironde",
-      "ISO3166-2-lvl6": "FR-33",
-      "state": "Nouvelle-Aquitaine",
-      "ISO3166-2-lvl4": "FR-NAQ",
-      "region": "France métropolitaine",
-      "postcode": "33680",
-      "country": "France",
-      "country_code": "fr"
+  "fr|vendee|la gueriniere / noirmoutier": {
+    "hit": {
+      "lat": "46.9680556",
+      "lon": "-2.2302778",
+      "display_name": "La Guérinière, Les Sables-d'Olonne, Vendée, Pays de la Loire, France métropolitaine, 85680, France",
+      "osm_type": "administrative",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "44.9340097",
-      "45.0050504",
-      "-1.1457318",
-      "-1.0911629"
-    ]
+    "method": "namensbestandteil",
+    "attempts": [
+      "La Guérinière / Noirmoutier, France",
+      "La Guérinière / Noirmoutier, Vendée, France",
+      "La Guérinière, France"
+    ],
+    "complete": true
+  },
+  "fr|var|saint-tropez – les salins": {
+    "hit": {
+      "lat": "43.2727191",
+      "lon": "6.6405225",
+      "display_name": "Saint-Tropez, Draguignan, Var, Provence-Alpes-Côte d'Azur, France métropolitaine, 83990, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Saint-Tropez – Les Salins, France",
+      "Saint-Tropez – Les Salins, Var, France",
+      "Saint-Tropez, France"
+    ],
+    "complete": true
+  },
+  "fr|var|sainte-maxime – la nartelle": {
+    "hit": {
+      "lat": "43.3087100",
+      "lon": "6.6377140",
+      "display_name": "Sainte-Maxime, Draguignan, Var, Provence-Alpes-Côte d'Azur, France métropolitaine, 83120, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Sainte-Maxime – La Nartelle, France",
+      "Sainte-Maxime – La Nartelle, Var, France",
+      "Sainte-Maxime, France"
+    ],
+    "complete": true
+  },
+  "fr|gironde|lacanau lac": {
+    "hit": {
+      "lat": "44.9695375",
+      "lon": "-1.1208688",
+      "display_name": "Étang de Lacanau, Lacanau, Lesparre-Médoc, Gironde, Nouvelle-Aquitaine, France métropolitaine, 33680, France",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "fr|bretagne|baie du kernic": {
-    "place_id": 285886376,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "way",
-    "osm_id": 481413494,
-    "lat": "48.6540401",
-    "lon": "-4.2102318",
-    "category": "natural",
-    "type": "bay",
-    "place_rank": 22,
-    "importance": 0.10670416800183105,
-    "addresstype": "bay",
-    "name": "Baie du Kernic",
-    "display_name": "Baie du Kernic, Porsmeur, Plouescat, Morlaix, Finistère, Bretagne, France métropolitaine, 29430, France",
-    "address": {
-      "bay": "Baie du Kernic",
-      "village": "Porsmeur",
-      "municipality": "Morlaix",
-      "county": "Finistère",
-      "ISO3166-2-lvl6": "FR-29",
-      "state": "Bretagne",
-      "ISO3166-2-lvl4": "FR-BRE",
-      "region": "France métropolitaine",
-      "postcode": "29430",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "48.6540401",
+      "lon": "-4.2102318",
+      "display_name": "Baie du Kernic, Porsmeur, Plouescat, Morlaix, Finistère, Bretagne, France métropolitaine, 29430, France",
+      "osm_type": "bay",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "48.6504758",
-      "48.6576129",
-      "-4.2237926",
-      "-4.1968256"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "fr|bretagne|plage du dossen / santec": {
-    "place_id": 285594370,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "way",
-    "osm_id": 660959116,
-    "lat": "48.6947250",
-    "lon": "-4.0596189",
-    "category": "natural",
-    "type": "beach",
-    "place_rank": 22,
-    "importance": 0.10672728999771113,
-    "addresstype": "beach",
-    "name": "Plage du Dossen",
-    "display_name": "Plage du Dossen, Santec, Morlaix, Finistère, Bretagne, France métropolitaine, 29250, France",
-    "address": {
-      "beach": "Plage du Dossen",
-      "village": "Santec",
-      "municipality": "Morlaix",
-      "county": "Finistère",
-      "ISO3166-2-lvl6": "FR-29",
-      "state": "Bretagne",
-      "ISO3166-2-lvl4": "FR-BRE",
-      "region": "France métropolitaine",
-      "postcode": "29250",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "48.6947250",
+      "lon": "-4.0596189",
+      "display_name": "Plage du Dossen, Santec, Morlaix, Finistère, Bretagne, France métropolitaine, 29250, France",
+      "osm_type": "beach",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "48.6856501",
-      "48.7038981",
-      "-4.0695709",
-      "-4.0519906"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "fr|bretagne|keremma": {
-    "place_id": 287033877,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "node",
-    "osm_id": 258968055,
-    "lat": "48.6431368",
-    "lon": "-4.2528339",
-    "category": "place",
-    "type": "village",
-    "place_rank": 19,
-    "importance": 0.14672734187838554,
-    "addresstype": "village",
-    "name": "Keremma",
-    "display_name": "Keremma, Tréflez, Morlaix, Finistère, Bretagne, France métropolitaine, 29430, France",
-    "address": {
-      "village": "Keremma",
-      "municipality": "Morlaix",
-      "county": "Finistère",
-      "ISO3166-2-lvl6": "FR-29",
-      "state": "Bretagne",
-      "ISO3166-2-lvl4": "FR-BRE",
-      "region": "France métropolitaine",
-      "postcode": "29430",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "48.6431368",
+      "lon": "-4.2528339",
+      "display_name": "Keremma, Tréflez, Morlaix, Finistère, Bretagne, France métropolitaine, 29430, France",
+      "osm_type": "village",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "48.6231368",
-      "48.6631368",
-      "-4.2728339",
-      "-4.2328339"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "fr|normandie|quineville": {
-    "place_id": 284182512,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "relation",
-    "osm_id": 1067782,
-    "lat": "49.5120464",
-    "lon": "-1.2975762",
-    "category": "boundary",
-    "type": "administrative",
-    "place_rank": 16,
-    "importance": 0.5776045947089203,
-    "addresstype": "village",
-    "name": "Quinéville",
-    "display_name": "Quinéville, Cherbourg, Manche, Normandie, France métropolitaine, 50310, France",
-    "address": {
-      "village": "Quinéville",
-      "municipality": "Cherbourg",
-      "county": "Manche",
-      "ISO3166-2-lvl6": "FR-50",
-      "state": "Normandie",
-      "ISO3166-2-lvl4": "FR-NOR",
-      "region": "France métropolitaine",
-      "postcode": "50310",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "49.5120464",
+      "lon": "-1.2975762",
+      "display_name": "Quinéville, Cherbourg, Manche, Normandie, France métropolitaine, 50310, France",
+      "osm_type": "administrative",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "49.5024605",
-      "49.5190274",
-      "-1.3324109",
-      "-1.2784886"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "fr|occitanie|frontignan plage": {
-    "place_id": 84992068,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "node",
-    "osm_id": 1305757756,
-    "lat": "43.4462651",
-    "lon": "3.7994920",
-    "category": "place",
-    "type": "locality",
-    "place_rank": 25,
-    "importance": 0.06672822232394902,
-    "addresstype": "locality",
-    "name": "Frontignan Plage",
-    "display_name": "Frontignan Plage, Frontignan, Montpellier, Hérault, Occitanie, France métropolitaine, 34110, France",
-    "address": {
-      "locality": "Frontignan Plage",
-      "town": "Frontignan",
-      "municipality": "Montpellier",
-      "county": "Hérault",
-      "ISO3166-2-lvl6": "FR-34",
-      "state": "Occitanie",
-      "ISO3166-2-lvl4": "FR-OCC",
-      "region": "France métropolitaine",
-      "postcode": "34110",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "43.4462651",
+      "lon": "3.7994920",
+      "display_name": "Frontignan Plage, Frontignan, Montpellier, Hérault, Occitanie, France métropolitaine, 34110, France",
+      "osm_type": "locality",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "43.4362651",
-      "43.4562651",
-      "3.7894920",
-      "3.8094920"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
   "fr|provence|plage napoleon": {
-    "place_id": 83100565,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "way",
-    "osm_id": 155285163,
-    "lat": "43.3564140",
-    "lon": "4.8863577",
-    "category": "natural",
-    "type": "beach",
-    "place_rank": 22,
-    "importance": 0.10667666666666664,
-    "addresstype": "beach",
-    "name": "Plage Napoléon",
-    "display_name": "Plage Napoléon, Port-Saint-Louis-du-Rhône, Istres, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13230, France",
-    "address": {
-      "beach": "Plage Napoléon",
-      "town": "Port-Saint-Louis-du-Rhône",
-      "municipality": "Istres",
-      "county": "Bouches-du-Rhône",
-      "ISO3166-2-lvl6": "FR-13",
-      "state": "Provence-Alpes-Côte d'Azur",
-      "ISO3166-2-lvl4": "FR-PAC",
-      "region": "France métropolitaine",
-      "postcode": "13230",
-      "country": "France",
-      "country_code": "fr"
+    "hit": {
+      "lat": "43.3564140",
+      "lon": "4.8863577",
+      "display_name": "Plage Napoléon, Port-Saint-Louis-du-Rhône, Istres, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13230, France",
+      "osm_type": "beach",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "43.3410807",
-      "43.3719297",
-      "4.8646529",
-      "4.9074559"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
-  "nl|ijsselmeer / markermeer|abbertstrand / elburg": null,
-  "nl|ijsselmeer / markermeer|almere haven": null,
-  "nl|ijsselmeer / markermeer|eemhof / zeewolde": null,
-  "nl|ijsselmeer / markermeer|ijburg / amsterdam": null,
-  "nl|ijsselmeer / markermeer|ketelhaven": null,
-  "nl|ijsselmeer / markermeer|mirnser klif": null,
-  "nl|ijsselmeer / markermeer|lelystad hoekipa dijk": null,
-  "nl|ijsselmeer / markermeer|trintelhaven": null,
-  "nl|waddenzee|moddergat": null,
-  "nl|waddenzee|oostmahorn": null,
-  "nl|noord-holland|lutjesstrand / amstelmeer": null,
+  "nl|ijsselmeer / markermeer|abbertstrand / elburg": {
+    "hit": {
+      "lat": "52.4156591",
+      "lon": "5.8413217",
+      "display_name": "Elburg, Gelderland, Nederland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Abbertstrand / Elburg, Nederland",
+      "Abbertstrand / Elburg, IJsselmeer / Markermeer, Nederland",
+      "Abbertstrand, Nederland",
+      "Abbertstrand, IJsselmeer / Markermeer, Nederland",
+      "Elburg, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|ijsselmeer / markermeer|almere haven": {
+    "hit": {
+      "lat": "52.3406187",
+      "lon": "5.2199258",
+      "display_name": "Almere Haven, Almere, Flevoland, Nederland, 1354 CN, Nederland",
+      "osm_type": "suburb",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Almere Haven, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|ijsselmeer / markermeer|eemhof / zeewolde": {
+    "hit": {
+      "lat": "52.2616238",
+      "lon": "5.4021151",
+      "display_name": "De Eemhof, Slingerweg, Zeewolde, Flevoland, Nederland, 3896 LD, Nederland",
+      "osm_type": "chalet",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Eemhof / Zeewolde, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|ijsselmeer / markermeer|ijburg / amsterdam": {
+    "hit": {
+      "lat": "52.3549938",
+      "lon": "4.9971565",
+      "display_name": "IJburg, Oost, Amsterdam, Noord-Holland, Nederland",
+      "osm_type": "quarter",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "IJburg / Amsterdam, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|ijsselmeer / markermeer|ketelhaven": {
+    "hit": {
+      "lat": "52.5781494",
+      "lon": "5.7614171",
+      "display_name": "Ketelhaven, Dronten, Flevoland, Nederland, 8253 AG, Nederland",
+      "osm_type": "hamlet",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Ketelhaven, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|ijsselmeer / markermeer|mirnser klif": {
+    "hit": {
+      "lat": "52.8519944",
+      "lon": "5.4805608",
+      "display_name": "'t Mirnser Klif, Murnserdyk, Mirns, De Fryske Marren, Fryslân, Nederland, 8573 WP, Nederland",
+      "osm_type": "parking",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Mirnser Klif, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|ijsselmeer / markermeer|lelystad hoekipa dijk": {
+    "hit": null,
+    "method": "",
+    "attempts": [
+      "Lelystad Hoekipa Dijk, Nederland",
+      "Lelystad Hoekipa Dijk, IJsselmeer / Markermeer, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|ijsselmeer / markermeer|trintelhaven": {
+    "hit": {
+      "lat": "52.6361482",
+      "lon": "5.4140468",
+      "display_name": "Trintelhaven, Lelystad, Flevoland, Nederland, 8242 PZ, Nederland",
+      "osm_type": "unclassified",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Trintelhaven, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|waddenzee|moddergat": {
+    "hit": {
+      "lat": "52.3705038",
+      "lon": "5.2185859",
+      "display_name": "Almere, Flevoland, Nederland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Moddergat, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|waddenzee|oostmahorn": {
+    "hit": {
+      "lat": "53.3795284",
+      "lon": "6.1603000",
+      "display_name": "De Skâns-Oostmahorn, Eanjum, Noardeast-Fryslân, Fryslân, Nederland, 9133 DS, Nederland",
+      "osm_type": "village",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Oostmahorn, Nederland"
+    ],
+    "complete": true
+  },
+  "nl|noord-holland|lutjesstrand / amstelmeer": {
+    "hit": {
+      "lat": "52.8784272",
+      "lon": "4.8995778",
+      "display_name": "Amstelmeer, Slootdorp, Hollands Kroon, Noord-Holland, Nederland",
+      "osm_type": "fairway",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Lutjesstrand / Amstelmeer, Nederland",
+      "Lutjesstrand / Amstelmeer, Noord-Holland, Nederland",
+      "Lutjesstrand, Nederland",
+      "Lutjesstrand, Noord-Holland, Nederland",
+      "Amstelmeer, Nederland"
+    ],
+    "complete": true
+  },
   "nl|zuid-holland|zandmotor": {
-    "place_id": 158703485,
-    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
-    "osm_type": "way",
-    "osm_id": 152867296,
-    "lat": "52.0534515",
-    "lon": "4.1910056",
-    "category": "natural",
-    "type": "beach",
-    "place_rank": 22,
-    "importance": 0.10672262378881511,
-    "addresstype": "beach",
-    "name": "De Zandmotor",
-    "display_name": "De Zandmotor, Monster, Westland, Zuid-Holland, Nederland",
-    "address": {
-      "beach": "De Zandmotor",
-      "town": "Monster",
-      "municipality": "Westland",
-      "state": "Zuid-Holland",
-      "ISO3166-2-lvl4": "NL-ZH",
-      "country": "Nederland",
-      "country_code": "nl"
+    "hit": {
+      "lat": "52.0534515",
+      "lon": "4.1910056",
+      "display_name": "De Zandmotor, Monster, Westland, Zuid-Holland, Nederland",
+      "osm_type": "beach",
+      "osm_class": ""
     },
-    "boundingbox": [
-      "52.0417438",
-      "52.0653660",
-      "4.1747196",
-      "4.2103421"
-    ]
+    "method": "altbestand_ungeprueft",
+    "attempts": [],
+    "complete": true
   },
-  "de|deutschland / nord- und ostsee / binnenland|juist": null,
-  "de|deutschland / nord- und ostsee / binnenland|norderney": null,
-  "de|deutschland / nord- und ostsee / binnenland|wangerooge": null,
-  "de|deutschland / nord- und ostsee / binnenland|sylt": null,
-  "de|deutschland / nord- und ostsee / binnenland|amrum": null,
-  "de|deutschland / nord- und ostsee / binnenland|meldorf": null,
-  "de|deutschland / nord- und ostsee / binnenland|heidkate": null,
-  "de|deutschland / nord- und ostsee / binnenland|heiligenhafen": null,
-  "de|deutschland / nord- und ostsee / binnenland|damp": null,
-  "de|deutschland / nord- und ostsee / binnenland|rugen – born": null,
-  "de|deutschland / nord- und ostsee / binnenland|grosser brombachsee": null,
-  "de|deutschland / nord- und ostsee / binnenland|altmuhlsee": null,
-  "de|deutschland / nord- und ostsee / binnenland|dummer see": null,
-  "de|deutschland / nord- und ostsee / binnenland|steinhuder meer": null,
-  "de|deutschland / nord- und ostsee / binnenland|ammersee": null,
-  "de|deutschland / nord- und ostsee / binnenland|chiemsee": null,
-  "de|deutschland / nord- und ostsee / binnenland|walchensee": null,
-  "de|deutschland / nord- und ostsee / binnenland|muritz": null,
-  "de|deutschland / nord- und ostsee / binnenland|tegeler see": null,
-  "de|deutschland / nord- und ostsee / binnenland|muggelsee": null,
-  "de|deutschland / nord- und ostsee / binnenland|wannsee": null,
-  "de|deutschland / nord- und ostsee / binnenland|bodensee – reichenau": null,
-  "de|deutschland / nord- und ostsee / binnenland|bodensee – radolfzell": null,
+  "de|deutschland / nord- und ostsee / binnenland|juist": {
+    "hit": {
+      "lat": "53.6784483",
+      "lon": "6.9956079",
+      "display_name": "Juist, Landkreis Aurich, Niedersachsen, 26571, Deutschland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Juist, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|norderney": {
+    "hit": {
+      "lat": "53.7123857",
+      "lon": "7.2340205",
+      "display_name": "Norderney, Landkreis Aurich, Niedersachsen, 26548, Deutschland",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Norderney, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|wangerooge": {
+    "hit": {
+      "lat": "53.7834392",
+      "lon": "7.9342106",
+      "display_name": "Wangerooge, Wangerland, Landkreis Friesland, Niedersachsen, 26486, Deutschland",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Wangerooge, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|sylt": {
+    "hit": {
+      "lat": "54.9026616",
+      "lon": "8.3311491",
+      "display_name": "Sylt, Kreis Nordfriesland, Schleswig-Holstein, Deutschland",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Sylt, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|amrum": {
+    "hit": {
+      "lat": "54.6602197",
+      "lon": "8.3287701",
+      "display_name": "Amrum, Nebel, Föhr-Amrum, Kreis Nordfriesland, Schleswig-Holstein, 25946, Deutschland",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Amrum, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|meldorf": {
+    "hit": {
+      "lat": "54.0898800",
+      "lon": "9.0706330",
+      "display_name": "Meldorf, Mitteldithmarschen, Kreis Dithmarschen, Schleswig-Holstein, 25704, Deutschland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Meldorf, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|heidkate": {
+    "hit": {
+      "lat": "54.4324052",
+      "lon": "10.3339066",
+      "display_name": "Heidkate, Wisch, Probstei, Kreis Plön, Schleswig-Holstein, 24217, Deutschland",
+      "osm_type": "hamlet",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Heidkate, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|heiligenhafen": {
+    "hit": {
+      "lat": "54.3717445",
+      "lon": "10.9809235",
+      "display_name": "Heiligenhafen, Kreis Ostholstein, Schleswig-Holstein, 23774, Deutschland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Heiligenhafen, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|damp": {
+    "hit": {
+      "lat": "54.5833680",
+      "lon": "10.0227108",
+      "display_name": "Damp, Schlei-Ostsee, Kreis Rendsburg-Eckernförde, Schleswig-Holstein, Deutschland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Damp, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|rugen – born": {
+    "hit": {
+      "lat": "54.4529015",
+      "lon": "13.3882344",
+      "display_name": "Rügen, Mecklenburg-Vorpommern, Deutschland",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Rügen – Born, Deutschland",
+      "Rügen – Born, Deutschland / Nord- und Ostsee / Binnenland, Deutschland",
+      "Rügen, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|grosser brombachsee": {
+    "hit": {
+      "lat": "49.1320153",
+      "lon": "10.9271904",
+      "display_name": "Großer Brombachsee, Pleinfeld, Gunzenhausen (VGem), Landkreis Weißenburg-Gunzenhausen, Bayern, Deutschland",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Großer Brombachsee, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|altmuhlsee": {
+    "hit": {
+      "lat": "49.1346750",
+      "lon": "10.7215720",
+      "display_name": "Altmühlsee, Streudorf, Gunzenhausen, Landkreis Weißenburg-Gunzenhausen, Bayern, Deutschland",
+      "osm_type": "reservoir",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Altmühlsee, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|dummer see": {
+    "hit": {
+      "lat": "53.5658650",
+      "lon": "11.1957585",
+      "display_name": "Badestelle Dümmer See, Dümmerhütte, Dümmer, Stralendorf, Ludwigslust-Parchim, Mecklenburg-Vorpommern, 19073, Deutschland",
+      "osm_type": "beach",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Dümmer See, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|steinhuder meer": {
+    "hit": {
+      "lat": "52.4731808",
+      "lon": "9.3291747",
+      "display_name": "Steinhuder Meer, Wunstorf, Region Hannover, Niedersachsen, Deutschland",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Steinhuder Meer, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|ammersee": {
+    "hit": {
+      "lat": "48.0062795",
+      "lon": "11.1196973",
+      "display_name": "Ammersee, Schondorf a.Ammersee (VGem), Landkreis Landsberg am Lech, Bayern, Deutschland",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Ammersee, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|chiemsee": {
+    "hit": {
+      "lat": "47.8811147",
+      "lon": "12.4744366",
+      "display_name": "Chiemsee, Breitbrunn am Chiemsee (VGem), Landkreis Traunstein, Bayern, 83256, Deutschland",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Chiemsee, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|walchensee": {
+    "hit": {
+      "lat": "47.5934400",
+      "lon": "11.3464569",
+      "display_name": "Walchensee, Kochel am See, Kochel am See (VGem), Landkreis Bad Tölz-Wolfratshausen, Bayern, 82432, Deutschland",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Walchensee, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|muritz": {
+    "hit": {
+      "lat": "53.4188545",
+      "lon": "12.7020046",
+      "display_name": "Müritz, Mecklenburgische Seenplatte, Mecklenburg-Vorpommern, Deutschland",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Müritz, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|tegeler see": {
+    "hit": {
+      "lat": "52.5745580",
+      "lon": "13.2550024",
+      "display_name": "Tegeler See, Reinickendorf, Berlin, Deutschland",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Tegeler See, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|muggelsee": {
+    "hit": {
+      "lat": "52.1688055",
+      "lon": "9.9656669",
+      "display_name": "Müggelsee, Drispenstedt, Hildesheim, Landkreis Hildesheim, Niedersachsen, Deutschland",
+      "osm_type": "water",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Müggelsee, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|wannsee": {
+    "hit": {
+      "lat": "52.4211482",
+      "lon": "13.1589374",
+      "display_name": "Wannsee, Steglitz-Zehlendorf, Berlin, 14109, Deutschland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Wannsee, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|bodensee – reichenau": {
+    "hit": {
+      "lat": "47.6715751",
+      "lon": "9.4203418",
+      "display_name": "ski manufaktur bodensee, 10, Reichenauweg, Fischbach, Friedrichshafen, VVG der Stadt Friedrichshafen, Bodenseekreis, Baden-Württemberg, 88048, Deutschland",
+      "osm_type": "ski",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Bodensee – Reichenau, Deutschland"
+    ],
+    "complete": true
+  },
+  "de|deutschland / nord- und ostsee / binnenland|bodensee – radolfzell": {
+    "hit": {
+      "lat": "47.7372802",
+      "lon": "8.9702755",
+      "display_name": "Radolfzell am Bodensee, Landkreis Konstanz, Baden-Württemberg, 78315, Deutschland",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Bodensee – Radolfzell, Deutschland"
+    ],
+    "complete": true
+  },
   "de|deutschland / nord- und ostsee / binnenland|bodensee – allensbach": null,
   "fr|frankreich / mehrere regionen|lac de divonne": null,
   "fr|frankreich / mehrere regionen|lac de nantua": null,
