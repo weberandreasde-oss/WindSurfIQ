@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updated": "2026-11-02",
-  "description": "75 Surfspots: Bostalsee als zwei eigenständige Einstiegsbereiche (WSCS/LVSS und Gonnesweiler), mit klar gekennzeichneten Basis-/Parkplatz-Koordinaten statt ungeprüften Wassereinstiegen.",
+  "description": "75 Spots; Teilrecherche DE/FR/NL: acht bestehende Einträge mit Quellen und Standortdetails ergänzt, keine unbestätigten neuen GPS-Marker.",
   "spots": [
     {
       "id": "fr-leucate-region",
@@ -75,15 +75,15 @@
       "coordinateAccuracy": "approximate; not verified launch point",
       "details": {
         "water": "Meer",
-        "wind": "NW (Tramontana): ablandig und oft flach; SE (Marin): Wellen",
+        "wind": "Tramontane: Flachwasser/Speed; Marin: Wellen. Offshore-Gefahr je nach Wind beachten.",
         "access": "Saisonale Windsurfzone jenseits der 300-m-Markierung; markierten Ausfahrtskorridor nutzen.",
-        "hazards": "Bei Tramontana ablandiger Wind. Saisonale Zonierung beachten.",
+        "hazards": "Windsurfzone außerhalb der 300-m-Zone über ausgewiesenen Ausfahrtskorridor; aktuelle Beschilderung beachten.",
         "standing": "Nicht belegt",
         "sources": [
           "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen."
       }
     },
     {
@@ -127,7 +127,7 @@
       "lon": 3.015,
       "country": "FR",
       "region": "Occitanie",
-      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "source": "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf",
       "verified": false,
       "kind": "documented_spot_approximate_location",
       "coordinateAccuracy": "approximate; not verified launch point",
@@ -135,15 +135,16 @@
         "water": "Lagune / Étang de Leucate",
         "wind": "Tramontana aus NW häufig stark (Spotnetz nennt 25–35 kn); auch Ost- bis Südostwind nutzbar.",
         "access": "Naturzugang an der Lagune; offizielle Spotkarte für Lage und ausgewiesene Bereiche verwenden.",
-        "parking": "Laut Fremdenverkehrsamt tagsüber für leichte Fahrzeuge und Wohnmobile unter 8 m zugänglich; nachts Parkverbot. Gespann-Eignung nicht bestätigt.",
+        "parking": "Laut Fremdenverkehrsamt tagsüber mit Wohnmobilen unter 8 m erreichbar; Übernachten/Parken nachts verboten. Anhänger nicht bestätigt.",
         "standing": "Laut Spotnetz auf den ersten rund 300 m stehtief; Wasserstand und Untergrund vor Ort prüfen.",
         "sources": [
           "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf",
           "https://de.tourisme-leucate.com/entdecken-sie/rutschen/top-spots-in-leucate/",
-          "https://www.spotnetz.de/w/frankreich/okzitanien/etang-de-leucate/etang-de-leucate-la-mine/"
+          "https://www.spotnetz.de/w/frankreich/okzitanien/etang-de-leucate/etang-de-leucate-la-mine/",
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Unter-8-m-Regel ist keine Freigabe für Fahrzeuge mit Anhänger. Kein geprüfter Parkplatz-Navigationspunkt.",
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen.",
         "hazards": "Seegras, flache Sandbänke und starke Tramontana; Seegrasfinne sinnvoll."
       }
     },
@@ -188,15 +189,15 @@
       "coordinateAccuracy": "approximate; not verified launch point",
       "details": {
         "water": "Lagune / Étang de Leucate",
-        "access": "Von der D627 nahe der Brücke der Austernzüchter der Beschilderung „Spot de la Corrège“ folgen.",
-        "hazards": "Kitesurfen ist hier laut Fremdenverkehrsamt aus Sicherheitsgründen untersagt; aktuelle lokale Zonierung beachten.",
+        "access": "Zufahrt von der D627 nahe der Brücke der Austernzüchter; Beschilderung „Spot de la Corrège“ folgen.",
+        "hazards": "Kitesurfen aus Sicherheitsgründen untersagt; aktuelle örtliche Regeln beachten.",
         "standing": "Nicht belegt",
         "sources": [
           "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
           "https://en.tourisme-leucate.com/discover/riding-in-leucate/leucate-top-spots/"
         ],
         "reviewed": "2026-11-02",
-        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen."
       }
     },
     {
@@ -334,14 +335,22 @@
       "lon": 11.085,
       "country": "DE",
       "region": "Schleswig-Holstein",
-      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "source": "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372=",
       "verified": false,
-      "kind": "region_anchor",
+      "kind": "documented_spot_approximate_location",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
-        "reviewed": null,
-        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+        "sources": [
+          "https://www.stadtfehmarn.de/media/custom/1066_274_1.PDF?1194445372=",
+          "https://spotara.de/spots/fehmarn"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen.",
+        "water": "Ostsee / Orther Reede, flaches Wasser",
+        "standing": "Großes Stehrevier; Wassertiefe am konkreten Einstieg nicht gemessen.",
+        "wind": "Besonders westliche Windrichtungen; Ostwind ablandig und für diesen Spot ungünstig.",
+        "hazards": "Lokale Befahrens- und Naturschutzzonen beachten.",
+        "parking": "Parkplatz am Revier beschrieben, exakte Einfahrt und Wohnmobil-/Anhänger-Eignung nicht geprüft."
       }
     },
     {
@@ -351,19 +360,22 @@
       "lon": 11.188,
       "country": "DE",
       "region": "Schleswig-Holstein",
-      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "source": "https://www.windsurfing-wulfen.de/kontakt.html",
       "verified": false,
-      "kind": "region_anchor",
+      "kind": "documented_spot_approximate_location",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
         "sources": [
-          "https://www.windsurfing-wulfen.de/kontakt.html"
+          "https://www.windsurfing-wulfen.de/kontakt.html",
+          "https://inselblume-fehmarn.de/de/fehmarn/aktivitaeten/surfen"
         ],
         "reviewed": "2026-11-02",
-        "note": "Adresse der Windsurfstation bestätigt, nicht die genaue Parkplatzeinfahrt. Kein verifizierter Parkplatz-Navigationspunkt.",
-        "access": "Windsurfstation auf dem Campingplatz Wulfener Hals, Wulfener-Hals-Weg 100, 23769 Fehmarn. Laut Betreiber über die A1/Fehmarnsundbrücke, erste Ausfahrt rechts Richtung Avendorf und weiter zum Campingplatz.",
-        "parking": "Zufahrt zur Windsurfstation über den Campingplatz. Tagesgäste-Parkplatz, Gebühren, Camper-/Gespannzulassung und Stellplatzkoordinaten noch nicht bestätigt.",
-        "facilities": "Windsurfstation auf Camping Wulfener Hals; laut Betreiber saisonaler Betrieb April bis Oktober."
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen.",
+        "access": "Windsurfstation am Campingplatz Wulfener Hals; Nutzungsbedingungen für externe Besucher vorher erfragen.",
+        "parking": "Campingplatz-Zufahrt; Tagesgast- und Gespann-Parken nicht verifiziert.",
+        "facilities": "Windsurfstation auf Camping Wulfener Hals; laut Betreiber saisonaler Betrieb April bis Oktober.",
+        "water": "Ostsee / südliche Fehmarnküste",
+        "wind": "Südliche Windrichtungen; Bedingungen vor Ort prüfen."
       }
     },
     {
@@ -373,14 +385,21 @@
       "lon": 11.096,
       "country": "DE",
       "region": "Schleswig-Holstein",
-      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "source": "https://spotara.de/spots/fehmarn",
       "verified": false,
-      "kind": "region_anchor",
+      "kind": "documented_spot_approximate_location",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
-        "reviewed": null,
-        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+        "sources": [
+          "https://spotara.de/spots/fehmarn",
+          "https://www.fehmarn.de/fehmarn-erleben/aktiv/surfen"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen.",
+        "water": "Ostsee / offenes Küstenrevier",
+        "wind": "W bis NW: Wellenbedingungen, für Fortgeschrittene.",
+        "hazards": "Wellen, Brandung und gegebenenfalls Strömung; kein Anfänger-Stehrevier bestätigt.",
+        "parking": "Parkplatz als vorhanden beschrieben; Zufahrt für Gespanne nicht verifiziert."
       }
     },
     {
@@ -645,14 +664,20 @@
       "lon": 5.4,
       "country": "NL",
       "region": "Friesland",
-      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "source": "https://www.waterlandvanfriesland.nl/nl/plan-je-bezoek/watersport/windsurfen",
       "verified": false,
-      "kind": "region_anchor",
+      "kind": "documented_spot_approximate_location",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
-        "reviewed": null,
-        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+        "sources": [
+          "https://www.waterlandvanfriesland.nl/nl/plan-je-bezoek/watersport/windsurfen"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen.",
+        "water": "IJsselmeer / Binnengewässer",
+        "standing": "Die friesische IJsselmeerküste bietet teilweise lange flache Uferbereiche; genaue Stehzone in Makkum nicht geprüft.",
+        "facilities": "Windsurfrevier Makkum wird vom regionalen Tourismusverband ausdrücklich empfohlen.",
+        "parking": "Parkplatz und Gespann-Eignung nicht verifiziert."
       }
     },
     {
@@ -662,14 +687,20 @@
       "lon": 5.422,
       "country": "NL",
       "region": "Friesland",
-      "source": "Redaktionelle Revier-Vorauswahl; noch keine einzeln belegte Standortprüfung",
+      "source": "https://www.waterlandvanfriesland.nl/nl/plan-je-bezoek/watersport/windsurfen",
       "verified": false,
-      "kind": "region_anchor",
+      "kind": "documented_spot_approximate_location",
       "coordinateAccuracy": "approximate geographic orientation; NOT verified entry or parking",
       "details": {
-        "sources": [],
-        "reviewed": null,
-        "note": "Bekanntes Windsurfrevier als geografischer Orientierungspunkt. Exakte Einstiegsstelle, lokale Regeln, Parkmöglichkeiten und Eignung müssen anhand spotbezogener Quellen geprüft werden."
+        "sources": [
+          "https://www.waterlandvanfriesland.nl/nl/plan-je-bezoek/watersport/windsurfen"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Quellenbasierte Teilrecherche. GPS-Marker bleibt Orientierungspunkt, nicht verifizierter Wassereinstieg. Nutzungsregeln und Parken vor Ort prüfen.",
+        "water": "IJsselmeer / Binnengewässer",
+        "access": "Windsurfbereich am Strand It Soal; genaue Startkoordinaten noch nicht geprüft.",
+        "facilities": "Surfshop und benachbarter Campingplatz laut regionalem Tourismusverband.",
+        "parking": "Campingplatz in Strandnähe; Tagesparken und Gespann-Eignung nicht verifiziert."
       }
     },
     {
