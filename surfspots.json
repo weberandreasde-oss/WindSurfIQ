@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updated": "2026-11-02",
-  "description": "Pilotkatalog. Die drei Koordinaten sind grobe regionale Orientierungspunkte, keine geprüften Windsurf-Einstiege.",
+  "description": "15 Katalogeinträge. Für 7 Leucate-Spots wurden quellengestützte Revierinformationen ergänzt; Koordinaten bleiben vorläufig und sind keine bestätigten Einstiege.",
   "spots": [
     {
       "id": "de-bostalsee-region",
@@ -12,7 +12,12 @@
       "region": "Saarland",
       "source": "Redaktioneller Pilot-Eintrag",
       "verified": false,
-      "kind": "region_anchor"
+      "kind": "region_anchor",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
     },
     {
       "id": "fr-leucate-region",
@@ -23,7 +28,12 @@
       "region": "Occitanie",
       "source": "Redaktioneller Pilot-Eintrag",
       "verified": false,
-      "kind": "region_anchor"
+      "kind": "region_anchor",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
     },
     {
       "id": "fr-hyeres-region",
@@ -34,7 +44,277 @@
       "region": "Provence-Alpes-Côte d’Azur",
       "source": "Redaktioneller Pilot-Eintrag",
       "verified": false,
-      "kind": "region_anchor"
+      "kind": "region_anchor",
+      "details": {
+        "sources": [],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
+    },
+    {
+      "id": "fr-leucate-coussoules",
+      "name": "Plage des Coussoules",
+      "lat": 42.963,
+      "lon": 3.041,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "water": "Meer",
+        "wind": "NW (Tramontana): ablandig, Flachwasser; SE (Marin): auflandig, Wellen",
+        "parking": "Parkplatz Coussoules beim Camping Sandaya Domaine La Franqui; Materialtransport zum Strand beachten.",
+        "access": "Vom Parkplatz etwa 300 m zu Fuß bis zum Windsurfbereich.",
+        "hazards": "Getrennte Kite-, Windsurf- und Badezonen beachten; Tramontana kann sehr stark werden.",
+        "facilities": "KSL und CVCL in der Umgebung.",
+        "standing": "Nicht belegt",
+        "sources": [
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+          "https://www.tourisme-leucate.com/decouvrir/la-nature/les-plages-de-la-franqui/"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+      }
+    },
+    {
+      "id": "fr-leucate-franqui",
+      "name": "La Franqui",
+      "lat": 42.944,
+      "lon": 3.037,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "water": "Meer",
+        "wind": "NW (Tramontana): ablandig und oft flach; SE (Marin): Wellen",
+        "access": "Saisonale Windsurfzone jenseits der 300-m-Markierung; markierten Ausfahrtskorridor nutzen.",
+        "hazards": "Bei Tramontana ablandiger Wind. Saisonale Zonierung beachten.",
+        "standing": "Nicht belegt",
+        "sources": [
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+      }
+    },
+    {
+      "id": "fr-leucate-goulet",
+      "name": "Le Goulet",
+      "lat": 42.915,
+      "lon": 3.016,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "water": "Lagune / Étang de Leucate",
+        "wind": "NW (Tramontana): gut exponiert, Freeride/Slalom",
+        "parking": "Wohnmobilstellplatz Aire du Goulet am Spot; Konditionen vor Ort prüfen.",
+        "facilities": "Wesh Center Crew: Verleih, Kurse, Gastronomie.",
+        "standing": "Nicht verlässlich belegt",
+        "sources": [
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+      }
+    },
+    {
+      "id": "fr-leucate-mine",
+      "name": "La Mine",
+      "lat": 42.897,
+      "lon": 3.015,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "water": "Lagune / Étang de Leucate",
+        "wind": "NW (Tramontana): seitlicher Wind, Slalom/Freeride",
+        "access": "Naturbelassener Zugang am Lagunenufer; Einstieg teilweise flach.",
+        "parking": "Parkregeln und Wohnmobilbeschränkungen vor Anreise anhand aktueller Beschilderung prüfen.",
+        "standing": "Teilweise flach; zusammenhängendes Stehrevier nicht bestätigt",
+        "sources": [
+          "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+      }
+    },
+    {
+      "id": "fr-leucate-pilotis",
+      "name": "Les Pilotis / Mouret",
+      "lat": 42.908,
+      "lon": 3.055,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "water": "Meer",
+        "wind": "NW: ablandig; SE: auflandig, bei Seegang Wellen",
+        "access": "In der Saison nur außerhalb der Badezonen surfen.",
+        "hazards": "Badezonen und saisonale Einschränkungen beachten.",
+        "standing": "Nein – Meerspot",
+        "sources": [
+          "https://www.tourisme-leucate.com/app/uploads/leucate/2026/05/Carte-des-spots-leucate-2026-27.pdf"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+      }
+    },
+    {
+      "id": "fr-leucate-correge",
+      "name": "La Corrège / Parcs à huîtres",
+      "lat": 42.882,
+      "lon": 3.03,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "water": "Lagune / Étang de Leucate",
+        "access": "Von der D627 an der Brücke bei den Austernparks der Beschilderung „Spot de la Corrège“ folgen.",
+        "hazards": "Kitesurfen ist an diesem Spot aus Sicherheitsgründen untersagt.",
+        "standing": "Nicht belegt",
+        "sources": [
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+      }
+    },
+    {
+      "id": "fr-leucate-aqualand",
+      "name": "Aqualand / Port Leucate",
+      "lat": 42.858,
+      "lon": 3.041,
+      "country": "FR",
+      "region": "Occitanie",
+      "source": "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "water": "Meer",
+        "wind": "SE (Marin): auflandig mit Wellen",
+        "access": "Großer Sandstrand gegenüber Aqualand, Port Leucate.",
+        "hazards": "In der Saison nur außerhalb der bewachten Badezonen und jenseits der 300-m-Zone navigieren.",
+        "standing": "Nein – Meerspot",
+        "sources": [
+          "https://www.tourisme-leucate.com/decouvrir/la-glisse/top-spots-de-leucate/"
+        ],
+        "reviewed": "2026-11-02",
+        "note": "Angaben aus Quellen; aktuelle Regeln und Beschilderung vor Ort prüfen."
+      }
+    },
+    {
+      "id": "fr-hyeres-almanarre",
+      "name": "Plage de l’Almanarre",
+      "lat": 43.071,
+      "lon": 6.139,
+      "country": "FR",
+      "region": "Provence-Alpes-Côte d’Azur",
+      "source": "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "sources": [
+          "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/"
+        ],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
+    },
+    {
+      "id": "fr-hyeres-madrague",
+      "name": "La Madrague",
+      "lat": 43.042,
+      "lon": 6.121,
+      "country": "FR",
+      "region": "Provence-Alpes-Côte d’Azur",
+      "source": "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "sources": [
+          "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/"
+        ],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
+    },
+    {
+      "id": "fr-hyeres-bergerie",
+      "name": "La Bergerie",
+      "lat": 43.045,
+      "lon": 6.153,
+      "country": "FR",
+      "region": "Provence-Alpes-Côte d’Azur",
+      "source": "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "sources": [
+          "https://www.surf-magazin.de/spots-und-reviere/international/frankreich/halbinsel-giens-hyeres-windsurf-spots-des-monats/"
+        ],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
+    },
+    {
+      "id": "de-steinhude-mardorf",
+      "name": "Steinhuder Meer – Mardorf Weiße Düne",
+      "lat": 52.488,
+      "lon": 9.321,
+      "country": "DE",
+      "region": "Niedersachsen",
+      "source": "https://www.surf-magazin.de/spots/steinhuder-meer-mardorf-weisse-dune/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "sources": [
+          "https://www.surf-magazin.de/spots/steinhuder-meer-mardorf-weisse-dune/"
+        ],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
+    },
+    {
+      "id": "de-steinhude-badeinsel",
+      "name": "Steinhuder Meer – Badeinsel",
+      "lat": 52.454,
+      "lon": 9.354,
+      "country": "DE",
+      "region": "Niedersachsen",
+      "source": "https://www.surf-magazin.de/spots/steinhuder-meer-steinhude-badeinsel/",
+      "verified": false,
+      "kind": "documented_spot_approximate_location",
+      "coordinateAccuracy": "approximate; not verified launch point",
+      "details": {
+        "sources": [
+          "https://www.surf-magazin.de/spots/steinhuder-meer-steinhude-badeinsel/"
+        ],
+        "reviewed": null,
+        "note": "Detailinformationen noch nicht recherchiert."
+      }
     }
   ]
 }
