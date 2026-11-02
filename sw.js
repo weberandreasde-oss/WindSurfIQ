@@ -1,5 +1,5 @@
 // App shell only. Live observations and third-party tiles are NEVER cached here.
-const CACHE='windsurfiq-v7-3-0-shell-15';
+const CACHE='windsurfiq-v7-3-1-shell-16';
 const SHELL=['./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./surfspots.json'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)));self.skipWaiting()});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim()});
