@@ -93,8 +93,8 @@ def main():
                     osm_typ=hit.get('osm_type',''),suchversuche=len(entry.get('attempts',[])))
             else:
                 row.update(lat='',lon='',osm_name='',coordinate_accuracy='',
-                    geocode_status='kein Treffer' if entry.get('complete') else 'weitere Suche offen',
-                    suchmethode='',osm_typ='',suchversuche=len(entry.get('attempts',[])))
+                    geocode_status='kein Treffer' if (entry or {}).get('complete') else 'weitere Suche offen',
+                    suchmethode='',osm_typ='',suchversuche=len(entry or {}).get('attempts', [])))
             writer.writerow(row)
     hits=sum(isinstance(v,dict) and bool(v.get('hit')) for v in cache.values())
     unfinished=sum(not (isinstance(cache.get(norm('|'.join([r['land'],r['region'],r['kandidat']]))),dict) and
