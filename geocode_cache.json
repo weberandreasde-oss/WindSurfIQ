@@ -723,34 +723,436 @@
     ],
     "complete": true
   },
-  "de|deutschland / nord- und ostsee / binnenland|bodensee – allensbach": null,
-  "fr|frankreich / mehrere regionen|lac de divonne": null,
-  "fr|frankreich / mehrere regionen|lac de nantua": null,
-  "fr|frankreich / mehrere regionen|lac de la foret d’orient": null,
-  "fr|frankreich / mehrere regionen|gruissan": null,
-  "fr|frankreich / mehrere regionen|la franqui": null,
-  "fr|frankreich / mehrere regionen|la ganguise": null,
-  "fr|frankreich / mehrere regionen|sigean – port mahon": null,
-  "fr|frankreich / mehrere regionen|narbonne – la nautique": null,
-  "fr|frankreich / mehrere regionen|leucate – les coussoules": null,
-  "fr|frankreich / mehrere regionen|leucate – parc a huitres": null,
-  "fr|frankreich / mehrere regionen|port-la-nouvelle – vieille nouvelle": null,
-  "fr|frankreich / mehrere regionen|carro": null,
-  "fr|frankreich / mehrere regionen|fos-sur-mer": null,
-  "fr|frankreich / mehrere regionen|marseille – pointe rouge": null,
-  "fr|frankreich / mehrere regionen|marseille – prado": null,
-  "fr|frankreich / mehrere regionen|marignane – le jai": null,
-  "fr|frankreich / mehrere regionen|lac de sainte-croix": null,
-  "fr|frankreich / mehrere regionen|ouistreham – colleville": null,
-  "fr|frankreich / mehrere regionen|langrune-sur-mer": null,
-  "fr|frankreich / mehrere regionen|trouville-sur-mer": null,
-  "fr|frankreich / mehrere regionen|ile d’oleron – les huttes": null,
-  "fr|frankreich / mehrere regionen|ile de re – la couarde": null,
-  "fr|frankreich / mehrere regionen|ile de re – loix": null,
-  "fr|frankreich / mehrere regionen|saint-georges-de-didonne": null,
-  "fr|frankreich / mehrere regionen|bonifacio – piantarella": null,
-  "fr|frankreich / mehrere regionen|bonifacio – la tonnara": null,
-  "fr|frankreich / mehrere regionen|plage de wissant": null,
-  "fr|frankreich / mehrere regionen|carnac – saint-colomban": null,
-  "fr|frankreich / mehrere regionen|hendaye": null
+  "de|deutschland / nord- und ostsee / binnenland|bodensee – allensbach": {
+    "hit": {
+      "lat": "47.7417583",
+      "lon": "9.1889992",
+      "display_name": "Überlinger See, Überlingen, VVG der Stadt Überlingen, Bodenseekreis, Baden-Württemberg, 78351, Deutschland",
+      "osm_type": "bay",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Bodensee – Allensbach, Deutschland"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|lac de divonne": {
+    "hit": {
+      "lat": "46.3539210",
+      "lon": "6.1512710",
+      "display_name": "Lac de Divonne, Plan, Vésenex, Divonne-les-Bains, Gex, Ain, Auvergne-Rhône-Alpes, France métropolitaine, 01220, France",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Lac de Divonne, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|lac de nantua": {
+    "hit": {
+      "lat": "46.1618531",
+      "lon": "5.5875398",
+      "display_name": "Lac de Nantua, Nantua, Ain, Auvergne-Rhône-Alpes, France métropolitaine, France",
+      "osm_type": "lake",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Lac de Nantua, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|lac de la foret d’orient": {
+    "hit": {
+      "lat": "48.2618021",
+      "lon": "4.3053221",
+      "display_name": "Lac de la Forêt d'Orient, Lusigny-sur-Barse, Troyes, Aube, Grand Est, France métropolitaine, 10270, France",
+      "osm_type": "hamlet",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Lac de la Forêt d’Orient, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|gruissan": {
+    "hit": {
+      "lat": "43.1070390",
+      "lon": "3.0864971",
+      "display_name": "Gruissan, Narbonne, Aude, Occitanie, France métropolitaine, 11430, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Gruissan, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|la franqui": {
+    "hit": {
+      "lat": "42.9323092",
+      "lon": "3.0352904",
+      "display_name": "La Franqui, Leucate, Narbonne, Aude, Occitanie, France métropolitaine, 11370, France",
+      "osm_type": "hamlet",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "La Franqui, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|la ganguise": {
+    "hit": {
+      "lat": "43.3066894",
+      "lon": "1.8268083",
+      "display_name": "La Ganguise, Cumiès, Carcassonne, Aude, Occitanie, France métropolitaine, 11410, France",
+      "osm_type": "river",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "La Ganguise, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|sigean – port mahon": {
+    "hit": {
+      "lat": "43.0290470",
+      "lon": "2.9808695",
+      "display_name": "Sigean, Narbonne, Aude, Occitanie, France métropolitaine, 11130, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Sigean – Port Mahon, France",
+      "Sigean – Port Mahon, Frankreich / mehrere Regionen, France",
+      "Sigean, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|narbonne – la nautique": {
+    "hit": {
+      "lat": "43.1420458",
+      "lon": "3.0092656",
+      "display_name": "Société Nautique de Narbonne - Ecole Française de Voile, Rue des Nautiquards, Port la Nautique, Narbonne, Aude, Occitanie, France métropolitaine, 11100, France",
+      "osm_type": "sailing_school",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Narbonne – La Nautique, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|leucate – les coussoules": {
+    "hit": {
+      "lat": "42.9099890",
+      "lon": "3.0270152",
+      "display_name": "Leucate, Narbonne, Aude, Occitanie, France métropolitaine, 11370, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Leucate – Les Coussoules, France",
+      "Leucate – Les Coussoules, Frankreich / mehrere Regionen, France",
+      "Leucate, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|leucate – parc a huitres": {
+    "hit": {
+      "lat": "42.9099890",
+      "lon": "3.0270152",
+      "display_name": "Leucate, Narbonne, Aude, Occitanie, France métropolitaine, 11370, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Leucate – Parc à Huîtres, France",
+      "Leucate – Parc à Huîtres, Frankreich / mehrere Regionen, France",
+      "Leucate, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|port-la-nouvelle – vieille nouvelle": {
+    "hit": {
+      "lat": "45.9475383",
+      "lon": "-0.9548382",
+      "display_name": "Port (de commerce) de Rochefort, Le Bois et la Forêt, Vieille Forme, Rochefort, Charente-Maritime, Nouvelle-Aquitaine, France métropolitaine, 17300, France",
+      "osm_type": "industrial",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Port-la-Nouvelle – Vieille Nouvelle, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|carro": {
+    "hit": {
+      "lat": "43.8467156",
+      "lon": "2.4780945",
+      "display_name": "Carro, Paulinet, Albi, Tarn, Occitanie, France métropolitaine, 81250, France",
+      "osm_type": "hamlet",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Carro, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|fos-sur-mer": {
+    "hit": {
+      "lat": "43.4380714",
+      "lon": "4.9455950",
+      "display_name": "Fos-sur-Mer, Istres, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13270, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Fos-sur-Mer, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|marseille – pointe rouge": {
+    "hit": {
+      "lat": "43.2443987",
+      "lon": "5.3722280",
+      "display_name": "Laboratoire de Biologie Médicale Synlab Provence Marseille - Pointe Rouge, 27, Avenue de Montredon, La Pointe-Rouge, Marseille 8e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13008, France",
+      "osm_type": "laboratory",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Marseille – Pointe Rouge, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|marseille – prado": {
+    "hit": {
+      "lat": "43.2811860",
+      "lon": "5.3869071",
+      "display_name": "Marseille Prado, 91, Avenue du Prado, Le Rouet, Marseille 8e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13008, France",
+      "osm_type": "post_office",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Marseille – Prado, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|marignane – le jai": {
+    "hit": {
+      "lat": "43.4329406",
+      "lon": "5.2087589",
+      "display_name": "Base hélicoptères de la Sècurité civile de Marignane, Route de la Plage, Le Jaï, Marignane, Istres, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13700, France",
+      "osm_type": "helipad",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Marignane – Le Jaï, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|lac de sainte-croix": {
+    "hit": {
+      "lat": "43.7673241",
+      "lon": "6.1839310",
+      "display_name": "Lac de Sainte-Croix, Sainte-Croix-du-Verdon, Digne-les-Bains, Alpes-de-Haute-Provence, Provence-Alpes-Côte d'Azur, France métropolitaine, 04500, France",
+      "osm_type": "reservoir",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Lac de Sainte-Croix, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|ouistreham – colleville": {
+    "hit": {
+      "lat": "49.2623648",
+      "lon": "-0.3153392",
+      "display_name": "Ouistreham, Colleville-Montgomery, Caen, Calvados, Normandie, France métropolitaine, 14880, France",
+      "osm_type": "political",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Ouistreham – Colleville, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|langrune-sur-mer": {
+    "hit": {
+      "lat": "49.3206220",
+      "lon": "-0.3727503",
+      "display_name": "Langrune-sur-Mer, Caen, Calvados, Normandie, France métropolitaine, 14830, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Langrune-sur-Mer, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|trouville-sur-mer": {
+    "hit": {
+      "lat": "49.3679823",
+      "lon": "0.0809113",
+      "display_name": "Trouville-sur-Mer, Lisieux, Calvados, Normandie, France métropolitaine, 14360, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Trouville-sur-Mer, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|ile d’oleron – les huttes": {
+    "hit": {
+      "lat": "45.9259467",
+      "lon": "-1.2923792",
+      "display_name": "Île d'Oléron, Charente-Maritime, Nouvelle-Aquitaine, France métropolitaine, France",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Île d’Oléron – Les Huttes, France",
+      "Île d’Oléron – Les Huttes, Frankreich / mehrere Regionen, France",
+      "Île d’Oléron, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|ile de re – la couarde": {
+    "hit": {
+      "lat": "46.2005378",
+      "lon": "-1.4002798",
+      "display_name": "Île de Ré, Le Bois-Plage-en-Ré, La Rochelle, Charente-Maritime, Nouvelle-Aquitaine, France métropolitaine, 17580, France",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Île de Ré – La Couarde, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|ile de re – loix": {
+    "hit": {
+      "lat": "46.2005378",
+      "lon": "-1.4002798",
+      "display_name": "Île de Ré, Le Bois-Plage-en-Ré, La Rochelle, Charente-Maritime, Nouvelle-Aquitaine, France métropolitaine, 17580, France",
+      "osm_type": "island",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Île de Ré – Loix, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|saint-georges-de-didonne": {
+    "hit": {
+      "lat": "45.6024886",
+      "lon": "-0.9979490",
+      "display_name": "Saint-Georges-de-Didonne, Rochefort, Charente-Maritime, Nouvelle-Aquitaine, France métropolitaine, 17110, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Saint-Georges-de-Didonne, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|bonifacio – piantarella": {
+    "hit": {
+      "lat": "41.3773933",
+      "lon": "9.1784290",
+      "display_name": "Les Bouches de Bonifacio, D 260, Falatte, Piantarella, Bonifacio / Bunifaziu, Sartène, Corse-du-Sud, Corse, France métropolitaine, 20169, France",
+      "osm_type": "fast_food",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Bonifacio – Piantarella, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|bonifacio – la tonnara": {
+    "hit": {
+      "lat": "41.3872348",
+      "lon": "9.1590609",
+      "display_name": "Bonifacio / Bunifaziu, Sartène, Corse-du-Sud, Corse, France métropolitaine, 20169, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Bonifacio – La Tonnara, France",
+      "Bonifacio – La Tonnara, Frankreich / mehrere Regionen, France",
+      "Bonifacio, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|plage de wissant": {
+    "hit": {
+      "lat": "50.9029951",
+      "lon": "1.6818383",
+      "display_name": "Chemin de la Plage, Strouanne, Wissant, Boulogne-sur-Mer, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62179, France",
+      "osm_type": "residential",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Plage de Wissant, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|carnac – saint-colomban": {
+    "hit": {
+      "lat": "47.5836629",
+      "lon": "-3.0794428",
+      "display_name": "Carnac, Lorient, Morbihan, Bretagne, France métropolitaine, 56340, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "namensbestandteil",
+    "attempts": [
+      "Carnac – Saint-Colomban, France",
+      "Carnac – Saint-Colomban, Frankreich / mehrere Regionen, France",
+      "Carnac, France"
+    ],
+    "complete": true
+  },
+  "fr|frankreich / mehrere regionen|hendaye": {
+    "hit": {
+      "lat": "43.3641518",
+      "lon": "-1.7616499",
+      "display_name": "Hendaye, Bayonne, Pyrénées-Atlantiques, Nouvelle-Aquitaine, France métropolitaine, 64700, France",
+      "osm_type": "administrative",
+      "osm_class": ""
+    },
+    "method": "spotname",
+    "attempts": [
+      "Hendaye, France"
+    ],
+    "complete": true
+  }
 }
