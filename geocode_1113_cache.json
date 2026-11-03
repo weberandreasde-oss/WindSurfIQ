@@ -6,5 +6,1560 @@
     "formatted": "Kart am Alfsee, Westerfeldstraße 73, 49597 Rieste, Germany",
     "result_type": "amenity",
     "rank_confidence": 0.81
+  },
+  "2": {
+    "status": "candidate_unverified",
+    "lat": 51.077101,
+    "lon": 11.038303,
+    "formatted": "Alperstedter See, Nöda, TH, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.45772297685950114
+  },
+  "3": {
+    "status": "candidate_unverified",
+    "lat": 47.5656307,
+    "lon": 10.1944922,
+    "formatted": "Freiwillige Feuerwehr Bühl Alpsee, Lindauer Straße 1, Bühl am Alpsee, 87509 Immenstadt im Allgäu, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "4": {
+    "status": "candidate_unverified",
+    "lat": 49.134675,
+    "lon": 10.721572,
+    "formatted": "Altmühlsee, Gunzenhausen, BY, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "5": {
+    "status": "candidate_unverified",
+    "lat": 47.9056634,
+    "lon": 11.1751031,
+    "formatted": "Pähl, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "6": {
+    "status": "candidate_unverified",
+    "lat": 47.9992929,
+    "lon": 11.1748083,
+    "formatted": "Herrsching am Ammersee, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "7": {
+    "status": "candidate_unverified",
+    "lat": 48.0802427,
+    "lon": 11.114071,
+    "formatted": "Rathaus Eching am Ammersee, Am Anger 1, 82279 Eching am Ammersee, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.6561000000000001
+  },
+  "8": {
+    "status": "no_result"
+  },
+  "9": {
+    "status": "no_result"
+  },
+  "10": {
+    "status": "candidate_unverified",
+    "lat": 47.968835,
+    "lon": 11.18182,
+    "formatted": "Andechs, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "11": {
+    "status": "candidate_unverified",
+    "lat": 47.9477942,
+    "lon": 11.1049697,
+    "formatted": "Dießen am Ammersee, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "12": {
+    "status": "candidate_unverified",
+    "lat": 48.0774991,
+    "lon": 11.1526202,
+    "formatted": "Inning am Ammersee, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "13": {
+    "status": "candidate_unverified",
+    "lat": 48.02608,
+    "lon": 11.08612,
+    "formatted": "Utting, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "14": {
+    "status": "candidate_unverified",
+    "lat": 47.96917,
+    "lon": 11.1509,
+    "formatted": "Herrsching a. Ammersee, Wartaweil, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.125
+  },
+  "15": {
+    "status": "candidate_unverified",
+    "lat": 54.6602197,
+    "lon": 8.3287701,
+    "formatted": "Amrum, 25946 Nebel, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "16": {
+    "status": "candidate_unverified",
+    "lat": 50.65481,
+    "lon": 11.13143,
+    "formatted": "Mittleres Schwarzatal, Aschau, TH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "17": {
+    "status": "candidate_unverified",
+    "lat": 51.6576909,
+    "lon": 6.617087,
+    "formatted": "Wesel, NW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "18": {
+    "status": "candidate_unverified",
+    "lat": 51.664636,
+    "lon": 6.625631,
+    "formatted": "Wesel, NW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "19": {
+    "status": "candidate_unverified",
+    "lat": 53.7282078,
+    "lon": 7.399482,
+    "formatted": "Baltrum, 26579 Baltrum, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "20": {
+    "status": "candidate_unverified",
+    "lat": 52.479378,
+    "lon": 12.574143,
+    "formatted": "Radewege, Beetzsee, BB, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "21": {
+    "status": "candidate_unverified",
+    "lat": 49.7092321,
+    "lon": 8.4141223,
+    "formatted": "Biblis Nuclear Power Plant, Biblis, HE, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "22": {
+    "status": "candidate_unverified",
+    "lat": 50.8539587,
+    "lon": 6.2743612,
+    "formatted": "Blausteinsee, Eschweiler, NW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "23": {
+    "status": "candidate_unverified",
+    "lat": 50.8399509,
+    "lon": 6.8605098,
+    "formatted": "Bleibtreusee, Kierberg, Brühl, NW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "24": {
+    "status": "candidate_unverified",
+    "lat": 50.4710209,
+    "lon": 11.7018245,
+    "formatted": "Bleilochtalsperre, Zoppoten, TH, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "25": {
+    "status": "candidate_unverified",
+    "lat": 47.717776,
+    "lon": 9.070066,
+    "formatted": "Konstanz, Allensbach, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "26": {
+    "status": "candidate_unverified",
+    "lat": 47.7348858,
+    "lon": 9.2400277,
+    "formatted": "Uhldingen-Mühlhofen, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "27": {
+    "status": "candidate_unverified",
+    "lat": 47.6500279,
+    "lon": 9.4800858,
+    "formatted": "Friedrichshafen, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "28": {
+    "status": "candidate_unverified",
+    "lat": 47.662592,
+    "lon": 9.361604,
+    "formatted": "Seestraße West, Friedrichshafen, 88086 Immenstaad am Bodensee, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.45
+  },
+  "29": {
+    "status": "candidate_unverified",
+    "lat": 47.6749642,
+    "lon": 9.3161678,
+    "formatted": "Hagnau am Bodensee, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "30": {
+    "status": "candidate_unverified",
+    "lat": 47.6658914,
+    "lon": 9.3676364,
+    "formatted": "Immenstaad am Bodensee, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "31": {
+    "status": "candidate_unverified",
+    "lat": 47.659216,
+    "lon": 9.1750718,
+    "formatted": "Constance, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "32": {
+    "status": "candidate_unverified",
+    "lat": 47.659216,
+    "lon": 9.1750718,
+    "formatted": "Constance, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "33": {
+    "status": "candidate_unverified",
+    "lat": 47.659216,
+    "lon": 9.1750718,
+    "formatted": "Constance, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "34": {
+    "status": "candidate_unverified",
+    "lat": 47.5994109,
+    "lon": 9.5448728,
+    "formatted": "Langenargen, Öschweg, 88085 Langenargen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "35": {
+    "status": "no_result"
+  },
+  "36": {
+    "status": "no_result"
+  },
+  "37": {
+    "status": "candidate_unverified",
+    "lat": 47.544202,
+    "lon": 9.6808298,
+    "formatted": "Lindau-Insel, Alfred-Nobel-Platz, 88131 Lindau (Bodensee), Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5619718309859154
+  },
+  "38": {
+    "status": "candidate_unverified",
+    "lat": 47.818563,
+    "lon": 9.058422,
+    "formatted": "Sparkasse Hegau-Bodensee - Filiale Ludwigshafen, 78351 Bodman-Ludwigshafen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "39": {
+    "status": "candidate_unverified",
+    "lat": 47.742067,
+    "lon": 8.979331,
+    "formatted": "Trafostation Reichenaustraße, Reichenaustraße, 78315 Radolfzell, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "41": {
+    "status": "candidate_unverified",
+    "lat": 47.5697038,
+    "lon": 9.6383375,
+    "formatted": "Wasserburg (Bodensee), BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5984999999999999
+  },
+  "42": {
+    "status": "candidate_unverified",
+    "lat": 53.2040626,
+    "lon": 11.4448967,
+    "formatted": "Boek, Eldenaer Straße, Boek, 19294 Gorlosen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "43": {
+    "status": "candidate_unverified",
+    "lat": 53.3765525,
+    "lon": 12.7796356,
+    "formatted": "Boeker Mühle, 17248 Rechlin, Germany",
+    "result_type": "street",
+    "rank_confidence": 1
+  },
+  "44": {
+    "status": "candidate_unverified",
+    "lat": 53.609342,
+    "lon": 6.703374,
+    "formatted": "FKK-Strand, Borkum, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "45": {
+    "status": "candidate_unverified",
+    "lat": 53.5902946,
+    "lon": 6.6682175,
+    "formatted": "Borkum, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "46": {
+    "status": "candidate_unverified",
+    "lat": 53.5902946,
+    "lon": 6.6682175,
+    "formatted": "Borkum, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "47": {
+    "status": "candidate_unverified",
+    "lat": 51.121981,
+    "lon": 12.479224,
+    "formatted": "Stadthalde Borna, 04550 Borna, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.9
+  },
+  "48": {
+    "status": "candidate_unverified",
+    "lat": 49.5649708,
+    "lon": 7.0730757,
+    "formatted": "Bostalsee, Nohfelden, SL, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "49": {
+    "status": "candidate_unverified",
+    "lat": 52.4108261,
+    "lon": 12.5497933,
+    "formatted": "Brandenburg an der Havel, BB, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "50": {
+    "status": "candidate_unverified",
+    "lat": 52.6333,
+    "lon": 14.3,
+    "formatted": "Kiehnwerder, Letschin, BB, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.05952380952380952
+  },
+  "51": {
+    "status": "candidate_unverified",
+    "lat": 52.4108261,
+    "lon": 12.5497933,
+    "formatted": "Brandenburg an der Havel, BB, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "52": {
+    "status": "candidate_unverified",
+    "lat": 54.5418135,
+    "lon": 9.7153103,
+    "formatted": "Brodersby-Goltoft, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "53": {
+    "status": "candidate_unverified",
+    "lat": 53.99236,
+    "lon": 10.84906,
+    "formatted": "Brodtener Steilufer, 23570 Lübeck, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.2777777777777778
+  },
+  "54": {
+    "status": "candidate_unverified",
+    "lat": 49.1320153,
+    "lon": 10.9271904,
+    "formatted": "Großer Brombachsee, Pleinfeld, BY, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "55": {
+    "status": "candidate_unverified",
+    "lat": 49.1753302,
+    "lon": 10.9254208,
+    "formatted": "Spalt, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "56": {
+    "status": "candidate_unverified",
+    "lat": 49.104447,
+    "lon": 10.978487,
+    "formatted": "Pleinfeld, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "57": {
+    "status": "candidate_unverified",
+    "lat": 49.1211151,
+    "lon": 10.9318375,
+    "formatted": "Die Bucht am Brombachsee, Leitenbuckstraße 10, 91785 Pleinfeld, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "58": {
+    "status": "candidate_unverified",
+    "lat": 47.8811147,
+    "lon": 12.4744366,
+    "formatted": "Lake Chiemsee, 83256 Chiemsee, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.20833333333333334
+  },
+  "59": {
+    "status": "candidate_unverified",
+    "lat": 47.8195907,
+    "lon": 12.4802068,
+    "formatted": "Übersee, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "60": {
+    "status": "candidate_unverified",
+    "lat": 47.9340965,
+    "lon": 12.4811288,
+    "formatted": "Minigolf Seebruck Chiemsee Kaufmann, Haushoferstraße, 83358 Seeon-Seebruck, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "61": {
+    "status": "candidate_unverified",
+    "lat": 51.2669343,
+    "lon": 12.3338537,
+    "formatted": "Cospudener See, Markkleeberg, SN, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "62": {
+    "status": "candidate_unverified",
+    "lat": 53.86878,
+    "lon": 8.698286,
+    "formatted": "Cuxhaven, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "63": {
+    "status": "candidate_unverified",
+    "lat": 53.8605609,
+    "lon": 8.6299351,
+    "formatted": "Sahlenburg, Cuxhaven, NI, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "64": {
+    "status": "candidate_unverified",
+    "lat": 53.86878,
+    "lon": 8.698286,
+    "formatted": "Cuxhaven, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "65": {
+    "status": "candidate_unverified",
+    "lat": 54.386494,
+    "lon": 12.5249835,
+    "formatted": "Friedhof Born a. Darss, Born a. Darß, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "66": {
+    "status": "candidate_unverified",
+    "lat": 54.4230701,
+    "lon": 12.7042784,
+    "formatted": "Fischland-Darß-Zingst, Vorpommern-Rügen, MV, Germany",
+    "result_type": "county",
+    "rank_confidence": 0
+  },
+  "67": {
+    "status": "candidate_unverified",
+    "lat": 54.35271,
+    "lon": 10.92845,
+    "formatted": "Dazendorf, Gremersdorf, SH, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 0
+  },
+  "68": {
+    "status": "candidate_unverified",
+    "lat": 53.2733776,
+    "lon": 7.3848504,
+    "formatted": "Dollartstraße, 26844 Jemgum, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.63
+  },
+  "69": {
+    "status": "candidate_unverified",
+    "lat": 53.7044885,
+    "lon": 8.568845,
+    "formatted": "Wurster Nordseeküste, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "70": {
+    "status": "candidate_unverified",
+    "lat": 52.496812,
+    "lon": 8.36394,
+    "formatted": "Campingplatz & Bootshafen Dümmer See, 49448 Hüde, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "71": {
+    "status": "candidate_unverified",
+    "lat": 52.5245313,
+    "lon": 8.3669417,
+    "formatted": "Dümmer See / Lembruch, Rönnekers Törn, 49459 Lembruch, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "72": {
+    "status": "candidate_unverified",
+    "lat": 53.5217724,
+    "lon": 8.2336804,
+    "formatted": "Eckwarderhörne, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "73": {
+    "status": "candidate_unverified",
+    "lat": 51.3856761,
+    "lon": 6.6253777,
+    "formatted": "Elfrather See, Traar, Krefeld, NW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "74": {
+    "status": "candidate_unverified",
+    "lat": 48.9647074,
+    "lon": 8.3238647,
+    "formatted": "Epplesee, Forchheim, Rheinstetten, BW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "75": {
+    "status": "candidate_unverified",
+    "lat": 49.2695268,
+    "lon": 8.4961341,
+    "formatted": "Erlichsee, 68794 Rheinhausen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "76": {
+    "status": "candidate_unverified",
+    "lat": 52.446372,
+    "lon": 13.0451544,
+    "formatted": "Neu Fahrland, Potsdam, BB, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 0.5
+  },
+  "77": {
+    "status": "candidate_unverified",
+    "lat": 54.5180001,
+    "lon": 11.0903829,
+    "formatted": "Altenteil, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "78": {
+    "status": "candidate_unverified",
+    "lat": 54.4908078,
+    "lon": 11.0298997,
+    "formatted": "Bojendorf, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "79": {
+    "status": "candidate_unverified",
+    "lat": 54.5166473,
+    "lon": 11.178117,
+    "formatted": "Grüner Brink, Fehmarn, SH, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "80": {
+    "status": "candidate_unverified",
+    "lat": 54.4467653,
+    "lon": 11.0902871,
+    "formatted": "Lemkenhafen, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "81": {
+    "status": "candidate_unverified",
+    "lat": 54.4612682,
+    "lon": 11.0239886,
+    "formatted": "Püttsee, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "82": {
+    "status": "candidate_unverified",
+    "lat": 54.5219651,
+    "lon": 11.0529736,
+    "formatted": "Westermarkelsdorf, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "83": {
+    "status": "candidate_unverified",
+    "lat": 54.4076546,
+    "lon": 11.1851294,
+    "formatted": "Wulfener Hals - Beach, Burgstaaken, Fehmarn, SH, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "84": {
+    "status": "candidate_unverified",
+    "lat": 54.706906,
+    "lon": 8.4218985,
+    "formatted": "Wasserwerk Föhr-West, Utersum, SH, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.23529411764705882
+  },
+  "85": {
+    "status": "candidate_unverified",
+    "lat": 47.59874,
+    "lon": 10.714167,
+    "formatted": "Ruderclub Forggensee, 87629 Füssen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "86": {
+    "status": "candidate_unverified",
+    "lat": 50.2226309,
+    "lon": 11.9324503,
+    "formatted": "Schwarzenbach an der Saale, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "87": {
+    "status": "candidate_unverified",
+    "lat": 50.2226309,
+    "lon": 11.9324503,
+    "formatted": "Schwarzenbach an der Saale, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "88": {
+    "status": "candidate_unverified",
+    "lat": 54.633624,
+    "lon": 10.005263,
+    "formatted": "Schlei-Ostsee, Brodersby, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "89": {
+    "status": "candidate_unverified",
+    "lat": 51.5074392,
+    "lon": 14.1127319,
+    "formatted": "Geierswalder See, Geierswalde, SN, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "90": {
+    "status": "candidate_unverified",
+    "lat": 51.106661,
+    "lon": 6.796192,
+    "formatted": "Goldberger See, 41542 Dormagen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "91": {
+    "status": "candidate_unverified",
+    "lat": 53.330452,
+    "lon": 12.722444,
+    "formatted": "Röbel-Müritz, Rechlin, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.33333333333333337
+  },
+  "92": {
+    "status": "candidate_unverified",
+    "lat": 53.3304218,
+    "lon": 12.7223343,
+    "formatted": "Rechlin, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "93": {
+    "status": "candidate_unverified",
+    "lat": 53.9871005,
+    "lon": 11.0066559,
+    "formatted": "Groß Schwansee, Kalkhorst, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "94": {
+    "status": "candidate_unverified",
+    "lat": 54.3615914,
+    "lon": 11.083755,
+    "formatted": "Großenbrode, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "95": {
+    "status": "candidate_unverified",
+    "lat": 54.3615914,
+    "lon": 11.083755,
+    "formatted": "Großenbrode, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "96": {
+    "status": "candidate_unverified",
+    "lat": 53.4303523,
+    "lon": 7.2937031,
+    "formatted": "Großes Meer, 26624 Bedekaspel, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "97": {
+    "status": "candidate_unverified",
+    "lat": 48.793934,
+    "lon": 8.776474,
+    "formatted": "Tiefenbronn, Neuhausen, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "98": {
+    "status": "candidate_unverified",
+    "lat": 50.3979,
+    "lon": 10.00168,
+    "formatted": "Bischofsheim a.d. Rhön, Haselbach, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "101": {
+    "status": "candidate_unverified",
+    "lat": 54.379365,
+    "lon": 10.997194,
+    "formatted": "Graswarder, 23774 Heiligenhafen, Germany",
+    "result_type": "street",
+    "rank_confidence": 1
+  },
+  "102": {
+    "status": "candidate_unverified",
+    "lat": 54.3215761,
+    "lon": 10.6664697,
+    "formatted": "Hohwacht, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "103": {
+    "status": "candidate_unverified",
+    "lat": 54.3215761,
+    "lon": 10.6664697,
+    "formatted": "Hohwacht, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "104": {
+    "status": "candidate_unverified",
+    "lat": 53.630905,
+    "lon": 8.021502,
+    "formatted": "Hooksiel, Wangerland, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "105": {
+    "status": "candidate_unverified",
+    "lat": 53.674798,
+    "lon": 6.995683,
+    "formatted": "Hafen Juist, 26571 Juist, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "106": {
+    "status": "candidate_unverified",
+    "lat": 53.6784483,
+    "lon": 6.9956079,
+    "formatted": "Juist, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "107": {
+    "status": "candidate_unverified",
+    "lat": 51.2300964,
+    "lon": 6.5694212,
+    "formatted": "Kaarster See, Kaarst, NW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "108": {
+    "status": "candidate_unverified",
+    "lat": 54.13765,
+    "lon": 11.6791333,
+    "formatted": "Kägsdorf, Bastorf, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "109": {
+    "status": "candidate_unverified",
+    "lat": 54.50574,
+    "lon": 9.9239685,
+    "formatted": "Hünenbett von Waabs-Karlsminde, Karlsminde, 24369 Waabs, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "110": {
+    "status": "candidate_unverified",
+    "lat": 50.1648395,
+    "lon": 9.0309247,
+    "formatted": "Kinzigsee, Langenselbold, HE, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "111": {
+    "status": "candidate_unverified",
+    "lat": 49.1445646,
+    "lon": 10.8796997,
+    "formatted": "Absberg, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "112": {
+    "status": "candidate_unverified",
+    "lat": 49.1050781,
+    "lon": 10.8343651,
+    "formatted": "Pfofeld, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "113": {
+    "status": "candidate_unverified",
+    "lat": 49.104447,
+    "lon": 10.978487,
+    "formatted": "Pleinfeld, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "114": {
+    "status": "candidate_unverified",
+    "lat": 53.3369785,
+    "lon": 7.0276783,
+    "formatted": "Knock, Jannes-Ohling-Straße, 26723 Emden, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "115": {
+    "status": "candidate_unverified",
+    "lat": 47.653932,
+    "lon": 11.366395,
+    "formatted": "Kochel, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.258719086873811
+  },
+  "116": {
+    "status": "no_result"
+  },
+  "117": {
+    "status": "candidate_unverified",
+    "lat": 50.8983209,
+    "lon": 7.022011,
+    "formatted": "Westhoven, Cologne, NW, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "118": {
+    "status": "candidate_unverified",
+    "lat": 51.3681993,
+    "lon": 6.4540453,
+    "formatted": "Königshüttesee, Kempen, NW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "119": {
+    "status": "candidate_unverified",
+    "lat": 50.6145665,
+    "lon": 8.1411792,
+    "formatted": "Campingplatz an der Krombachtalsperre, An der Krombachtalsperre, 35759 Mademühlen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "120": {
+    "status": "candidate_unverified",
+    "lat": 50.6341939,
+    "lon": 8.1194493,
+    "formatted": "Rehe, RP, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "121": {
+    "status": "candidate_unverified",
+    "lat": 53.8083692,
+    "lon": 12.8599625,
+    "formatted": "Kummerower See, Kummerow, MV, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.36363636363636365
+  },
+  "122": {
+    "status": "candidate_unverified",
+    "lat": 50.4039625,
+    "lon": 7.2533937,
+    "formatted": "Laacher See, L 113, 56653 Glees, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "123": {
+    "status": "candidate_unverified",
+    "lat": 54.4034342,
+    "lon": 10.2159405,
+    "formatted": "Laboe, Strandpromenade, 24235 Laboe, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "124": {
+    "status": "candidate_unverified",
+    "lat": 53.7408705,
+    "lon": 7.4859169,
+    "formatted": "Langeoog, 26465 Langeoog, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "125": {
+    "status": "candidate_unverified",
+    "lat": 48.2449006,
+    "lon": 10.9863758,
+    "formatted": "Merching, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "126": {
+    "status": "candidate_unverified",
+    "lat": 54.4557948,
+    "lon": 9.9639035,
+    "formatted": "Lindhöft, Noer, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "127": {
+    "status": "candidate_unverified",
+    "lat": 50.0051772,
+    "lon": 8.2735287,
+    "formatted": "Historisches Mainz - Theodor-Heuss-Brücke, B 40, 55252 Mainz, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "128": {
+    "status": "candidate_unverified",
+    "lat": 50.0272524,
+    "lon": 8.1749563,
+    "formatted": "Budenheim, Rheinstraße, 55257 Budenheim, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "129": {
+    "status": "candidate_unverified",
+    "lat": 54.08988,
+    "lon": 9.070633,
+    "formatted": "Mitteldithmarschen, Meldorf, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "130": {
+    "status": "candidate_unverified",
+    "lat": 54.08988,
+    "lon": 9.070633,
+    "formatted": "Meldorf, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "131": {
+    "status": "candidate_unverified",
+    "lat": 54.08988,
+    "lon": 9.070633,
+    "formatted": "Meldorf, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "132": {
+    "status": "candidate_unverified",
+    "lat": 51.482315,
+    "lon": 8.086055,
+    "formatted": "Delecker Brücke, 59519 Möhnesee, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "133": {
+    "status": "no_result"
+  },
+  "134": {
+    "status": "no_result"
+  },
+  "135": {
+    "status": "candidate_unverified",
+    "lat": 52.376481,
+    "lon": 12.44669,
+    "formatted": "Möserscher See, Brandenburg an der Havel, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.8
+  },
+  "136": {
+    "status": "candidate_unverified",
+    "lat": 52.4367583,
+    "lon": 13.6501033,
+    "formatted": "Großer Müggelsee, Berlin, Treptow-Köpenick, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.45
+  },
+  "137": {
+    "status": "no_result"
+  },
+  "138": {
+    "status": "candidate_unverified",
+    "lat": 49.2806488,
+    "lon": 6.9871114,
+    "formatted": "Neuhaus, 66115 Saarbrücken, Germany",
+    "result_type": "street",
+    "rank_confidence": 1
+  },
+  "139": {
+    "status": "candidate_unverified",
+    "lat": 50.466201,
+    "lon": 9.372796,
+    "formatted": "Nieder-Mooser-See, 36355 Freiensteinau, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "140": {
+    "status": "candidate_unverified",
+    "lat": 53.9885257,
+    "lon": 10.8261167,
+    "formatted": "Grundschule Niendorf/Ostsee, Störtebekerweg 22, 23669 Timmendorfer Strand, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "141": {
+    "status": "candidate_unverified",
+    "lat": 53.6163238,
+    "lon": 7.1606696,
+    "formatted": "Norddeich, Norden, NI, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "142": {
+    "status": "candidate_unverified",
+    "lat": 53.709701,
+    "lon": 7.143195,
+    "formatted": "Norderney, NI, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "143": {
+    "status": "candidate_unverified",
+    "lat": 53.708862,
+    "lon": 7.140069,
+    "formatted": "Kaiserwiese, Norderney, NI, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "144": {
+    "status": "candidate_unverified",
+    "lat": 53.7056126,
+    "lon": 7.1438175,
+    "formatted": "Norderney, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "145": {
+    "status": "candidate_unverified",
+    "lat": 53.7056126,
+    "lon": 7.1438175,
+    "formatted": "Norderney, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "146": {
+    "status": "candidate_unverified",
+    "lat": 53.7056126,
+    "lon": 7.1438175,
+    "formatted": "Norderney, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "147": {
+    "status": "candidate_unverified",
+    "lat": 53.7206043,
+    "lon": 7.2079522,
+    "formatted": "Weiße Düne 1, 26548 Norderney, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "148": {
+    "status": "candidate_unverified",
+    "lat": 53.703084,
+    "lon": 7.1661264,
+    "formatted": "Yachthafen Norderney, Am Hafen, 26548 Norderney, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "149": {
+    "status": "candidate_unverified",
+    "lat": 50.0071863,
+    "lon": 8.0167585,
+    "formatted": "Oestrich-Winkel, HE, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "150": {
+    "status": "candidate_unverified",
+    "lat": 53.4497583,
+    "lon": 10.0986286,
+    "formatted": "Bergedorf, Oortkaten, Hamburg, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "151": {
+    "status": "candidate_unverified",
+    "lat": 53.8060503,
+    "lon": 8.8938233,
+    "formatted": "Otterndorf, Am Bahnhof, 21762 Otterndorf, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "152": {
+    "status": "candidate_unverified",
+    "lat": 49.3730488,
+    "lon": 8.4505856,
+    "formatted": "Otterstadt, RP, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "153": {
+    "status": "candidate_unverified",
+    "lat": 52.9208627,
+    "lon": 14.0274088,
+    "formatted": "Campingplatz Parsteiner See, Am Parsteinsee E 24, 16248 Parsteinsee, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "155": {
+    "status": "candidate_unverified",
+    "lat": 54.0378581,
+    "lon": 11.595496,
+    "formatted": "Pepelow, Am Salzhaff, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "156": {
+    "status": "candidate_unverified",
+    "lat": 53.5133185,
+    "lon": 12.353353,
+    "formatted": "Alt Schwerin, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "157": {
+    "status": "candidate_unverified",
+    "lat": 52.3973799,
+    "lon": 12.435316,
+    "formatted": "Plauer See, Brandenburg an der Havel, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "158": {
+    "status": "candidate_unverified",
+    "lat": 52.399594,
+    "lon": 12.444791,
+    "formatted": "Plauer See, Brandenburg, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "159": {
+    "status": "candidate_unverified",
+    "lat": 54.4436594,
+    "lon": 12.5628816,
+    "formatted": "Prerow, Grüne Straße, 18375 Prerow, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "160": {
+    "status": "candidate_unverified",
+    "lat": 52.287649,
+    "lon": 13.410342,
+    "formatted": "Rangsdorfer See, 15834 Rangsdorf, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "161": {
+    "status": "candidate_unverified",
+    "lat": 54.1067652,
+    "lon": 11.6171165,
+    "formatted": "Rerik, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "162": {
+    "status": "candidate_unverified",
+    "lat": 54.1067652,
+    "lon": 11.6171165,
+    "formatted": "Rerik, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "163": {
+    "status": "no_result"
+  },
+  "164": {
+    "status": "candidate_unverified",
+    "lat": 47.6416386,
+    "lon": 10.4438496,
+    "formatted": "Oy-Mittelberg, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "165": {
+    "status": "candidate_unverified",
+    "lat": 54.6603731,
+    "lon": 13.2598424,
+    "formatted": "Kreptitz, 18556 Dranske, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.5
+  },
+  "166": {
+    "status": "candidate_unverified",
+    "lat": 54.4827013,
+    "lon": 13.5738139,
+    "formatted": "Neu Mukran, 18546 Sassnitz, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.5
+  },
+  "167": {
+    "status": "candidate_unverified",
+    "lat": 54.462873,
+    "lon": 13.136302,
+    "formatted": "Regenbogencamp Suhrendorf, Suhrendorf 4, 18569 Ummanz, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "168": {
+    "status": "candidate_unverified",
+    "lat": 54.3077472,
+    "lon": 13.6965342,
+    "formatted": "Mönchgut, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "169": {
+    "status": "candidate_unverified",
+    "lat": 54.6236393,
+    "lon": 13.2941898,
+    "formatted": "Wiek, Schule, Hauptstraße, 18556 Wiek, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.85
+  },
+  "170": {
+    "status": "candidate_unverified",
+    "lat": 54.3109282,
+    "lon": 12.4998895,
+    "formatted": "Freiwillige Feuerwehr Saal, Neue Straße 10, 18317 Saal, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "171": {
+    "status": "candidate_unverified",
+    "lat": 52.2472886,
+    "lon": 14.0568991,
+    "formatted": "Scharmützelsee, 15864 Bad Saarow, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "172": {
+    "status": "candidate_unverified",
+    "lat": 53.7033668,
+    "lon": 8.0235529,
+    "formatted": "Schillig, Wangerland, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "173": {
+    "status": "candidate_unverified",
+    "lat": 54.51851,
+    "lon": 9.5653284,
+    "formatted": "Schleswig, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "174": {
+    "status": "candidate_unverified",
+    "lat": 47.8333468,
+    "lon": 8.133505,
+    "formatted": "Aha, Schluchsee, BW, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "175": {
+    "status": "candidate_unverified",
+    "lat": 54.4734013,
+    "lon": 10.1038223,
+    "formatted": "Schwedeneck, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "176": {
+    "status": "candidate_unverified",
+    "lat": 52.3464533,
+    "lon": 12.9890287,
+    "formatted": "Caputh, Schwielowsee, BB, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "177": {
+    "status": "candidate_unverified",
+    "lat": 47.849792,
+    "lon": 11.854596,
+    "formatted": "Seehamer See, Weyarn, BY, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "178": {
+    "status": "candidate_unverified",
+    "lat": 54.2982221,
+    "lon": 10.6871309,
+    "formatted": "Sehlendorf, Blekendorf, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "179": {
+    "status": "candidate_unverified",
+    "lat": 51.4995207,
+    "lon": 13.9827465,
+    "formatted": "Komfortcamping Senftenberger See, Am Senftenberger See, 01968 Senftenberg - Zły Komorow, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "180": {
+    "status": "candidate_unverified",
+    "lat": 49.5789233,
+    "lon": 8.382791,
+    "formatted": "Silbersee, Bobenheim-Roxheim, RP, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "181": {
+    "status": "candidate_unverified",
+    "lat": 47.8565786,
+    "lon": 12.1943825,
+    "formatted": "Stephanskirchen, Bahnhof, Simsseestraße, 83071 Stephanskirchen, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "182": {
+    "status": "candidate_unverified",
+    "lat": 47.906411,
+    "lon": 12.3013697,
+    "formatted": "Bad Endorf, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "183": {
+    "status": "candidate_unverified",
+    "lat": 51.0657625,
+    "lon": 9.2904529,
+    "formatted": "Gombeth, HE, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.225
+  },
+  "184": {
+    "status": "candidate_unverified",
+    "lat": 51.0586607,
+    "lon": 9.3197022,
+    "formatted": "Singlis, HE, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.225
+  },
+  "185": {
+    "status": "candidate_unverified",
+    "lat": 51.3309061,
+    "lon": 7.9420379,
+    "formatted": "Sorpestalsperre, Sundern, NW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "186": {
+    "status": "candidate_unverified",
+    "lat": 48.1046276,
+    "lon": 12.2021949,
+    "formatted": "Soyensee, Soyen, BY, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "187": {
+    "status": "candidate_unverified",
+    "lat": 53.7710589,
+    "lon": 7.6946627,
+    "formatted": "Spiekeroog, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "188": {
+    "status": "candidate_unverified",
+    "lat": 51.6337501,
+    "lon": 14.3929249,
+    "formatted": "Talsperre Spremberg, Spremberg, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "189": {
+    "status": "candidate_unverified",
+    "lat": 51.63403,
+    "lon": 14.390123,
+    "formatted": "Talsperre Spremberg, 03058 Neuhausen/Spree, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "190": {
+    "status": "candidate_unverified",
+    "lat": 51.5714513,
+    "lon": 14.3804302,
+    "formatted": "Spremberg, BB, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "191": {
+    "status": "candidate_unverified",
+    "lat": 54.302261,
+    "lon": 8.631477,
+    "formatted": "St. Peter-Ording, Sankt Peter-Ording, SH, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 0.5
+  },
+  "192": {
+    "status": "candidate_unverified",
+    "lat": 54.3055745,
+    "lon": 8.6363737,
+    "formatted": "Zum Südstrand, 25826 Sankt Peter-Ording, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.9
+  },
+  "193": {
+    "status": "candidate_unverified",
+    "lat": 47.85255,
+    "lon": 11.337117,
+    "formatted": "Starnberger See - Ambach, Münsing, BY, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "194": {
+    "status": "candidate_unverified",
+    "lat": 47.90289,
+    "lon": 11.3694069,
+    "formatted": "Münsing, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "195": {
+    "status": "candidate_unverified",
+    "lat": 47.9092703,
+    "lon": 11.3083626,
+    "formatted": "Lake Starnberg, Starnberger See, BY, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.15384615384615388
+  },
+  "197": {
+    "status": "candidate_unverified",
+    "lat": 52.4856325,
+    "lon": 9.2825765,
+    "formatted": "Grundschule Mardorf am Steinhuder Meer, Eichendorffstraße 5, 31536 Neustadt am Rübenberge, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "198": {
+    "status": "candidate_unverified",
+    "lat": 54.4375322,
+    "lon": 10.1742064,
+    "formatted": "Strande, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "199": {
+    "status": "candidate_unverified",
+    "lat": 54.4375322,
+    "lon": 10.1742064,
+    "formatted": "Strande, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "200": {
+    "status": "candidate_unverified",
+    "lat": 54.4709725,
+    "lon": 10.0745153,
+    "formatted": "Surendorf, Schwedeneck, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "201": {
+    "status": "candidate_unverified",
+    "lat": 54.9064856,
+    "lon": 8.3071734,
+    "formatted": "Westerland, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "202": {
+    "status": "candidate_unverified",
+    "lat": 55.0170633,
+    "lon": 8.435707,
+    "formatted": "List auf Sylt, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "203": {
+    "status": "candidate_unverified",
+    "lat": 55.0170633,
+    "lon": 8.435707,
+    "formatted": "List auf Sylt, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "204": {
+    "status": "candidate_unverified",
+    "lat": 50.538003,
+    "lon": 12.202928,
+    "formatted": "Talsperre Pöhl, 08543 Pöhl, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "205": {
+    "status": "candidate_unverified",
+    "lat": 47.7099191,
+    "lon": 11.7543337,
+    "formatted": "Tegernsee, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "206": {
+    "status": "candidate_unverified",
+    "lat": 47.74964,
+    "lon": 11.7353,
+    "formatted": "Gmund (Tegernsee), Gmund am Tegernsee, BY, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.53865
   }
 }
