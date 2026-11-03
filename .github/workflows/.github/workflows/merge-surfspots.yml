@@ -1,0 +1,34 @@
+
+name: Surfspots zusammenfuehren
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Surfspots zusammenfuehren
+        run: python merge_surfspots.py
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add surfspots_merged_1155.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Surfspots zusammengefuehrt"
+            git push
+          fi
