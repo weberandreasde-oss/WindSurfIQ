@@ -1,1 +1,10 @@
-{}
+{
+  "1": {
+    "status": "candidate_unverified",
+    "lat": 52.4911664,
+    "lon": 7.9894187,
+    "formatted": "Kart am Alfsee, Westerfeldstraße 73, 49597 Rieste, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  }
+}
