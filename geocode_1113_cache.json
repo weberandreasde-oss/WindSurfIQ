@@ -4706,5 +4706,1565 @@
     "formatted": "La Torche, Sallanches, ARA, France",
     "result_type": "city",
     "rank_confidence": 1
+  },
+  "633": {
+    "status": "candidate_unverified",
+    "lat": 48.4935856,
+    "lon": -4.0433645,
+    "formatted": "Lampaul-Guimiliau, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "634": {
+    "status": "candidate_unverified",
+    "lat": 48.7012288,
+    "lon": -4.0563356,
+    "formatted": "Le Dossen, Place du Dossen, 29250 Santec, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "635": {
+    "status": "candidate_unverified",
+    "lat": 47.8427124,
+    "lon": -4.1679541,
+    "formatted": "Île-Tudy, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "636": {
+    "status": "candidate_unverified",
+    "lat": 47.8427124,
+    "lon": -4.1679541,
+    "formatted": "Île-Tudy, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "637": {
+    "status": "candidate_unverified",
+    "lat": 47.8126044,
+    "lon": -4.3377655,
+    "formatted": "Penmarc'h, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "638": {
+    "status": "candidate_unverified",
+    "lat": 48.348453,
+    "lon": -4.703926,
+    "formatted": "Place de Trez Hir, 29217 Plougonvelin, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "639": {
+    "status": "candidate_unverified",
+    "lat": 48.6207067,
+    "lon": -4.5618001,
+    "formatted": "Le Penty, Kervenni Vraz, 29880 Lilia, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "640": {
+    "status": "candidate_unverified",
+    "lat": 48.6261114,
+    "lon": -4.4612553,
+    "formatted": "Le Vougot, Plouguerneau, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "641": {
+    "status": "candidate_unverified",
+    "lat": 48.3665416,
+    "lon": -4.7594039,
+    "formatted": "Camping les Blancs Sablons, Route de Kermorvan, 29217 Le Conquet, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "642": {
+    "status": "candidate_unverified",
+    "lat": 47.9524286,
+    "lon": -2.389844,
+    "formatted": "Millet, Ploërmel, France",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "643": {
+    "status": "candidate_unverified",
+    "lat": 48.3972299,
+    "lon": -4.4205229,
+    "formatted": "Moulin Blanc, Le Relecq-Kerhuon, BRE, France",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "644": {
+    "status": "candidate_unverified",
+    "lat": 48.39313,
+    "lon": -4.433194,
+    "formatted": "Moulin blanc, Brest, Finistère, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "645": {
+    "status": "candidate_unverified",
+    "lat": 47.9413758,
+    "lon": -4.4031081,
+    "formatted": "Penhors, Pouldreuzic, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "646": {
+    "status": "candidate_unverified",
+    "lat": 48.1895264,
+    "lon": -4.3007719,
+    "formatted": "Plage de Pentrez, 29550 Pentrez, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "647": {
+    "status": "candidate_unverified",
+    "lat": 48.09331,
+    "lon": -4.274039,
+    "formatted": "Rue de la Baie, 29100 Douarnenez, France",
+    "result_type": "street",
+    "rank_confidence": 0.6270967741935484
+  },
+  "648": {
+    "status": "candidate_unverified",
+    "lat": 48.6572057,
+    "lon": -4.1743159,
+    "formatted": "Plouescat, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "649": {
+    "status": "no_result"
+  },
+  "650": {
+    "status": "candidate_unverified",
+    "lat": 48.5894429,
+    "lon": -3.313762,
+    "formatted": "Le Yélen, 22540 Pédernec, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "651": {
+    "status": "candidate_unverified",
+    "lat": 48.7255816,
+    "lon": -3.9828983,
+    "formatted": "Roscoff, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "652": {
+    "status": "candidate_unverified",
+    "lat": 48.346292,
+    "lon": -4.325541,
+    "formatted": "Rostiviec, 29470 Loperhet, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "653": {
+    "status": "candidate_unverified",
+    "lat": 47.8757017,
+    "lon": -3.9223889,
+    "formatted": "Concarneau, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "654": {
+    "status": "candidate_unverified",
+    "lat": 48.8483389,
+    "lon": 2.3985035,
+    "formatted": "Barrière du Trône - Saint-Louis, Place des Antilles, 75011 Paris, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "655": {
+    "status": "candidate_unverified",
+    "lat": 48.677894,
+    "lon": -3.846364,
+    "formatted": "Impasse Les Hauts de Térénez, 29630 Plougasnou, France",
+    "result_type": "street",
+    "rank_confidence": 0.6561000000000001
+  },
+  "656": {
+    "status": "candidate_unverified",
+    "lat": 48.677894,
+    "lon": -3.846364,
+    "formatted": "Impasse Les Hauts de Térénez, 29630 Plougasnou, France",
+    "result_type": "street",
+    "rank_confidence": 0.6561000000000001
+  },
+  "657": {
+    "status": "candidate_unverified",
+    "lat": 48.6773757,
+    "lon": -3.844516,
+    "formatted": "Terenez, Chemin de Pen ar C'Hra, 29630 Térénez, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "658": {
+    "status": "candidate_unverified",
+    "lat": 48.348453,
+    "lon": -4.703926,
+    "formatted": "Place de Trez Hir, 29217 Plougonvelin, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "659": {
+    "status": "candidate_unverified",
+    "lat": 48.5632411,
+    "lon": -4.6812632,
+    "formatted": "Tréompan, Ploudalmézeau, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "660": {
+    "status": "candidate_unverified",
+    "lat": 44.082692,
+    "lon": -1.262476,
+    "formatted": "Les Dunes de Contis, Route de Contis, 40170 Saint-Julien-en-Born, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "661": {
+    "status": "candidate_unverified",
+    "lat": 47.8660866,
+    "lon": -4.1497999,
+    "formatted": "Menhir de Treustel, Rue de Menez Lanveur, 29120 Sainte-Marine, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.11571428571428571
+  },
+  "662": {
+    "status": "candidate_unverified",
+    "lat": 48.0944459,
+    "lon": -4.3311243,
+    "formatted": "Douarnenez, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "663": {
+    "status": "candidate_unverified",
+    "lat": 48.3912324,
+    "lon": -4.4851141,
+    "formatted": "Brest, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "664": {
+    "status": "candidate_unverified",
+    "lat": 45.256802,
+    "lon": 4.585146,
+    "formatted": "Chemin de la Croix de l’Ane, 42220 Burdignes, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "665": {
+    "status": "no_result"
+  },
+  "666": {
+    "status": "candidate_unverified",
+    "lat": 43.5069351,
+    "lon": 4.1258041,
+    "formatted": "Camping de L'Espiguette, Route de l'Espiguette, 30240 Le Grau-du-Roi, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.2604396951219512
+  },
+  "667": {
+    "status": "candidate_unverified",
+    "lat": 43.516567,
+    "lon": 4.141761,
+    "formatted": "Les Terrasses du Lac, 30240 Le Grau-du-Roi, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "668": {
+    "status": "candidate_unverified",
+    "lat": 44.14333,
+    "lon": 4.71167,
+    "formatted": "Phénix, Codolet, Gard, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "669": {
+    "status": "candidate_unverified",
+    "lat": 43.5230262,
+    "lon": 4.1412497,
+    "formatted": "Port-Camargue, Le Grau-du-Roi, OCC, France",
+    "result_type": "suburb",
+    "rank_confidence": 0.25
+  },
+  "670": {
+    "status": "candidate_unverified",
+    "lat": 43.950768,
+    "lon": -1.363091,
+    "formatted": "Plage Sud, 40560 Vielle-Saint-Girons, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "671": {
+    "status": "candidate_unverified",
+    "lat": 43.5151455,
+    "lon": 4.1229969,
+    "formatted": "Port Camargue Plage Sud, 30240 Le Grau-du-Roi, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "672": {
+    "status": "candidate_unverified",
+    "lat": 43.5151455,
+    "lon": 4.1229969,
+    "formatted": "Port Camargue Plage Sud, 30240 Le Grau-du-Roi, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "673": {
+    "status": "candidate_unverified",
+    "lat": 44.0237452,
+    "lon": 4.7934816,
+    "formatted": "Sauveterre, 45 Rue Guirand de Scevola, 30150 Sauveterre, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "674": {
+    "status": "candidate_unverified",
+    "lat": 43.517214,
+    "lon": 1.4980801,
+    "formatted": "Castanet-Tolosan, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "675": {
+    "status": "candidate_unverified",
+    "lat": 43.31429,
+    "lon": 1.803471,
+    "formatted": "Cap Ganguise, 11410 Belflou, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "676": {
+    "status": "candidate_unverified",
+    "lat": 47.9392614,
+    "lon": 3.1348735,
+    "formatted": "La Chanteraine, 89120 Charny Orée de Puisaye, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.23966942148760334
+  },
+  "677": {
+    "status": "candidate_unverified",
+    "lat": 43.5698998,
+    "lon": 1.3490897,
+    "formatted": "Lac de la Ramée, 31170 Tournefeuille, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "678": {
+    "status": "candidate_unverified",
+    "lat": 44.7523625,
+    "lon": -1.1783971,
+    "formatted": "Arbousiers, Route des Pastourelles, 33950 Lège-Cap-Ferret, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "679": {
+    "status": "candidate_unverified",
+    "lat": 44.606705,
+    "lon": -1.207486,
+    "formatted": "Avenue du Banc d'Arguin, 33115 La Teste-de-Buch, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "680": {
+    "status": "candidate_unverified",
+    "lat": 45.1861565,
+    "lon": -1.0575334,
+    "formatted": "Hourtin, NAQ, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "681": {
+    "status": "candidate_unverified",
+    "lat": 45.1814443,
+    "lon": -1.0844905,
+    "formatted": "Hourtin Port, Hourtin, NAQ, France",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "682": {
+    "status": "candidate_unverified",
+    "lat": 45.551057,
+    "lon": -1.058804,
+    "formatted": "Plage de la Chambrette, 33123 Le Verdon-sur-Mer, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "683": {
+    "status": "candidate_unverified",
+    "lat": 44.7395807,
+    "lon": -1.0905235,
+    "formatted": "Ancien Cimetière d'Andernos, Le Bétey, Andernos-les-Bains, NAQ, France",
+    "result_type": "postcode",
+    "rank_confidence": 1
+  },
+  "684": {
+    "status": "candidate_unverified",
+    "lat": 45.0702413,
+    "lon": -1.141081,
+    "formatted": "Plage de Maubuisson, Super Maubuisson, 33121 Carcans, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "685": {
+    "status": "candidate_unverified",
+    "lat": 43.899669,
+    "lon": -0.383519,
+    "formatted": "Chemin Lacanau, 40090 Bougue, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "686": {
+    "status": "candidate_unverified",
+    "lat": 43.899669,
+    "lon": -0.383519,
+    "formatted": "Chemin Lacanau, 40090 Bougue, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "687": {
+    "status": "candidate_unverified",
+    "lat": 44.481701,
+    "lon": -1.087251,
+    "formatted": "Sanguinet, Landes, France",
+    "result_type": "city",
+    "rank_confidence": 0.0873015873015873
+  },
+  "688": {
+    "status": "candidate_unverified",
+    "lat": 44.481701,
+    "lon": -1.087251,
+    "formatted": "Sanguinet, Landes, France",
+    "result_type": "city",
+    "rank_confidence": 0.0873015873015873
+  },
+  "689": {
+    "status": "candidate_unverified",
+    "lat": 43.42181,
+    "lon": 3.67515,
+    "formatted": "Pointe du Barrou, Sète, Sete, Hérault, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "690": {
+    "status": "candidate_unverified",
+    "lat": 43.297286,
+    "lon": 3.533949,
+    "formatted": "Plage naturiste Cap d'Agde, 34300 Agde, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "691": {
+    "status": "candidate_unverified",
+    "lat": 48.9878202,
+    "lon": 1.7131463,
+    "formatted": "Dalla Famiglia, Rue de Lorraine, 78200 Mantes-la-Jolie, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.16363636363636364
+  },
+  "692": {
+    "status": "candidate_unverified",
+    "lat": 42.77934,
+    "lon": 3.03738,
+    "formatted": "Embouchure de l'Agly, Le Barcarès, Pyrénées-Orientales, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6204255319148937
+  },
+  "693": {
+    "status": "candidate_unverified",
+    "lat": 43.4540733,
+    "lon": 3.8132661,
+    "formatted": "Plage des Aresquiers, 34110 Frontignan, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "694": {
+    "status": "candidate_unverified",
+    "lat": 43.3995079,
+    "lon": 3.6940603,
+    "formatted": "La chapelle du haut quartier, Rue Borne, 34200 Sète, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "695": {
+    "status": "candidate_unverified",
+    "lat": 43.5602672,
+    "lon": 4.0860222,
+    "formatted": "La Grande-Motte, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "696": {
+    "status": "candidate_unverified",
+    "lat": 43.5602672,
+    "lon": 4.0860222,
+    "formatted": "La Grande-Motte, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "697": {
+    "status": "candidate_unverified",
+    "lat": 43.2830736,
+    "lon": 3.2798682,
+    "formatted": "Sérignan, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "698": {
+    "status": "candidate_unverified",
+    "lat": 47.3670296,
+    "lon": 0.6977806,
+    "formatted": "Lac, Avenue de Grammont, 37200 Tours, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "699": {
+    "status": "candidate_unverified",
+    "lat": 43.6565153,
+    "lon": 3.3806741,
+    "formatted": "Lac du Salagou, 34800 Clermont-l'Hérault, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6000000000000001
+  },
+  "700": {
+    "status": "candidate_unverified",
+    "lat": 43.6565153,
+    "lon": 3.3806741,
+    "formatted": "Lac du Salagou, 34800 Clermont-l'Hérault, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "701": {
+    "status": "candidate_unverified",
+    "lat": 43.403553,
+    "lon": 3.689653,
+    "formatted": "Sete, Sète, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "702": {
+    "status": "candidate_unverified",
+    "lat": 43.4209797,
+    "lon": 3.6739161,
+    "formatted": "Le Barrou, Place Guirand de Scévola, 34200 Sète, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "703": {
+    "status": "candidate_unverified",
+    "lat": 43.4014434,
+    "lon": 3.6959771,
+    "formatted": "Sète, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "704": {
+    "status": "candidate_unverified",
+    "lat": 43.3021197,
+    "lon": 0.2138821,
+    "formatted": "Marseillan, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.21428571428571427
+  },
+  "705": {
+    "status": "candidate_unverified",
+    "lat": 43.3527834,
+    "lon": 3.5352648,
+    "formatted": "Port de Marseillan-Ville, Quai Antonin Gros, 34340 Marseillan, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "706": {
+    "status": "candidate_unverified",
+    "lat": 43.277204,
+    "lon": 3.276712,
+    "formatted": "Sérignan, Serignan, France",
+    "result_type": "city",
+    "rank_confidence": 0.6666666666666667
+  },
+  "707": {
+    "status": "candidate_unverified",
+    "lat": 44.94488,
+    "lon": 6.56545,
+    "formatted": "Villeneuve, La Salle-Les-Alpes, France",
+    "result_type": "city",
+    "rank_confidence": 0.055263157894736833
+  },
+  "708": {
+    "status": "candidate_unverified",
+    "lat": 43.4014434,
+    "lon": 3.6959771,
+    "formatted": "Sète, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "709": {
+    "status": "candidate_unverified",
+    "lat": 43.4014434,
+    "lon": 3.6959771,
+    "formatted": "Sète, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "710": {
+    "status": "candidate_unverified",
+    "lat": 48.582828,
+    "lon": -2.1565872,
+    "formatted": "Baie de Lancieux, Chemin de la Digue de la Roche, 22770 Lancieux, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "711": {
+    "status": "no_result"
+  },
+  "712": {
+    "status": "candidate_unverified",
+    "lat": 48.1452702,
+    "lon": -1.250779,
+    "formatted": "La Cantache, 35500 Montreuil-sous-Pérouse, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "713": {
+    "status": "candidate_unverified",
+    "lat": 48.3211583,
+    "lon": -1.9133195,
+    "formatted": "Le Pont, La Baussaine, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "714": {
+    "status": "candidate_unverified",
+    "lat": 48.6354993,
+    "lon": -2.1090269,
+    "formatted": "Saint-Lunaire, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "715": {
+    "status": "candidate_unverified",
+    "lat": 48.5699597,
+    "lon": -1.9733807,
+    "formatted": "Saint-Suliac, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "716": {
+    "status": "candidate_unverified",
+    "lat": 48.5699597,
+    "lon": -1.9733807,
+    "formatted": "Saint-Suliac, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "717": {
+    "status": "candidate_unverified",
+    "lat": 48.174842,
+    "lon": -1.731081,
+    "formatted": "Sillon de la Guédonnais, 35520 La Chapelle-des-Fougeretz, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "718": {
+    "status": "candidate_unverified",
+    "lat": 48.6359188,
+    "lon": -2.0687571,
+    "formatted": "Saint-Énogat, Dinard, BRE, France",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "719": {
+    "status": "candidate_unverified",
+    "lat": 48.649518,
+    "lon": -2.0260409,
+    "formatted": "Saint-Malo, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "720": {
+    "status": "candidate_unverified",
+    "lat": 47.3736117,
+    "lon": 0.7346115,
+    "formatted": "Grand Lac des Peupleraies, 37550 Saint-Avertin, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "721": {
+    "status": "candidate_unverified",
+    "lat": 45.8159548,
+    "lon": 5.4038207,
+    "formatted": "Montalieu-Vercieu, ARA, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "722": {
+    "status": "candidate_unverified",
+    "lat": 45.0235248,
+    "lon": 5.7821139,
+    "formatted": "Plage de Laffrey, Route du Lac, 38220 Laffrey, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "723": {
+    "status": "candidate_unverified",
+    "lat": 44.9656674,
+    "lon": 5.7017388,
+    "formatted": "Monteynard, ARA, France",
+    "result_type": "city",
+    "rank_confidence": 0.3333333333333333
+  },
+  "724": {
+    "status": "candidate_unverified",
+    "lat": 49.66439,
+    "lon": 1.59641,
+    "formatted": "Saint-Maurice, Gaillefontaine, France",
+    "result_type": "city",
+    "rank_confidence": 0.02197802197802198
+  },
+  "725": {
+    "status": "candidate_unverified",
+    "lat": 45.8464,
+    "lon": 5.43503,
+    "formatted": "Villebois, ARA, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "726": {
+    "status": "no_result"
+  },
+  "727": {
+    "status": "candidate_unverified",
+    "lat": 49.112196,
+    "lon": 6.171979,
+    "formatted": "Ideal, 57000 Metz, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "728": {
+    "status": "candidate_unverified",
+    "lat": 43.752568,
+    "lon": 5.935097,
+    "formatted": "Lac d'Esparron, Esparron-de-Verdon, Alpes-de-Haute-Provence, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "729": {
+    "status": "candidate_unverified",
+    "lat": 43.7597818,
+    "lon": 6.1536983,
+    "formatted": "Le Lac de Ste Croix, Route de la Vallée, 04500 Sainte-Croix-du-Verdon, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.15
+  },
+  "730": {
+    "status": "candidate_unverified",
+    "lat": 44.4443954,
+    "lon": -1.2510871,
+    "formatted": "Biscarrosse-Plage, Biscarrosse, NAQ, France",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "731": {
+    "status": "candidate_unverified",
+    "lat": 50.403698,
+    "lon": 1.633343,
+    "formatted": "Chemin de la Flaque du Vieux Moulin, 62180 Verton, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "732": {
+    "status": "candidate_unverified",
+    "lat": 44.2019796,
+    "lon": -1.2309278,
+    "formatted": "Mimizan, NAQ, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "733": {
+    "status": "candidate_unverified",
+    "lat": 44.4819695,
+    "lon": -1.0923678,
+    "formatted": "Camping le Lac de Sanguinet, 526 Rue de Pinton, 40460 Sanguinet, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "734": {
+    "status": "candidate_unverified",
+    "lat": 43.6722048,
+    "lon": -1.4287026,
+    "formatted": "Lac d'Hossegor, 40150 Soorts-Hossegor, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "735": {
+    "status": "candidate_unverified",
+    "lat": 44.387389,
+    "lon": -1.182627,
+    "formatted": "Centre Latécoère, 1500 Avenue Pierre-Georges Latécoère, 40600 Biscarrosse, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "736": {
+    "status": "candidate_unverified",
+    "lat": 43.7645082,
+    "lon": -1.3164048,
+    "formatted": "Chemin de Laurens, 40140 Soustons, France",
+    "result_type": "street",
+    "rank_confidence": 0.9
+  },
+  "737": {
+    "status": "candidate_unverified",
+    "lat": 44.430833,
+    "lon": -1.17034,
+    "formatted": "Camping de Navarrosse, 712 Chemin de Navarrosse, 40600 Biscarrosse, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "738": {
+    "status": "candidate_unverified",
+    "lat": 47.2046689,
+    "lon": -1.5007962,
+    "formatted": "Rue du Docteur Victor Luneau, 44230 Saint-Sébastien-sur-Loire, France",
+    "result_type": "street",
+    "rank_confidence": 0.7290000000000001
+  },
+  "739": {
+    "status": "candidate_unverified",
+    "lat": 44.5206605,
+    "lon": 2.0944406,
+    "formatted": "Naussac, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "740": {
+    "status": "candidate_unverified",
+    "lat": 47.3991145,
+    "lon": -2.4595913,
+    "formatted": "Mesquer, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "741": {
+    "status": "candidate_unverified",
+    "lat": 47.3468646,
+    "lon": -2.5080068,
+    "formatted": "La Turballe, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "742": {
+    "status": "candidate_unverified",
+    "lat": 47.3278442,
+    "lon": -2.4293843,
+    "formatted": "Guérande, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "743": {
+    "status": "candidate_unverified",
+    "lat": 47.403175,
+    "lon": -2.494259,
+    "formatted": "Rue de Lanséria, 44420 Mesquer, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "744": {
+    "status": "candidate_unverified",
+    "lat": 48.293202,
+    "lon": 6.411157,
+    "formatted": "Sentier devant chez Martin Di, 88330 Vaxoncourt, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "745": {
+    "status": "candidate_unverified",
+    "lat": 42.530552,
+    "lon": 1.8546727,
+    "formatted": "El Punxo, 66760 Porté-Puymorens, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.09999999999999999
+  },
+  "746": {
+    "status": "candidate_unverified",
+    "lat": 47.6033486,
+    "lon": -2.0646076,
+    "formatted": "Ruisseau du Moulin Aumée, 44460 Saint-Nicolas-de-Redon, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "747": {
+    "status": "candidate_unverified",
+    "lat": 47.6071,
+    "lon": -2.05627,
+    "formatted": "Étang Aumée, 44460 Fégréac, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "748": {
+    "status": "candidate_unverified",
+    "lat": 47.6033486,
+    "lon": -2.0646076,
+    "formatted": "Ruisseau du Moulin Aumée, 44460 Saint-Nicolas-de-Redon, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "749": {
+    "status": "candidate_unverified",
+    "lat": 47.537585,
+    "lon": -1.4346502,
+    "formatted": "Étang de Vioreau, 44440 Joué-sur-Erdre, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6875
+  },
+  "750": {
+    "status": "candidate_unverified",
+    "lat": 47.080938,
+    "lon": -2.0416515,
+    "formatted": "Grande Plage, 44760 La Bernerie-en-Retz, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6000000000000001
+  },
+  "751": {
+    "status": "candidate_unverified",
+    "lat": 43.137281,
+    "lon": 5.7599528,
+    "formatted": "La Baie, 62 Rue du Docteur Louis Marçon, 83150 Bandol, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "752": {
+    "status": "candidate_unverified",
+    "lat": 47.2859032,
+    "lon": -2.3896795,
+    "formatted": "La Baule, Place du 18 Juin 1940, La Baule-les-Pins, 44500 La Baule-Escoublac, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "753": {
+    "status": "candidate_unverified",
+    "lat": 47.0814025,
+    "lon": -2.0383793,
+    "formatted": "La Bernerie-en-Retz, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 0.1111111111111111
+  },
+  "754": {
+    "status": "candidate_unverified",
+    "lat": 48.395052,
+    "lon": -4.459242,
+    "formatted": "St.-Marc, Brest, France",
+    "result_type": "suburb",
+    "rank_confidence": 0.5
+  },
+  "755": {
+    "status": "candidate_unverified",
+    "lat": 47.2670616,
+    "lon": -2.4542736,
+    "formatted": "La Govelle, Route de la Govelle, 44740 Batz-sur-Mer, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "756": {
+    "status": "candidate_unverified",
+    "lat": 43.518676,
+    "lon": 0.2181354,
+    "formatted": "La Hune, Laveraët, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.375
+  },
+  "757": {
+    "status": "candidate_unverified",
+    "lat": 47.4743551,
+    "lon": -2.485729,
+    "formatted": "La Mine d'Or, 45 Rue de la Plage, 56760 Pénestin, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "758": {
+    "status": "candidate_unverified",
+    "lat": 47.1816681,
+    "lon": -2.1497904,
+    "formatted": "Saint-Michel-Chef-Chef, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "759": {
+    "status": "candidate_unverified",
+    "lat": 47.3468646,
+    "lon": -2.5080068,
+    "formatted": "La Turballe, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "760": {
+    "status": "candidate_unverified",
+    "lat": 47.4038744,
+    "lon": -2.4933379,
+    "formatted": "Lanseria, Chemin des Douaniers, 44420 Quimiac, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "761": {
+    "status": "candidate_unverified",
+    "lat": 47.403175,
+    "lon": -2.494259,
+    "formatted": "Rue de Lanséria, 44420 Mesquer, France",
+    "result_type": "street",
+    "rank_confidence": 0.575
+  },
+  "762": {
+    "status": "candidate_unverified",
+    "lat": 45.688723,
+    "lon": 5.9127777,
+    "formatted": "Casino Grand-Cercle, 200 Rue du Casino, 73100 Aix-les-Bains, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "763": {
+    "status": "candidate_unverified",
+    "lat": 49.439341,
+    "lon": 1.1014021,
+    "formatted": "Le Grand Saint-Marc, 29 Rue Armand Carrel, 76000 Rouen, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "764": {
+    "status": "candidate_unverified",
+    "lat": 47.0628755,
+    "lon": -2.0009009,
+    "formatted": "Les Moutiers-en-Retz, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "765": {
+    "status": "candidate_unverified",
+    "lat": 47.3612293,
+    "lon": -1.5049408,
+    "formatted": "Plaine de Mazerolles, 44240 Sucé-sur-Erdre, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "766": {
+    "status": "candidate_unverified",
+    "lat": 48.26519,
+    "lon": 1.24892,
+    "formatted": "Monbeau, Saint-Avit-Les-Guespieres, France",
+    "result_type": "city",
+    "rank_confidence": 0.07142857142857142
+  },
+  "767": {
+    "status": "candidate_unverified",
+    "lat": 48.273745,
+    "lon": -0.629459,
+    "formatted": "Site d'escalade de Moulay, 53100 Moulay, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.18225000000000002
+  },
+  "768": {
+    "status": "candidate_unverified",
+    "lat": 47.1152695,
+    "lon": -2.1040102,
+    "formatted": "Pornic, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "769": {
+    "status": "candidate_unverified",
+    "lat": 47.429648,
+    "lon": -2.401665,
+    "formatted": "Route de Pont-Mahé, Asserac, 44410 Assérac, France",
+    "result_type": "street",
+    "rank_confidence": 0.6328125
+  },
+  "770": {
+    "status": "candidate_unverified",
+    "lat": 47.429648,
+    "lon": -2.401665,
+    "formatted": "Route de Pont-Mahé, 44410 Assérac, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "771": {
+    "status": "candidate_unverified",
+    "lat": 47.2705207,
+    "lon": -2.3447637,
+    "formatted": "Pornichet, Place Aristide Briand, 44380 Pornichet, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "772": {
+    "status": "candidate_unverified",
+    "lat": 47.3002188,
+    "lon": -2.5277552,
+    "formatted": "Lamsac, Le Croisic, Saint-Goustan, France",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "773": {
+    "status": "candidate_unverified",
+    "lat": 47.40583,
+    "lon": -2.48118,
+    "formatted": "Quimiac, Mesquer, PL, France",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "774": {
+    "status": "candidate_unverified",
+    "lat": 47.2296945,
+    "lon": -2.1751403,
+    "formatted": "Saint-Brévin l'Océan, Avenue du Président Roosevelt, 44250 Saint-Brévin l'Océan, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "775": {
+    "status": "candidate_unverified",
+    "lat": 45.644419,
+    "lon": 0.117704,
+    "formatted": "Angouleme, Saint-Michel, Charente, France",
+    "result_type": "city",
+    "rank_confidence": 0.5538461538461539
+  },
+  "776": {
+    "status": "no_result"
+  },
+  "777": {
+    "status": "candidate_unverified",
+    "lat": 47.1659633,
+    "lon": -2.1683707,
+    "formatted": "plage de tharon, 44730 Saint-Michel-Chef-Chef, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "778": {
+    "status": "candidate_unverified",
+    "lat": 47.279342,
+    "lon": -2.498674,
+    "formatted": "Plage Valentin, 44740 PL, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "779": {
+    "status": "candidate_unverified",
+    "lat": 47.2781471,
+    "lon": -2.4956993,
+    "formatted": "Plage Valentin, 44740 Batz-sur-Mer, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "780": {
+    "status": "candidate_unverified",
+    "lat": 49.007094,
+    "lon": 7.888565,
+    "formatted": "Rue Wolf, 67160 Cleebourg, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "781": {
+    "status": "candidate_unverified",
+    "lat": 47.59019,
+    "lon": 2.37838,
+    "formatted": "Étang du Puits, Cerdon, Loiret, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6788571428571429
+  },
+  "782": {
+    "status": "candidate_unverified",
+    "lat": 47.8983735,
+    "lon": 1.9359999,
+    "formatted": "Île Charlemagne, Chemin de Halage, 45000 Orléans, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "783": {
+    "status": "candidate_unverified",
+    "lat": 44.3142971,
+    "lon": 0.0880691,
+    "formatted": "Casteljaloux, NAQ, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "784": {
+    "status": "candidate_unverified",
+    "lat": 44.747282,
+    "lon": 3.8123598,
+    "formatted": "Lac de Naussac, 48300 Langogne, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "785": {
+    "status": "candidate_unverified",
+    "lat": 44.747282,
+    "lon": 3.8123598,
+    "formatted": "Lac de Naussac, 48300 Langogne, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "786": {
+    "status": "candidate_unverified",
+    "lat": 44.747282,
+    "lon": 3.8123598,
+    "formatted": "Lac de Naussac, 48300 Langogne, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "787": {
+    "status": "candidate_unverified",
+    "lat": 44.7270769,
+    "lon": 3.8553135,
+    "formatted": "Langogne, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "788": {
+    "status": "candidate_unverified",
+    "lat": 47.4607752,
+    "lon": -0.5971498,
+    "formatted": "Lac de Maine, Angers, PDL, France",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "789": {
+    "status": "candidate_unverified",
+    "lat": 47.0103976,
+    "lon": -0.8123711,
+    "formatted": "Lac du Verdon, 49360 Maulévrier, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "790": {
+    "status": "candidate_unverified",
+    "lat": 47.0103976,
+    "lon": -0.8123711,
+    "formatted": "Lac du Verdon, 49360 Maulévrier, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "791": {
+    "status": "candidate_unverified",
+    "lat": 47.371575,
+    "lon": -0.684418,
+    "formatted": "Le port, La Loire à Vélo, La Possonniere, 49170 La Possonnière, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "792": {
+    "status": "candidate_unverified",
+    "lat": 49.3815306,
+    "lon": -1.7528273,
+    "formatted": "Barneville-Carteret, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.9
+  },
+  "793": {
+    "status": "candidate_unverified",
+    "lat": 44.551909,
+    "lon": 6.4739723,
+    "formatted": "Chemin de Chadenas, 05200 Embrun, France",
+    "result_type": "street",
+    "rank_confidence": 0.9
+  },
+  "794": {
+    "status": "candidate_unverified",
+    "lat": 44.5641764,
+    "lon": 6.4958189,
+    "formatted": "Embrun, PAC, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "795": {
+    "status": "candidate_unverified",
+    "lat": 44.5488483,
+    "lon": 6.4724759,
+    "formatted": "Plan d'Eau d'Embrun, 05200 Embrun, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "796": {
+    "status": "candidate_unverified",
+    "lat": 44.4776793,
+    "lon": 6.2484788,
+    "formatted": "Rousset-Serre-Ponçon, PAC, France",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "797": {
+    "status": "candidate_unverified",
+    "lat": 44.45667,
+    "lon": 6.29444,
+    "formatted": "La Breole, Ubaye-Serre-Ponçon, Alpes-de-Haute-Provence, France",
+    "result_type": "city",
+    "rank_confidence": 0.3125
+  },
+  "798": {
+    "status": "candidate_unverified",
+    "lat": 49.1183561,
+    "lon": -1.5810351,
+    "formatted": "Anneville-sur-Mer, Gouville-sur-Mer, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "799": {
+    "status": "candidate_unverified",
+    "lat": 48.8987261,
+    "lon": -1.5677154,
+    "formatted": "Saint-Martin de Bréhal, Bréhal, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "800": {
+    "status": "candidate_unverified",
+    "lat": 49.672978,
+    "lon": -1.7378289,
+    "formatted": "Urville-Nacqueville, La Hague, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "801": {
+    "status": "candidate_unverified",
+    "lat": 49.3815306,
+    "lon": -1.7528273,
+    "formatted": "Barneville-Carteret, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.9
+  },
+  "802": {
+    "status": "candidate_unverified",
+    "lat": 49.60587,
+    "lon": -1.22994,
+    "formatted": "Pointe de Saire, Manche, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.15
+  },
+  "803": {
+    "status": "no_result"
+  },
+  "804": {
+    "status": "candidate_unverified",
+    "lat": 49.3815306,
+    "lon": -1.7528273,
+    "formatted": "Barneville-Carteret, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.9
+  },
+  "805": {
+    "status": "candidate_unverified",
+    "lat": 49.3125362,
+    "lon": -1.6606292,
+    "formatted": "Denneville, Port-Bail-sur-Mer, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.7000000000000001
+  },
+  "806": {
+    "status": "no_result"
+  },
+  "807": {
+    "status": "candidate_unverified",
+    "lat": 49.3836098,
+    "lon": -1.7994381,
+    "formatted": "Sommet dunes d'Hatainville, 50270 Les Moitiers-d'Allonne, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "808": {
+    "status": "candidate_unverified",
+    "lat": 49.5877016,
+    "lon": -1.2662184,
+    "formatted": "Saint-Vaast-la-Hougue, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "809": {
+    "status": "candidate_unverified",
+    "lat": 48.7743747,
+    "lon": -1.5636005,
+    "formatted": "Avenue Armand Jullou, 50610 Jullouville, France",
+    "result_type": "street",
+    "rank_confidence": 0.9
+  },
+  "810": {
+    "status": "candidate_unverified",
+    "lat": 48.8139133,
+    "lon": -1.5665949,
+    "formatted": "Saint-Pair-sur-Mer, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "812": {
+    "status": "candidate_unverified",
+    "lat": 48.898168,
+    "lon": -1.5118727,
+    "formatted": "Bréhal, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "813": {
+    "status": "candidate_unverified",
+    "lat": 49.5589537,
+    "lon": -1.8392427,
+    "formatted": "Siouville-Hague, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.9
+  },
+  "814": {
+    "status": "no_result"
+  },
+  "815": {
+    "status": "candidate_unverified",
+    "lat": 45.928343,
+    "lon": 4.726528,
+    "formatted": "Route de Anse, 69480 Anse, France",
+    "result_type": "street",
+    "rank_confidence": 0.45
+  },
+  "816": {
+    "status": "candidate_unverified",
+    "lat": 45.928343,
+    "lon": 4.726528,
+    "formatted": "Route de Anse, 69480 Anse, France",
+    "result_type": "street",
+    "rank_confidence": 0.45
+  },
+  "817": {
+    "status": "candidate_unverified",
+    "lat": 48.7921069,
+    "lon": 2.333088,
+    "formatted": "Romy Thorel, Rue Victor Schœlcher, 94230 Cachan, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.27
+  },
+  "818": {
+    "status": "candidate_unverified",
+    "lat": 48.5795975,
+    "lon": 4.7449399,
+    "formatted": "Lac du Der-Chantecoq, 51290 Sainte-Marie-du-Lac-Nuisement, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "819": {
+    "status": "candidate_unverified",
+    "lat": 47.7461525,
+    "lon": 5.3133476,
+    "formatted": "Lac de la Vingeanne, 52250 Longeau-Percey, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.2857142857142857
+  },
+  "820": {
+    "status": "candidate_unverified",
+    "lat": 48.5795975,
+    "lon": 4.7449399,
+    "formatted": "Lac du Der-Chantecoq, 51290 Sainte-Marie-du-Lac-Nuisement, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.15882352941176472
+  },
+  "821": {
+    "status": "candidate_unverified",
+    "lat": 47.866707,
+    "lon": -1.066359,
+    "formatted": "Étang de la Rincerie, La Selle-Craonnaise, Mayenne, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.5904900000000001
+  },
+  "822": {
+    "status": "candidate_unverified",
+    "lat": 47.8664739,
+    "lon": -1.0650998,
+    "formatted": "Étang de la Rincerie, 53800 La Selle-Craonnaise, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.216
+  },
+  "823": {
+    "status": "candidate_unverified",
+    "lat": 48.041107,
+    "lon": -0.4770755,
+    "formatted": "Vaiges, PDL, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "824": {
+    "status": "candidate_unverified",
+    "lat": 48.608897,
+    "lon": 6.145638,
+    "formatted": "Base nautique de Messein, 54850 Messein, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "825": {
+    "status": "candidate_unverified",
+    "lat": 48.6100192,
+    "lon": 6.1454087,
+    "formatted": "Messein, GES, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "826": {
+    "status": "candidate_unverified",
+    "lat": 48.92934,
+    "lon": 5.761369,
+    "formatted": "La Pergola, Nonsard-Lamarche, 54470 Pannes, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "827": {
+    "status": "candidate_unverified",
+    "lat": 47.6217578,
+    "lon": -2.8137337,
+    "formatted": "14 Arradon, Chemin Côtier, 56610 Arradon, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.15172413793103445
+  },
+  "828": {
+    "status": "candidate_unverified",
+    "lat": 47.5269877,
+    "lon": -2.5088738,
+    "formatted": "Bétahon, Ambon, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "829": {
+    "status": "candidate_unverified",
+    "lat": 47.5895735,
+    "lon": -2.8027424,
+    "formatted": "Kerroland, 56840 Île-d'Arz, France",
+    "result_type": "postcode",
+    "rank_confidence": 0.14166666666666666
+  },
+  "830": {
+    "status": "candidate_unverified",
+    "lat": 47.3463962,
+    "lon": 5.0137399,
+    "formatted": "Cottin, Route de Daix, 21121 Fontaine-lès-Dijon, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "831": {
+    "status": "candidate_unverified",
+    "lat": 48.292545,
+    "lon": 6.409744,
+    "formatted": "Chemin entre la Roche et le Chemin d’armée, 88330 Vaxoncourt, France",
+    "result_type": "street",
+    "rank_confidence": 0.12835684171597636
+  },
+  "832": {
+    "status": "candidate_unverified",
+    "lat": 47.6199584,
+    "lon": -2.7373441,
+    "formatted": "Séné, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "833": {
+    "status": "candidate_unverified",
+    "lat": 47.7349456,
+    "lon": -3.5048267,
+    "formatted": "The Fort-Bloqué, Allée des Touristes, 56270 Le Fort-Bloqué, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
   }
 }
