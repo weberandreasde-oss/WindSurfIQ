@@ -551,11 +551,33 @@ if(startupMapKey){$('mapkey').value=startupMapKey;$('loadmap').click();}
   btn.disabled=true;status.textContent='Surfspot-Katalog wird geladen …';
   fetchPromise=(async()=>{
    try{
-    const response=await fetch('./surfspots.json'+(force?'?refresh='+Date.now():''),{cache:'no-cache'});
-    if(!response.ok)throw Error('HTTP '+response.status);
-    const payload=await response.json();
-    if(!Array.isArray(payload.spots))throw Error('Ungültiges Katalogformat');
-    catalog=payload.spots.filter(p=>p&&typeof p.name==='string'&&Number.isFinite(p.lat)&&Number.isFinite(p.lon)&&Math.abs(p.lat)<=90&&Math.abs(p.lon)<=180);
+const response = await fetch(
+  './surfspots_1113_markers.json' +
+  (force ? '?refresh=' + Date.now() : ''),
+  {cache: 'no-cache'}
+);
+if (!response.ok) throw Error('HTTP ' + response.status);
+
+const payload = await response.json();
+if (!Array.isArray(payload)) throw Error('Ungültiges Katalogformat');
+
+catalog = payload.map(p => ({
+  ...p,
+  lat: Number(p.lat),
+  lon: Number(p.lon),
+  lng: Number(p.lon),
+  region: p.place || p.country,
+  verified: false,
+  coordinateAccuracy: 'approximate; not verified launch point'
+})).filter(p =>
+  typeof p.name === 'string' &&
+  Number.isFinite(p.lat) &&
+  Number.isFinite(p.lon) &&
+  Math.abs(p.lat) <= 90 &&
+  Math.abs(p.lon) <= 180
+);
+
+
     loaded=true;draw();refreshAudit();
    }catch(e){
     if(loaded){draw();status.textContent+=' Aktualisierung fehlgeschlagen: '+e.message+' (alter Katalog bleibt erhalten).'}
