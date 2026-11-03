@@ -613,7 +613,7 @@ if(startupMapKey){$('mapkey').value=startupMapKey;$('loadmap').click();}
   btn.disabled=true;status.textContent='Surfspot-Katalog wird geladen …';
   fetchPromise=(async()=>{
    try{
-    const response=await fetch('./surfspots_1113_markers.json'+(force?'?refresh='+Date.now():''),{cache:'no-cache'});
+    const response=await fetch('./surfspots_merged_1155.json'+(force?'?refresh='+Date.now():''),{cache:'no-cache'});
     if(!response.ok)throw Error('HTTP '+response.status);
     const payload=await response.json();
     if(!Array.isArray(payload))throw Error('Ungültiges Katalogformat');
