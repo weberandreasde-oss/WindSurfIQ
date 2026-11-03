@@ -10,6 +10,24 @@ OUT=ROOT/'spots_1113_geocoded_candidates.csv'
 REPORT=ROOT/'geocode_1113_report.json'
 API=os.environ.get('GEOAPIFY_API_KEY','').strip()
 LIMIT=max(0,min(int(os.environ.get('MAX_QUERIES','50')),200))
+
+# Diagnose des Geoapify-API-Schlüssels
+# Der Schlüssel selbst wird NICHT ausgegeben.
+import hashlib
+
+def diagnose_api_key():
+    raw_key = os.environ.get('GEOAPIFY_API_KEY', '')
+    clean_key = raw_key.strip()
+
+    print("=== GEOAPIFY API DIAGNOSE ===")
+    print("Schluessel vorhanden:", bool(clean_key))
+    print("Schluessellaenge:", len(clean_key))
+    print("Leerzeichen am Anfang/Ende:", raw_key != clean_key)
+    print("SHA256:", hashlib.sha256(clean_key.encode('utf-8')).hexdigest())
+    print("============================")
+
+diagnose_api_key()
+
 COUNTRIES={'DE':'Germany','FR':'France','NL':'Netherlands'}
 
 def get_result(row):
