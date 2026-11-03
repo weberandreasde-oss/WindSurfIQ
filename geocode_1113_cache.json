@@ -1561,5 +1561,1585 @@
     "formatted": "Gmund (Tegernsee), Gmund am Tegernsee, BY, Germany",
     "result_type": "amenity",
     "rank_confidence": 0.53865
+  },
+  "207": {
+    "status": "candidate_unverified",
+    "lat": 47.7128111,
+    "lon": 11.7254859,
+    "formatted": "Bad Wiessee, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "208": {
+    "status": "candidate_unverified",
+    "lat": 47.750822,
+    "lon": 11.738955,
+    "formatted": "Gmund, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "209": {
+    "status": "candidate_unverified",
+    "lat": 54.1166965,
+    "lon": 13.8291312,
+    "formatted": "Karlshagen, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "210": {
+    "status": "candidate_unverified",
+    "lat": 54.0138976,
+    "lon": 14.049895,
+    "formatted": "Ückeritz, Bahnhofstraße, 17459 Ückeritz, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "211": {
+    "status": "candidate_unverified",
+    "lat": 54.554383,
+    "lon": 9.093146,
+    "formatted": "Tierheim Ahrenshöft/Steinberg, Steinberg 1, 25853 Ahrenshöft, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "212": {
+    "status": "no_result"
+  },
+  "213": {
+    "status": "candidate_unverified",
+    "lat": 54.7558633,
+    "lon": 9.881306,
+    "formatted": "Wackerballig, Gelting, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "214": {
+    "status": "candidate_unverified",
+    "lat": 49.416214,
+    "lon": 8.533285,
+    "formatted": "Walchenseeweg, 68782 Mannheim, Germany",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "215": {
+    "status": "candidate_unverified",
+    "lat": 47.6179377,
+    "lon": 11.3461766,
+    "formatted": "Urfeld, Kochel am See, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.3
+  },
+  "216": {
+    "status": "candidate_unverified",
+    "lat": 49.416214,
+    "lon": 8.533285,
+    "formatted": "Walchenseeweg, 68782 Mannheim, Germany",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "217": {
+    "status": "candidate_unverified",
+    "lat": 47.653932,
+    "lon": 11.366395,
+    "formatted": "Kochel, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.2549467275494673
+  },
+  "218": {
+    "status": "candidate_unverified",
+    "lat": 52.7565273,
+    "lon": 13.4550849,
+    "formatted": "Wandlitzsee, Wandlitz, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "219": {
+    "status": "candidate_unverified",
+    "lat": 53.7891528,
+    "lon": 7.9016018,
+    "formatted": "Wangerooge, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "220": {
+    "status": "candidate_unverified",
+    "lat": 53.7891528,
+    "lon": 7.9016018,
+    "formatted": "Wangerooge, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "222": {
+    "status": "candidate_unverified",
+    "lat": 54.3025151,
+    "lon": 10.7661326,
+    "formatted": "Schloss Weißenhaus, Franz-Ernst-Straße, 23758 Wangels, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "223": {
+    "status": "candidate_unverified",
+    "lat": 52.9157116,
+    "lon": 13.7145593,
+    "formatted": "Haus am Werbellinsee, Krumme Straße 5, 16244 Altenhof, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "224": {
+    "status": "candidate_unverified",
+    "lat": 50.5895677,
+    "lon": 7.9979339,
+    "formatted": "Strandbad Wiesensee, 56459 Pottum, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "225": {
+    "status": "candidate_unverified",
+    "lat": 53.5057407,
+    "lon": 8.1021399,
+    "formatted": "Innenhafen, Banter See, Wilhelmshaven, NI, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "226": {
+    "status": "candidate_unverified",
+    "lat": 53.512329,
+    "lon": 8.137877,
+    "formatted": "Südstrand Waffel, 26382 Wilhelmshaven, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "227": {
+    "status": "candidate_unverified",
+    "lat": 48.073498,
+    "lon": 11.184013,
+    "formatted": "Wörthseestraße, 82237 Wörthsee, Germany",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "228": {
+    "status": "candidate_unverified",
+    "lat": 48.0742376,
+    "lon": 11.1849504,
+    "formatted": "Walchstadt, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "229": {
+    "status": "candidate_unverified",
+    "lat": 53.648325,
+    "lon": 8.509077,
+    "formatted": "Wurster Nordseeküste, Wremen, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "230": {
+    "status": "candidate_unverified",
+    "lat": 52.371857,
+    "lon": 12.397406,
+    "formatted": "Großer Wusterwitzer See, 14789 Wusterwitz, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "231": {
+    "status": "candidate_unverified",
+    "lat": 54.348434,
+    "lon": 12.401311,
+    "formatted": "Bibliothek Ostseebad Wustrow, 18347 Wustrow, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "232": {
+    "status": "candidate_unverified",
+    "lat": 51.6943969,
+    "lon": 6.4356152,
+    "formatted": "Xantener Nordsee, 46509 Xanten, Germany",
+    "result_type": "street",
+    "rank_confidence": 1
+  },
+  "233": {
+    "status": "candidate_unverified",
+    "lat": 51.661519,
+    "lon": 6.4543203,
+    "formatted": "Xanten, NW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "234": {
+    "status": "candidate_unverified",
+    "lat": 51.678958,
+    "lon": 6.448145,
+    "formatted": "Xantener Südsee, 46509 Xanten, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "235": {
+    "status": "candidate_unverified",
+    "lat": 51.661519,
+    "lon": 6.4543203,
+    "formatted": "Xanten, NW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "236": {
+    "status": "candidate_unverified",
+    "lat": 50.6809448,
+    "lon": 6.6641655,
+    "formatted": "Zülpicher See, Zülpich, NW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "237": {
+    "status": "candidate_unverified",
+    "lat": 52.405993,
+    "lon": 12.931235,
+    "formatted": "Großer Zernsee, Werder, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.95
+  },
+  "238": {
+    "status": "candidate_unverified",
+    "lat": 52.1493955,
+    "lon": 13.3816174,
+    "formatted": "Am Mellensee, BB, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "239": {
+    "status": "candidate_unverified",
+    "lat": 52.2798016,
+    "lon": 13.0129167,
+    "formatted": "Seddiner See, BB, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "240": {
+    "status": "candidate_unverified",
+    "lat": 52.4696471,
+    "lon": 12.7970794,
+    "formatted": "Trebelsee, Ketzin/Havel, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.2
+  },
+  "241": {
+    "status": "candidate_unverified",
+    "lat": 50.7032,
+    "lon": 8.476972,
+    "formatted": "Aartalsee, Bischoffen, HE, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "242": {
+    "status": "candidate_unverified",
+    "lat": 54.3791454,
+    "lon": 12.4212237,
+    "formatted": "Mühle Ahrenshoop, Feldweg, 18347 Ahrenshoop, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "243": {
+    "status": "candidate_unverified",
+    "lat": 53.9880796,
+    "lon": 11.3914382,
+    "formatted": "Timmendorf, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "244": {
+    "status": "candidate_unverified",
+    "lat": 54.1483764,
+    "lon": 11.7441876,
+    "formatted": "Kühlungsborn, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "245": {
+    "status": "candidate_unverified",
+    "lat": 54.1120878,
+    "lon": 13.5256248,
+    "formatted": "Ludwigsburger Straße, 17509 Ludwigsburg, Germany",
+    "result_type": "street",
+    "rank_confidence": 1
+  },
+  "246": {
+    "status": "candidate_unverified",
+    "lat": 52.1564864,
+    "lon": 10.3007497,
+    "formatted": "Salzgittersee, Lebenstedt, Salzgitter, NI, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "247": {
+    "status": "candidate_unverified",
+    "lat": 51.4962922,
+    "lon": 11.6733979,
+    "formatted": "Süßer See, Seeburg, ST, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "248": {
+    "status": "candidate_unverified",
+    "lat": 54.3501567,
+    "lon": 10.6047162,
+    "formatted": "Behrensdorf, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "249": {
+    "status": "candidate_unverified",
+    "lat": 54.422062,
+    "lon": 10.395538,
+    "formatted": "Wohnmobilstellplatz Mittelstrand, 24217 Schönberg, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.225
+  },
+  "250": {
+    "status": "candidate_unverified",
+    "lat": 54.4394204,
+    "lon": 11.1969428,
+    "formatted": "Burg auf Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "251": {
+    "status": "candidate_unverified",
+    "lat": 54.409599,
+    "lon": 11.204258,
+    "formatted": "Südstrand, Fehmarn, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "253": {
+    "status": "candidate_unverified",
+    "lat": 54.7306651,
+    "lon": 8.7130636,
+    "formatted": "Dagebüll, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "254": {
+    "status": "candidate_unverified",
+    "lat": 54.2073631,
+    "lon": 11.0904159,
+    "formatted": "Jugendherberge Dahme, Dahmeshöved 1, 23747 Dahme, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "255": {
+    "status": "candidate_unverified",
+    "lat": 54.579911,
+    "lon": 9.982315,
+    "formatted": "Schlei-Ostsee, Damp, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "256": {
+    "status": "candidate_unverified",
+    "lat": 54.4789973,
+    "lon": 10.1230136,
+    "formatted": "Dänisch-Nienhof, Schwedeneck, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "257": {
+    "status": "candidate_unverified",
+    "lat": 54.450822,
+    "lon": 9.855628,
+    "formatted": "Südstrand, 24340 Eckernförde, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "259": {
+    "status": "candidate_unverified",
+    "lat": 54.583368,
+    "lon": 10.0227108,
+    "formatted": "Damp, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "260": {
+    "status": "candidate_unverified",
+    "lat": 54.4685201,
+    "lon": 11.1342465,
+    "formatted": "Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "261": {
+    "status": "candidate_unverified",
+    "lat": 54.4540471,
+    "lon": 11.0077167,
+    "formatted": "Camping Flügger Strand, Hof Flügge 2, 23769 Fehmarn, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "262": {
+    "status": "candidate_unverified",
+    "lat": 54.4477604,
+    "lon": 11.2512982,
+    "formatted": "Gahlendorf, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "263": {
+    "status": "candidate_unverified",
+    "lat": 54.4685201,
+    "lon": 11.1342465,
+    "formatted": "Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "264": {
+    "status": "candidate_unverified",
+    "lat": 54.1441095,
+    "lon": 10.9588499,
+    "formatted": "Grömitz, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "265": {
+    "status": "candidate_unverified",
+    "lat": 54.355581,
+    "lon": 11.0821046,
+    "formatted": "Am Kai, 23775 Großenbrode, Germany",
+    "result_type": "street",
+    "rank_confidence": 0.5
+  },
+  "266": {
+    "status": "candidate_unverified",
+    "lat": 53.8443378,
+    "lon": 9.6243131,
+    "formatted": "Hohenfelde, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "267": {
+    "status": "candidate_unverified",
+    "lat": 54.379071,
+    "lon": 10.54082,
+    "formatted": "Hubertsberg, 24257 Panker, Germany",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "268": {
+    "status": "candidate_unverified",
+    "lat": 54.4271787,
+    "lon": 10.3679991,
+    "formatted": "Kalifornien, Schönberg (Holstein), SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.9
+  },
+  "269": {
+    "status": "candidate_unverified",
+    "lat": 54.4351864,
+    "lon": 11.2800476,
+    "formatted": "Katharinenhof, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "270": {
+    "status": "candidate_unverified",
+    "lat": 54.1906659,
+    "lon": 11.0612676,
+    "formatted": "Kellenhusen, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "271": {
+    "status": "candidate_unverified",
+    "lat": 54.1906659,
+    "lon": 11.0612676,
+    "formatted": "Kellenhusen, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "272": {
+    "status": "candidate_unverified",
+    "lat": 54.4055971,
+    "lon": 10.1891804,
+    "formatted": "Elefant am Strand, Falckensteiner Strand 81, 24159 Kiel, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.41785714285714287
+  },
+  "273": {
+    "status": "candidate_unverified",
+    "lat": 54.4575652,
+    "lon": 11.271556,
+    "formatted": "Klausdorfer Strandweg, 23769 Fehmarn, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "274": {
+    "status": "candidate_unverified",
+    "lat": 54.5340979,
+    "lon": 9.9661369,
+    "formatted": "Großsteingrab Kleinwaabs 1, Aschenberg, Großwaabs, 24369 Waabs, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "275": {
+    "status": "candidate_unverified",
+    "lat": 54.4679319,
+    "lon": 10.0496588,
+    "formatted": "Krusendorf, Schwedeneck, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "276": {
+    "status": "candidate_unverified",
+    "lat": 54.5153171,
+    "lon": 9.9829698,
+    "formatted": "Langholz, Waabs, SH, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "277": {
+    "status": "candidate_unverified",
+    "lat": 54.4685201,
+    "lon": 11.1342465,
+    "formatted": "Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "278": {
+    "status": "candidate_unverified",
+    "lat": 54.3215761,
+    "lon": 10.6664697,
+    "formatted": "Hohwacht, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "279": {
+    "status": "candidate_unverified",
+    "lat": 54.4949657,
+    "lon": 11.2382099,
+    "formatted": "Marienleuchte, Rethen, 23769 Fehmarn, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "280": {
+    "status": "candidate_unverified",
+    "lat": 54.4364596,
+    "lon": 11.1969356,
+    "formatted": "Burg auf Fehmarn, Kirche, Breite Straße, 23769 Burg auf Fehmarn, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "281": {
+    "status": "candidate_unverified",
+    "lat": 54.409599,
+    "lon": 11.204258,
+    "formatted": "Südstrand, Fehmarn, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "282": {
+    "status": "candidate_unverified",
+    "lat": 54.6588789,
+    "lon": 8.3571605,
+    "formatted": "Kläranlage Nebel, Nebel, SH, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "283": {
+    "status": "candidate_unverified",
+    "lat": 54.3215761,
+    "lon": 10.6664697,
+    "formatted": "Hohwacht, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "284": {
+    "status": "candidate_unverified",
+    "lat": 54.6909807,
+    "lon": 8.4893511,
+    "formatted": "Nieblum, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "285": {
+    "status": "candidate_unverified",
+    "lat": 54.4685201,
+    "lon": 11.1342465,
+    "formatted": "Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "286": {
+    "status": "candidate_unverified",
+    "lat": 54.6340003,
+    "lon": 10.0260438,
+    "formatted": "Schönhagen, Brodersby, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "287": {
+    "status": "no_result"
+  },
+  "288": {
+    "status": "candidate_unverified",
+    "lat": 54.4761222,
+    "lon": 11.2409235,
+    "formatted": "Presen, Fehmarn, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "289": {
+    "status": "candidate_unverified",
+    "lat": 54.851588,
+    "lon": 8.293353,
+    "formatted": "Rantum (Sylt), SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.225
+  },
+  "290": {
+    "status": "candidate_unverified",
+    "lat": 54.4734013,
+    "lon": 10.1038223,
+    "formatted": "Schwedeneck, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "291": {
+    "status": "candidate_unverified",
+    "lat": 54.026634,
+    "lon": 10.7559481,
+    "formatted": "Scharbeutz, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.23529411764705882
+  },
+  "292": {
+    "status": "candidate_unverified",
+    "lat": 54.4151243,
+    "lon": 10.4087365,
+    "formatted": "Schönberger Strand, Schönberg (Holstein), SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.9
+  },
+  "293": {
+    "status": "candidate_unverified",
+    "lat": 54.2901039,
+    "lon": 10.4288232,
+    "formatted": "Selent, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "295": {
+    "status": "candidate_unverified",
+    "lat": 54.47164,
+    "lon": 10.14708,
+    "formatted": "Stohl, Schwedeneck, SH, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 0
+  },
+  "296": {
+    "status": "candidate_unverified",
+    "lat": 54.4123192,
+    "lon": 11.1030967,
+    "formatted": "Strukkamphuk, Fehmarn, SH, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "297": {
+    "status": "candidate_unverified",
+    "lat": 54.660394,
+    "lon": 9.927115,
+    "formatted": "Kappeln, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "298": {
+    "status": "candidate_unverified",
+    "lat": 54.3132103,
+    "lon": 10.7911324,
+    "formatted": "Seebrücke Weißenhäuser Strand, 23758 Wangels, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "299": {
+    "status": "candidate_unverified",
+    "lat": 54.6304867,
+    "lon": 8.3687609,
+    "formatted": "Amrum, Inselstraße, 25946 Wittdün auf Amrum, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "300": {
+    "status": "candidate_unverified",
+    "lat": 54.4055005,
+    "lon": 9.7687811,
+    "formatted": "Groß Wittensee, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "301": {
+    "status": "candidate_unverified",
+    "lat": 54.6843316,
+    "lon": 9.9915141,
+    "formatted": "Maasholm, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "302": {
+    "status": "candidate_unverified",
+    "lat": 51.1601184,
+    "lon": 10.4449963,
+    "formatted": "Niederdorla, Vogtei, TH, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "303": {
+    "status": "candidate_unverified",
+    "lat": 53.1322349,
+    "lon": 5.9406531,
+    "formatted": "Earnewâld, Frisia, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "305": {
+    "status": "candidate_unverified",
+    "lat": 53.018652,
+    "lon": 5.533441,
+    "formatted": "Sudwest-Fryslan, FR, Netherlands",
+    "result_type": "district",
+    "rank_confidence": 0.3969
+  },
+  "308": {
+    "status": "candidate_unverified",
+    "lat": 52.9003769,
+    "lon": 5.3995749,
+    "formatted": "Molkwerum, Frisia, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "309": {
+    "status": "candidate_unverified",
+    "lat": 52.8832689,
+    "lon": 5.3602125,
+    "formatted": "Stavoren, Frisia, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "312": {
+    "status": "candidate_unverified",
+    "lat": 52.55751,
+    "lon": 4.610245,
+    "formatted": "Castricum aan Zee, Strand, Castricum, 1901 NZ Bakkum, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "313": {
+    "status": "candidate_unverified",
+    "lat": 52.6183093,
+    "lon": 4.6256307,
+    "formatted": "Egmond aan Zee, Bergen, NH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "314": {
+    "status": "candidate_unverified",
+    "lat": 52.4574139,
+    "lon": 4.6116211,
+    "formatted": "IJmuiden, NH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "315": {
+    "status": "candidate_unverified",
+    "lat": 52.6343702,
+    "lon": 5.1222228,
+    "formatted": "Schellinkhout, NH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "316": {
+    "status": "candidate_unverified",
+    "lat": 53.1144001,
+    "lon": 4.82879,
+    "formatted": "Texel International Airport, Muyweg, 1795 JA De Cocksdorp, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "318": {
+    "status": "candidate_unverified",
+    "lat": 52.886767,
+    "lon": 4.915711,
+    "formatted": "Watersportcamping Lutjestrand, Hollands Kroon, 1778 LB Westerland, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "319": {
+    "status": "candidate_unverified",
+    "lat": 52.4939272,
+    "lon": 4.593759,
+    "formatted": "Wijk aan Zee, NH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "320": {
+    "status": "candidate_unverified",
+    "lat": 52.3719838,
+    "lon": 4.5302209,
+    "formatted": "Zandvoort, NH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "321": {
+    "status": "candidate_unverified",
+    "lat": 51.3957804,
+    "lon": 3.5551696,
+    "formatted": "Breskens, ZE, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "322": {
+    "status": "candidate_unverified",
+    "lat": 51.3957804,
+    "lon": 3.5551696,
+    "formatted": "Breskens, ZE, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "323": {
+    "status": "candidate_unverified",
+    "lat": 51.3928888,
+    "lon": 3.5489718,
+    "formatted": "Algemene Begraafplaats van Breskens, Breskens, ZE, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "324": {
+    "status": "candidate_unverified",
+    "lat": 51.3803974,
+    "lon": 3.3987684,
+    "formatted": "Cadzand-Bad, Boulevard de Wielingen, Cadzand-Bad, 4506 GA Cadzand, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "325": {
+    "status": "candidate_unverified",
+    "lat": 51.3803974,
+    "lon": 3.3987684,
+    "formatted": "Cadzand-Bad, Boulevard de Wielingen, Cadzand-Bad, 4506 GA Cadzand, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "326": {
+    "status": "candidate_unverified",
+    "lat": 51.3803974,
+    "lon": 3.3987684,
+    "formatted": "Cadzand-Bad, Boulevard de Wielingen, Cadzand-Bad, 4506 GA Cadzand, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "327": {
+    "status": "candidate_unverified",
+    "lat": 51.555502,
+    "lon": 3.474896,
+    "formatted": "Domburg, Trommelweg, Verspreide huizen Domburg, Domburg, Veere, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "328": {
+    "status": "candidate_unverified",
+    "lat": 51.67384,
+    "lon": 4.138576,
+    "formatted": "Grevelingendam, Schouwen-Duiveland, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "329": {
+    "status": "candidate_unverified",
+    "lat": 51.3687309,
+    "lon": 3.4574045,
+    "formatted": "Nieuwvliet, Sint Jansdijk, Nieuwvliet-Bad, 4504 PB Nieuwvliet, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "331": {
+    "status": "candidate_unverified",
+    "lat": 51.753229,
+    "lon": 3.851821,
+    "formatted": "Webcam Brouwersdam Grevelingenmeer, Ouddorp brouwersdam, Ouddorp, Goeree-Overflakkee, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.09529411764705883
+  },
+  "332": {
+    "status": "candidate_unverified",
+    "lat": 51.529968,
+    "lon": 3.439033,
+    "formatted": "Westkapelle, Veere, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "333": {
+    "status": "candidate_unverified",
+    "lat": 51.5184577,
+    "lon": 3.4493202,
+    "formatted": "Joossesweg, 4361 XZ Westkapelle, Netherlands",
+    "result_type": "street",
+    "rank_confidence": 1
+  },
+  "334": {
+    "status": "candidate_unverified",
+    "lat": 51.5018348,
+    "lon": 3.4872245,
+    "formatted": "Zoutelande, ZE, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "335": {
+    "status": "candidate_unverified",
+    "lat": 51.8430666,
+    "lon": 4.0743262,
+    "formatted": "TOP Hellevoetsluis-Quackstrand, Oever, 3221 MB Hellevoetsluis, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "336": {
+    "status": "candidate_unverified",
+    "lat": 51.9771615,
+    "lon": 4.1314526,
+    "formatted": "Hook of Holland, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "337": {
+    "status": "candidate_unverified",
+    "lat": 52.2048978,
+    "lon": 4.3965975,
+    "formatted": "Katwijk aan Zee, Katwijk, ZH, Netherlands",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "338": {
+    "status": "candidate_unverified",
+    "lat": 52.066528,
+    "lon": 4.218222,
+    "formatted": "Den Haag, Kijkduin, Kijkduin, The Hague, Loosduinen, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "339": {
+    "status": "candidate_unverified",
+    "lat": 51.9543525,
+    "lon": 4.0197987,
+    "formatted": "Maasvlakte, Rotterdam, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "340": {
+    "status": "candidate_unverified",
+    "lat": 52.027906,
+    "lon": 4.170389,
+    "formatted": "Schietvereniging Monster, 2684 XC Ter Heijde, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "341": {
+    "status": "candidate_unverified",
+    "lat": 52.2484451,
+    "lon": 4.4344787,
+    "formatted": "Noordwijk aan Zee, Noordwijk, Netherlands",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "342": {
+    "status": "candidate_unverified",
+    "lat": 52.3000635,
+    "lon": 4.4799819,
+    "formatted": "Langevelderslag, 2204 AH Noordwijk, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "343": {
+    "status": "candidate_unverified",
+    "lat": 51.914271,
+    "lon": 4.1038932,
+    "formatted": "Oostvoorne, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "344": {
+    "status": "candidate_unverified",
+    "lat": 51.9301963,
+    "lon": 4.0572129,
+    "formatted": "Slag Bergeend, 3199 LM Oostvoorne, Netherlands",
+    "result_type": "street",
+    "rank_confidence": 0.45
+  },
+  "345": {
+    "status": "candidate_unverified",
+    "lat": 51.914271,
+    "lon": 4.1038932,
+    "formatted": "Oostvoorne, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "346": {
+    "status": "candidate_unverified",
+    "lat": 51.824279,
+    "lon": 3.930933,
+    "formatted": "Ouddorp, Goeree-Overflakkee, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0
+  },
+  "347": {
+    "status": "candidate_unverified",
+    "lat": 51.8176603,
+    "lon": 3.8903852,
+    "formatted": "Noordweg, 3253 LK Ouddorp, Netherlands",
+    "result_type": "street",
+    "rank_confidence": 1
+  },
+  "348": {
+    "status": "candidate_unverified",
+    "lat": 51.8093104,
+    "lon": 3.9359204,
+    "formatted": "Ouddorp, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "349": {
+    "status": "candidate_unverified",
+    "lat": 51.808107,
+    "lon": 3.873918,
+    "formatted": "Ouddorp, Vuurtoren, Ouddorp buitengebied, Ouddorp, Goeree-Overflakkee, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "350": {
+    "status": "candidate_unverified",
+    "lat": 51.8706546,
+    "lon": 4.0699129,
+    "formatted": "Rockanje, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "351": {
+    "status": "candidate_unverified",
+    "lat": 52.1067449,
+    "lon": 4.2736937,
+    "formatted": "Scheveningen, The Hague, ZH, Netherlands",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "352": {
+    "status": "candidate_unverified",
+    "lat": 52.144735,
+    "lon": 4.388909,
+    "formatted": "Wassenaar, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "353": {
+    "status": "candidate_unverified",
+    "lat": 51.4885206,
+    "lon": 8.1541057,
+    "formatted": "Stockumer Damm, 59519 Möhnesee, Germany",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "354": {
+    "status": "no_result"
+  },
+  "355": {
+    "status": "candidate_unverified",
+    "lat": 51.497096,
+    "lon": 8.1347,
+    "formatted": "Möhnesee, NW, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "356": {
+    "status": "candidate_unverified",
+    "lat": 51.7103863,
+    "lon": 4.0873287,
+    "formatted": "Herkingen, ZH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "357": {
+    "status": "candidate_unverified",
+    "lat": 50.9812318,
+    "lon": 12.7650415,
+    "formatted": "Untergöhren, Göhren, Wechselburg, SN, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 0.25
+  },
+  "358": {
+    "status": "candidate_unverified",
+    "lat": 53.9799237,
+    "lon": 10.9693979,
+    "formatted": "Barendorf, Seestraße, 23942 Dassow, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "359": {
+    "status": "candidate_unverified",
+    "lat": 53.9799237,
+    "lon": 10.9693979,
+    "formatted": "Barendorf, Seestraße, 23942 Dassow, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "360": {
+    "status": "candidate_unverified",
+    "lat": 51.7862092,
+    "lon": 12.5769971,
+    "formatted": "Bergwitzsee, Kemberg, ST, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "362": {
+    "status": "candidate_unverified",
+    "lat": 54.5035476,
+    "lon": 9.5960536,
+    "formatted": "Fahrdorf, SH, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "363": {
+    "status": "candidate_unverified",
+    "lat": 54.5275928,
+    "lon": 11.1116531,
+    "formatted": "Teichhof 1, 23769 Fehmarn, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "364": {
+    "status": "candidate_unverified",
+    "lat": 53.939609,
+    "lon": 10.8587192,
+    "formatted": "Travemünde, Lübeck, SH, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "365": {
+    "status": "candidate_unverified",
+    "lat": 43.135876,
+    "lon": 5.741975,
+    "formatted": "Les Isles de Bandol, 83150 Bandol AOC, France",
+    "result_type": "street",
+    "rank_confidence": 0.7290000000000001
+  },
+  "366": {
+    "status": "candidate_unverified",
+    "lat": 49.4938975,
+    "lon": 0.1079732,
+    "formatted": "Le Havre, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "367": {
+    "status": "candidate_unverified",
+    "lat": 48.245425,
+    "lon": -4.508381,
+    "formatted": "Rue de Goulien, 29160 Crozon, France",
+    "result_type": "street",
+    "rank_confidence": 0.5
+  },
+  "368": {
+    "status": "candidate_unverified",
+    "lat": 49.7594424,
+    "lon": 0.375282,
+    "formatted": "Fécamp, Place de la Gare, 76400 Fécamp, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "369": {
+    "status": "candidate_unverified",
+    "lat": 48.1994497,
+    "lon": -4.5522766,
+    "formatted": "Plage de la Palue, 29160 Saint-Hernot, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "370": {
+    "status": "candidate_unverified",
+    "lat": 47.806275,
+    "lon": -4.305337,
+    "formatted": "Route du Guilvinec, 29760 Penmarc'h, France",
+    "result_type": "street",
+    "rank_confidence": 0
+  },
+  "371": {
+    "status": "candidate_unverified",
+    "lat": 47.8366583,
+    "lon": -4.3543511,
+    "formatted": "Pointe de la Torche, 29120 Plomeur, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "372": {
+    "status": "candidate_unverified",
+    "lat": 46.344222,
+    "lon": -1.4439772,
+    "formatted": "Gendarmerie nationale, Rue du Phare, 85360 La Tranche-sur-Mer, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.06712564543889844
+  },
+  "373": {
+    "status": "candidate_unverified",
+    "lat": 48.6072372,
+    "lon": -2.1502639,
+    "formatted": "Lancieux, BRE, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "374": {
+    "status": "candidate_unverified",
+    "lat": 49.6526753,
+    "lon": -1.5561444,
+    "formatted": "Centre de Loisirs Le Becquet, Rue du Becquet, 50110 Cherbourg-en-Cotentin, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.7290000000000001
+  },
+  "376": {
+    "status": "candidate_unverified",
+    "lat": 42.909989,
+    "lon": 3.0270152,
+    "formatted": "Leucate, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "377": {
+    "status": "candidate_unverified",
+    "lat": 44.886372,
+    "lon": 6.451015,
+    "formatted": "Les Petites Dalles, Vallouise, Hautes-Alpes, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "378": {
+    "status": "candidate_unverified",
+    "lat": 48.225209,
+    "lon": -4.504303,
+    "formatted": "Place d'Ys Morgat, Boulevard de la Plage, 29160 Morgat, France",
+    "result_type": "amenity",
+    "rank_confidence": 0
+  },
+  "379": {
+    "status": "candidate_unverified",
+    "lat": 49.558408,
+    "lon": -1.839771,
+    "formatted": "Mairie de Siouville-Hague, Rue de l’Église, 50340 Siouville-Hague, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "380": {
+    "status": "candidate_unverified",
+    "lat": 48.6556023,
+    "lon": -2.0057666,
+    "formatted": "Hôtel Kyriad Saint-Malo Plage, Chaussée du Sillon, 35400 Saint-Malo, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.027562499999999997
+  },
+  "381": {
+    "status": "candidate_unverified",
+    "lat": 49.672978,
+    "lon": -1.7378289,
+    "formatted": "Urville-Nacqueville, La Hague, NOR, France",
+    "result_type": "city",
+    "rank_confidence": 0.3
+  },
+  "382": {
+    "status": "candidate_unverified",
+    "lat": 49.6355544,
+    "lon": -1.8451428,
+    "formatted": "Château de Vauville, Le Moitier, 50440 Vauville, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.81
+  },
+  "383": {
+    "status": "candidate_unverified",
+    "lat": 52.6607662,
+    "lon": 4.6316645,
+    "formatted": "Bergen aan Zee, Bergen, NH, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "384": {
+    "status": "candidate_unverified",
+    "lat": 51.1719464,
+    "lon": 5.9630077,
+    "formatted": "Merum, Herten, LI, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 0.25
+  },
+  "385": {
+    "status": "candidate_unverified",
+    "lat": 54.1469049,
+    "lon": 10.3443803,
+    "formatted": "Ascheberg, 24326 Ascheberg, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.5
+  },
+  "386": {
+    "status": "candidate_unverified",
+    "lat": 48.977257,
+    "lon": 12.220037,
+    "formatted": "Guggenberger See, 93073 Neutraubling, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "387": {
+    "status": "candidate_unverified",
+    "lat": 49.8910913,
+    "lon": 8.3703085,
+    "formatted": "Hessenaue, HE, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "388": {
+    "status": "candidate_unverified",
+    "lat": 51.297927,
+    "lon": 11.883531,
+    "formatted": "Geiseltalsee, Braunsbedra, ST, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "389": {
+    "status": "candidate_unverified",
+    "lat": 54.1760673,
+    "lon": 12.0278297,
+    "formatted": "Wilhelmshöhe, 18119 Rostock, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "390": {
+    "status": "candidate_unverified",
+    "lat": 48.2864328,
+    "lon": 9.7438929,
+    "formatted": "Rosengarten, Ehingen (Donau), BW, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "391": {
+    "status": "candidate_unverified",
+    "lat": 53.9614894,
+    "lon": 14.159712,
+    "formatted": "Strand-Bistro, Badstraße, 17424 Heringsdorf, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "392": {
+    "status": "candidate_unverified",
+    "lat": 52.3285217,
+    "lon": 5.5795944,
+    "formatted": "Strand Horst Noord, Harderwijk, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "393": {
+    "status": "candidate_unverified",
+    "lat": 51.7129045,
+    "lon": 3.9517495,
+    "formatted": "Zonnemaire, ZE, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "394": {
+    "status": "candidate_unverified",
+    "lat": 53.3828908,
+    "lon": 6.1581571,
+    "formatted": "Jachthaven Lauwersmeer - Oostmahorn, Oostmahorn, 9133 CB Eanjum, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "395": {
+    "status": "candidate_unverified",
+    "lat": 52.4603823,
+    "lon": 5.0751474,
+    "formatted": "Gouwzee, Monnickendam, NH, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "396": {
+    "status": "candidate_unverified",
+    "lat": 51.574222,
+    "lon": 14.01393,
+    "formatted": "Großräschener See, Großräschen, BB, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "397": {
+    "status": "candidate_unverified",
+    "lat": 43.1523982,
+    "lon": 6.4318535,
+    "formatted": "Le Lavandou, Avenue du Cap Nègre, 83980 Le Lavandou, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "398": {
+    "status": "candidate_unverified",
+    "lat": 54.4833877,
+    "lon": 13.5067976,
+    "formatted": "Lietzow, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "399": {
+    "status": "candidate_unverified",
+    "lat": 54.6197796,
+    "lon": 13.3760466,
+    "formatted": "Juliusruh, Breege, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "401": {
+    "status": "candidate_unverified",
+    "lat": 51.6391287,
+    "lon": 3.7157872,
+    "formatted": "Deltapark Neeltje Jans, Faelweg 5, 4354 RB Vrouwenpolder, Netherlands",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "402": {
+    "status": "candidate_unverified",
+    "lat": 51.4367381,
+    "lon": 12.3422145,
+    "formatted": "Schladitzer Bucht, 04519 Rackwitz, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 0.9
+  },
+  "403": {
+    "status": "candidate_unverified",
+    "lat": 49.4141818,
+    "lon": 11.0153478,
+    "formatted": "Stein, BY, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "404": {
+    "status": "candidate_unverified",
+    "lat": 54.3300215,
+    "lon": 13.1261879,
+    "formatted": "Altefähr, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "405": {
+    "status": "candidate_unverified",
+    "lat": 53.7551455,
+    "lon": 11.4965885,
+    "formatted": "Flessenow, Dobin am See, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "406": {
+    "status": "no_result"
+  },
+  "407": {
+    "status": "candidate_unverified",
+    "lat": 43.5358424,
+    "lon": 7.0372761,
+    "formatted": "Palm Beach, Place Franklin Roosevelt, 06407 Cannes, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6666666666666667
+  },
+  "408": {
+    "status": "candidate_unverified",
+    "lat": 42.9747989,
+    "lon": 2.9942438,
+    "formatted": "La Palme, OCC, France",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "409": {
+    "status": "candidate_unverified",
+    "lat": 53.7340404,
+    "lon": 14.0539883,
+    "formatted": "Ueckermünde, Eggesiner Straße 14, 17373 Ueckermünde, Germany",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "410": {
+    "status": "candidate_unverified",
+    "lat": 54.1130966,
+    "lon": 13.5294375,
+    "formatted": "Loissin, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "411": {
+    "status": "candidate_unverified",
+    "lat": 43.387239,
+    "lon": 4.8514345,
+    "formatted": "Baie de Carteau, Avenue de la 1re Division Française Libre, 13230 Port-Saint-Louis-du-Rhône, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "412": {
+    "status": "candidate_unverified",
+    "lat": 54.1779039,
+    "lon": 12.0812875,
+    "formatted": "Warnemünde, Rostock, MV, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "413": {
+    "status": "candidate_unverified",
+    "lat": 43.0799622,
+    "lon": 6.1255156,
+    "formatted": "Almanarre, Route de l'Almanarre, 83400 Hyères, France",
+    "result_type": "amenity",
+    "rank_confidence": 1
+  },
+  "414": {
+    "status": "candidate_unverified",
+    "lat": 54.2552653,
+    "lon": 12.2517155,
+    "formatted": "Graal-Müritz, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "415": {
+    "status": "candidate_unverified",
+    "lat": 43.388546,
+    "lon": 4.560383,
+    "formatted": "Plage de Beauduc, Arles, Bouches-du-Rhône, France",
+    "result_type": "amenity",
+    "rank_confidence": 0.6561000000000001
+  },
+  "416": {
+    "status": "candidate_unverified",
+    "lat": 51.576602,
+    "lon": 3.6165776,
+    "formatted": "Vrouwenpolder, ZE, Netherlands",
+    "result_type": "city",
+    "rank_confidence": 1
+  },
+  "417": {
+    "status": "candidate_unverified",
+    "lat": 52.8141117,
+    "lon": 11.6097884,
+    "formatted": "Wohlenberg, Altmärkische Höhe, ST, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "418": {
+    "status": "candidate_unverified",
+    "lat": 53.6736383,
+    "lon": 7.4785555,
+    "formatted": "Dornumersiel/ Westeraccumersiel, Dornum, NI, Germany",
+    "result_type": "suburb",
+    "rank_confidence": 1
+  },
+  "419": {
+    "status": "candidate_unverified",
+    "lat": 53.6992698,
+    "lon": 7.7035695,
+    "formatted": "Neuharlingersiel, NI, Germany",
+    "result_type": "city",
+    "rank_confidence": 0.5
+  },
+  "420": {
+    "status": "candidate_unverified",
+    "lat": 53.8684526,
+    "lon": 14.2065532,
+    "formatted": "Kamminke, MV, Germany",
+    "result_type": "city",
+    "rank_confidence": 1
   }
 }
